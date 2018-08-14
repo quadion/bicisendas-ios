@@ -16,8 +16,18 @@ class ViewController: UIViewController {
 
     fileprivate var bikePathsRenderer: MKTileOverlayRenderer!
 
+    private let locationManager = CLLocationManager()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        requestLocationPermission()
+
+        mapView.centerCoordinate = CLLocationCoordinate2D(latitude: -34.6052088, longitude: -58.4811313)
+        let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: -34.6052088, longitude: -58.45),
+                                        span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
+        mapView.setRegion(region, animated: true)
+        mapView.showsUserLocation = true
 
         let overlay = BiciTileOverlay(urlTemplate: "https://tiles1.usig.buenosaires.gob.ar/mapcache/tms/1.0.0/ciclovias_caba_3857@GoogleMapsCompatible/{z}/{x}/{y}.png")
 
@@ -34,7 +44,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    private func requestLocationPermission() {
+        locationManager.requestWhenInUseAuthorization()
+    }
 }
 
 class BiciTileOverlay: MKTileOverlay {
