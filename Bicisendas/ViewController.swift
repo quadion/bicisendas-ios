@@ -28,6 +28,7 @@ class ViewController: UIViewController {
                                         span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
         mapView.setRegion(region, animated: true)
         mapView.showsUserLocation = true
+        mapView.userTrackingMode = .followWithHeading
 
         let overlay = BiciTileOverlay(urlTemplate: "https://tiles1.usig.buenosaires.gob.ar/mapcache/tms/1.0.0/ciclovias_caba_3857@GoogleMapsCompatible/{z}/{x}/{y}.png")
 
