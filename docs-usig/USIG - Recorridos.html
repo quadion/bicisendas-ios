@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <base href="http://servicios.usig.buenosaires.gob.ar/usig-js/3.2/demos/">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>USIG - Recorridos</title>
+    <link rel="stylesheet" type="text/css" href="css/demos.css" />
+    <style>
+        body {
+    		width: 95%;
+    	}
+    	.ramales {
+    		color: #007baf;
+    		cursor: pointer;
+    	}
+    	.transport {
+    		color: #007baf;
+    	}
+    	.detalle_recorrido {
+    		display: none;
+    		font-size: 90%;
+    	}
+    	.par {
+    		background: #f5f5f5;
+    	}
+    	.tiempo {
+			width: 50px; 
+			text-align: center;
+			color: #007baf;
+			font-weight: bold;
+    	}
+    	#recorridos {
+    		width: 45%;
+    		margin-top: 10px;
+    		margin-right: 40px;
+    		float: left;
+    	}
+    	
+    	#mapa {
+    		float: left;
+    	}
+    	
+    	div.ref {
+			background: url(../images/lamparitas.png) 50% 0px no-repeat;
+			width: auto;
+			height: 15px;
+	 	}
+		
+		div.trip_1 {
+			background: url(../images/lamparitas.png) 50% -15px no-repeat;
+		}
+		div.trip_2 {
+			background: url(../images/lamparitas.png) 50% -30px no-repeat;
+		}
+		div.trip_3 {
+			background: url(../images/lamparitas.png) 50% -45px no-repeat;
+		}
+		div.trip_4 {
+			background: url(../images/lamparitas.png) 50% -60px no-repeat;
+		}
+		div.trip_5 {
+			background: url(../images/lamparitas.png) 50% -75px no-repeat;
+		}
+		div.trip_6 {
+			background: url(../images/lamparitas.png) 50% -90px no-repeat;
+		}
+		div.trip_7 {
+			background: url(../images/lamparitas.png) 50% -105px no-repeat;
+		}
+		div.trip_8 {
+			background: url(../images/lamparitas.png) 50% -120px no-repeat;
+		}
+		div.trip_9 {
+			background: url(../images/lamparitas.png) 50% -135px no-repeat;
+		}
+		div.trip_10 {
+			background: url(../images/lamparitas.png) 50% -150px no-repeat;
+		}
+    </style>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+	<script src="http://servicios.usig.buenosaires.gob.ar/usig-js/3.2/usig.AutoCompleterFull.min.js" type="text/javascript"></script> 
+	<script src="http://servicios.usig.buenosaires.gob.ar/usig-js/3.2/usig.Recorridos.min.js" type="text/javascript"></script> 
+	<script src="http://servicios.usig.buenosaires.gob.ar/usig-js/3.2/usig.MapaInteractivo.min.js" type="text/javascript"></script> 
+    
+	<script type="text/javascript">
+	$.noConflict();
+	jQuery(document).ready(function($) {
+		var origen, destino, recorridos;
+
+		var ac = new usig.AutoCompleter('o', {
+       		debug: false,
+       		rootUrl: '../',
+       		onReady: function() {
+       			$('#o').val('').removeAttr('disabled').focus();	        			
+       		},
+       		afterSelection: function(option) {
+       			if (option instanceof usig.Direccion || option instanceof usig.inventario.Objeto) {
+       				origen = option;
+       			}
+       		},
+       		afterGeoCoding: function(pt) {
+    			if (pt instanceof usig.Punto) {
+    				if (origen instanceof usig.Direccion) {
+    					origen.setCoordenadas(pt);
+    				}				
+    			}
+       		} 
+       		
+       	});
+		
+		var ac = new usig.AutoCompleter('d', {
+       		debug: false,
+       		rootUrl: '../',
+       		onReady: function() {
+       			$('#d').val('').removeAttr('disabled');	        			
+       		},
+       		afterSelection: function(option) {
+       			if (option instanceof usig.Direccion || option instanceof usig.inventario.Objeto) {
+       				destino = option;
+       			}
+       		},
+       		afterGeoCoding: function(pt) {
+    			if (pt instanceof usig.Punto) {
+    				if (destino instanceof usig.Direccion) {
+    					destino.setCoordenadas(pt);
+    				}				
+    			}		       			
+       		} 
+       	});
+		
+		$('#mainForm').bind("submit", function () {
+			return false;
+		});	
+		
+		function mostrarOpciones(opciones) {
+			usig.debug("en mostrarOpciones");
+			usig.debug(opciones);
+			recorridos = opciones;
+			var distance;
+			var html = '<p>Se hallaron las siguientes opciones:</p><table style="width:100%"><tbody>';
+
+			for (var i=0,len=opciones.length; i<len; i++) {
+				html+='<tr class="'+(i%2?'impar':'par')+'"><td style="width: 20px;text-align: center;"><input type="checkbox" class="ver_detalle" id="recorrido_'+i+'"/></td><td style="width: 80%;">'+opciones[i].toHtmlString()+'</td><td class="tiempo">'+opciones[i].getTimeString()+'\'</td><td style="width: 20px;"><div class="ref" id="ref_'+i+'">&nbsp;</div></td></tr>';
+				html+='<tr class="detalle_recorrido"><td class="detalle" colspan="4" id="detalle_recorrido_'+i+'"></td></tr>'
+				distance = recorridos[i].getTraveledDistance();
+			}
+			html+='</tbody></table>';
+			$('#recorridos').html(html);
+			$('input.ver_detalle').click(function(event) {
+				var target = event.target?event.target:event.srcElement,
+						target_id = target.id.replace('recorrido_', '');
+				if ($(this).is(':checked')) {
+					$('#detalle_recorrido_'+target_id).html('Cargando detalle...').parent('tr').show();
+					recorridos[target_id].getDetalle(function(detalle) {
+						var html = '<table border="0" width="100%" margin= "100px">';
+						var index=1;
+						for(var i=0,l=detalle.length;i<l;i++) {
+							html += '<tr id="tr-street-code-'+detalle[i].id+'" class="selectable"> \
+								<td width="5%">'+index+'. </td> \
+								<td>'+detalle[i].text+'</td> \
+								<td width="20%" align="right">'+detalle[i].distance+' m</td></tr>';
+							index++;							
+						}
+						html += '<tr> \
+									<td width="5%"></td> \
+									<td ></td> \
+									<td width="20%" align="right">'+distance+' m</td> \
+								</tr></table>';
+						//html+='</table>';
+						$('#detalle_recorrido_'+target_id).html(html).parent('tr').show();
+						miMapa.mostrarRecorrido(recorridos[target_id]);
+						$('#ref_'+target_id).addClass(recorridos[target_id].getTemplate().cls);
+					}, function() { alert('Se produjo un error al intentar cargar los detalles del recorrido.'); });
+				} else {
+					miMapa.ocultarRecorrido(recorridos[target_id]);
+					$('#ref_'+target_id).removeClass(recorridos[target_id].getTemplate().cls);
+					$('#detalle_recorrido_'+target_id).parent('tr').hide();					
+				}
+			});
+		}
+		
+		$('#buscar').click(function(ev) {
+			ev.preventDefault();
+			if (origen && destino) {
+				usig.Recorridos.buscarRecorridos(origen, destino, mostrarOpciones, function() {
+					$('#recorridos').html('Se produjo un error el buscar el recorrido.');
+				}, {tipo: 'bici', opciones_prioridad: 'avenidas', opciones_incluir_autopistas: false});
+				if (recorridos) {
+					for(var i=0;i<recorridos.length;i++) {
+						miMapa.borrarRecorrido(recorridos[i]);
+					}
+				}
+				$('#recorridos').html('Buscando recorrido...');
+			} else {
+				$('#recorridos').html('Ingrese origen y destino del recorrido.');
+			}
+		});
+
+		$('#mapa').css('width', Math.floor($('body').width()/2)-40).css('height', 450);
+		
+		miMapa = new usig.MapaInteractivo('mapa', {
+			rootUrl: '../',
+			// baseLayer: 'mapabsas_informa',
+			includeToolbar: false,
+			onReady: function() {
+				var layerWMS = miMapa.addWMSLayer('ciclovias');
+			}
+			
+		});	
+		
+		miMapa.add
+	});	
+	</script>
+  </head>
+  <body>
+    <div id="page">
+      <div id="header">
+        <div id="logo"><h1>USIG - Recorridos En Bici (Demo)</h1></div>
+      </div>
+      <div id="buscador">
+       <form id="mainForm" accept-charset="utf-8">
+      	<label for="o">Origen</label>
+     	<input type="text" size="30" name="o" id="o" title="Origen del recorrido" class="text"/>
+     	<span id="ejemplo">ej.: Callao y Corrientes, Florida 550, Teatro San Martín, etc.</span>
+      	<label for="d">Destino</label>
+     	<input type="text" size="30" name="d" id="d" title="Destino del recorrido" class="text"/>
+     	<span id="ejemplo">ej.: Callao y Corrientes, Florida 550, Teatro San Martín, etc.</span>
+     	<a class="button" id="buscar" href="#">Buscar Recorrido</a><br/>
+	    <div id="recorridos">No hay recorridos para mostrar</div>&nbsp;
+	    <div id="mapa"></div>
+       </form>
+      </div>
+      <div id="footer">
+        <p>&copy; 2011-2012 USIG - Unidad de Sistemas de Información Geográfica</p>
+      </div>
+    </div>
+  </body>
+</html>

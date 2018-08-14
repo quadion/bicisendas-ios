@@ -1,0 +1,2212 @@
+.contrast {	
+	color:#000;
+	text-shadow: 0 0 0 #FFF!important;
+ }
+
+.trenpill {
+	font-style: italic;
+	background: #178258;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI0OCUiIHN0b3AtY29sb3I9IiMxNzgyNTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDk1YzM0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(top,  #64a1d1 48%, #3683bd 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#64a1d1), color-stop(100%,#3683bd));
+	background: -webkit-linear-gradient(top,  #64a1d1 48%,#3683bd 100%);
+	background: -o-linear-gradient(top,  #64a1d1 48%,#3683bd 100%);
+	background: -ms-linear-gradient(top,  #64a1d1 48%,#3683bd 100%);
+	background: linear-gradient(to bottom,  #64a1d1 48%,#3683bd 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64a1d1', endColorstr='#3683bd',GradientType=0 );
+; border:#155789 1px solid!important; 
+	width: auto!important;
+} 
+
+.trenpill .primero {
+	background:#2b6baf;
+	border-bottom: #7db3da 1px solid
+} 
+
+.trenpill .segundo {
+	background:#2b6baf;
+}
+
+.trenpill .linea { padding: 0 5px 1px 5px !important; }
+
+.pill {
+	border-radius: 3px;
+	border: 1px;
+	text-shadow: 0 1px 1px black;
+	float: left;
+	color: white;
+	width: 30px;
+	text-align: center;
+}
+
+.pill .primero {height:5px;box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.3); border-radius: 2px 3px 0 0}
+.pill .segundo {float:right; width:50%;height: 5px;box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.3);border-radius: 0 2px 0 0}
+.pill .linea {	padding: 0px 0 1px 0; display: block; font-size: 14px;font-weight: bold}
+
+.circlePill {
+	border-radius: 100px;
+	float: left;
+	padding: 3px 8px;
+	color:#FFF;
+	box-shadow: 0 0 5px #CCC;
+	border:2px solid #FFF;
+	font-weight: bold;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+}
+
+.colectivo1 {	
+background: #19236d;
+background: -moz-linear-gradient(top,  #19236d 48%, #141c58 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#19236d), color-stop(100%,#141c58));
+background: -webkit-linear-gradient(top,  #19236d 48%,#141c58 100%);
+background: -o-linear-gradient(top,  #19236d 48%,#141c58 100%);
+background: -ms-linear-gradient(top,  #19236d 48%,#141c58 100%);
+background: linear-gradient(to bottom,  #19236d 48%,#141c58 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19236d', endColorstr='#141c58',GradientType=0 );
+; 
+border: 1px solid #141c58; }
+
+ .colectivo1 .primero {background:#88aee8; border-bottom: #141c58 1px solid} 
+ .colectivo1 .segundo {background:#eee392;}
+
+
+.colectivo2 {	
+background: #be1f1c;
+background: -moz-linear-gradient(top,  #be1f1c 48%, #980805 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#be1f1c), color-stop(100%,#980805));
+background: -webkit-linear-gradient(top,  #be1f1c 48%,#980805 100%);
+background: -o-linear-gradient(top,  #be1f1c 48%,#980805 100%);
+background: -ms-linear-gradient(top,  #be1f1c 48%,#980805 100%);
+background: linear-gradient(to bottom,  #be1f1c 48%,#980805 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#be1f1c', endColorstr='#980805',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo2 .primero {background:#ccc7b1; border-bottom: #093b29 1px solid} 
+ .colectivo2 .segundo {background:#1d3b78;}
+ 
+
+.colectivo4 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo4 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo4 .segundo {background:#161616;}
+ 
+
+.colectivo5 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo5 .primero {background:#178258; border-bottom: #161616 1px solid} 
+ .colectivo5 .segundo {background:#161616;}
+ 
+
+.colectivo6 {	
+background: #178258;
+background: -moz-linear-gradient(top,  #178258 48%, #095c34 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#178258), color-stop(100%,#095c34));
+background: -webkit-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: -o-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: -ms-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: linear-gradient(to bottom,  #178258 48%,#095c34 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#095c34',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo6 .primero {background:#c5001b; border-bottom: #161616 1px solid} 
+ .colectivo6 .segundo {background:#0f72ba;}
+ 
+
+.colectivo7 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo7 .primero {background:#448dc4; border-bottom: #161616 1px solid} 
+ .colectivo7 .segundo {background:#448dc4;}
+
+
+.colectivo8 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo8 .primero {background:#448dc4; border-bottom: #161616 1px solid} 
+ .colectivo8 .segundo {background:#448dc4;}
+ 
+
+.colectivo9 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo9 .primero {background:#4a7ed4; border-bottom: #161616 1px solid} 
+ .colectivo9 .segundo {background:#ba091d;}
+ 
+
+.colectivo10 {	
+background: #00dcd7;
+background: -moz-linear-gradient(top,  #00dcd7 48%, #06a8a4 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#00dcd7), color-stop(100%,#06a8a4));
+background: -webkit-linear-gradient(top,  #00dcd7 48%,#06a8a4 100%);
+background: -o-linear-gradient(top,  #00dcd7 48%,#06a8a4 100%);
+background: -ms-linear-gradient(top,  #00dcd7 48%,#06a8a4 100%);
+background: linear-gradient(to bottom,  #00dcd7 48%,#06a8a4 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00dcd7', endColorstr='#06a8a4',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo10 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo10 .segundo {background:#161616;}
+ 
+.colectivo12 {	
+background: #b6b6b5;
+background: -moz-linear-gradient(top,  #b6b6b5 48%, #90908f 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#b6b6b5), color-stop(100%,#90908f));
+background: -webkit-linear-gradient(top,  #b6b6b5 48%,#90908f 100%);
+background: -o-linear-gradient(top,  #b6b6b5 48%,#90908f 100%);
+background: -ms-linear-gradient(top,  #b6b6b5 48%,#90908f 100%);
+background: linear-gradient(to bottom,  #b6b6b5 48%,#90908f 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6b6b5', endColorstr='#90908f',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo12 .primero {background:#d90004; border-bottom: #161616 1px solid} 
+ .colectivo12 .segundo {background:#161616;}
+ 
+.colectivo15 {	
+background: #178258;
+background: -moz-linear-gradient(top,  #178258 48%, #095c34 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#178258), color-stop(100%,#095c34));
+background: -webkit-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: -o-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: -ms-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: linear-gradient(to bottom,  #178258 48%,#095c34 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#095c34',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo15 .primero {background:#6dd378; border-bottom: #161616 1px solid} 
+ .colectivo15 .segundo {background:#161616;}
+
+
+.colectivo17 {	
+background: #00dcd7;
+background: -moz-linear-gradient(top,  #00dcd7 48%, #06a8a4 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#00dcd7), color-stop(100%,#06a8a4));
+background: -webkit-linear-gradient(top,  #00dcd7 48%,#06a8a4 100%);
+background: -o-linear-gradient(top,  #00dcd7 48%,#06a8a4 100%);
+background: -ms-linear-gradient(top,  #00dcd7 48%,#06a8a4 100%);
+background: linear-gradient(to bottom,  #00dcd7 48%,#06a8a4 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00dcd7', endColorstr='#06a8a4',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo17 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo17 .segundo {background:#161616;}
+
+
+.colectivo19 {	
+background: #b6b6b5;
+background: -moz-linear-gradient(top,  #b6b6b5 48%, #90908f 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#b6b6b5), color-stop(100%,#90908f));
+background: -webkit-linear-gradient(top,  #b6b6b5 48%,#90908f 100%);
+background: -o-linear-gradient(top,  #b6b6b5 48%,#90908f 100%);
+background: -ms-linear-gradient(top,  #b6b6b5 48%,#90908f 100%);
+background: linear-gradient(to bottom,  #b6b6b5 48%,#90908f 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6b6b5', endColorstr='#90908f',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo19 .primero {background:#d90004; border-bottom: #161616 1px solid} 
+ .colectivo19 .segundo {background:#161616;}
+
+
+.colectivo20 {		
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo20 .primero {background:#be1f1c; border-bottom: #161616 1px solid} 
+ .colectivo20 .segundo {background:#161616;}
+
+
+.colectivo21 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo21 .primero {background:#448dc4; border-bottom: #161616 1px solid} 
+ .colectivo21 .segundo {background:#448dc4;}
+
+
+.colectivo22 {	
+background: #00dcd7;
+background: -moz-linear-gradient(top,  #00dcd7 48%, #06a8a4 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#00dcd7), color-stop(100%,#06a8a4));
+background: -webkit-linear-gradient(top,  #00dcd7 48%,#06a8a4 100%);
+background: -o-linear-gradient(top,  #00dcd7 48%,#06a8a4 100%);
+background: -ms-linear-gradient(top,  #00dcd7 48%,#06a8a4 100%);
+background: linear-gradient(to bottom,  #00dcd7 48%,#06a8a4 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00dcd7', endColorstr='#06a8a4',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo22 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo22 .segundo {background:#161616;}
+
+.colectivo23 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo23 .primero {background:#178258; border-bottom: #161616 1px solid} 
+ .colectivo23 .segundo {background:#161616;}
+
+.colectivo24 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo24 .primero {background:#bb0017; border-bottom: #161616 1px solid} 
+ .colectivo24 .segundo {background:#178258;}
+
+
+.colectivo25 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo25 .primero {background:#bb0017; border-bottom: #161616 1px solid} 
+ .colectivo25 .segundo {background:#178258;}
+
+.colectivo26 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo26 .primero {background:#4a7ed4; border-bottom: #161616 1px solid} 
+ .colectivo26 .segundo {background:#ba091d;}
+
+.colectivo28 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo28 .primero {background:#178258; border-bottom: #161616 1px solid} 
+ .colectivo28 .segundo {background:#161616;}
+
+.colectivo29 {	
+background: #0d4a92;
+background: -moz-linear-gradient(top,  #0d4a92 48%, #062243 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#0d4a92), color-stop(100%,#062243));
+background: -webkit-linear-gradient(top,  #0d4a92 48%,#062243 100%);
+background: -o-linear-gradient(top,  #0d4a92 48%,#062243 100%);
+background: -ms-linear-gradient(top,  #0d4a92 48%,#062243 100%);
+background: linear-gradient(to bottom,  #0d4a92 48%,#062243 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d4a92', endColorstr='#062243',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo29 .primero {background:#edef9c; border-bottom: #161616 1px solid} 
+ .colectivo29 .segundo {background:#c60321;}
+
+.colectivo32 {		
+background: #be1f1c;
+background: -moz-linear-gradient(top,  #be1f1c 48%, #980805 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#be1f1c), color-stop(100%,#980805));
+background: -webkit-linear-gradient(top,  #be1f1c 48%,#980805 100%);
+background: -o-linear-gradient(top,  #be1f1c 48%,#980805 100%);
+background: -ms-linear-gradient(top,  #be1f1c 48%,#980805 100%);
+background: linear-gradient(to bottom,  #be1f1c 48%,#980805 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#be1f1c', endColorstr='#980805',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo32 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo32 .segundo {background:#161616;}
+
+
+.colectivo33 {	
+background: #178258;
+background: -moz-linear-gradient(top,  #178258 48%, #095c34 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#178258), color-stop(100%,#095c34));
+background: -webkit-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: -o-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: -ms-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: linear-gradient(to bottom,  #178258 48%,#095c34 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#095c34',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo33 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo33 .segundo {background:#161616;}
+
+.colectivo34 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo34 .primero {background:#4a7ed4; border-bottom: #161616 1px solid} 
+ .colectivo34 .segundo {background:#ba091d;}
+
+
+.colectivo36 {		
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo36 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo36 .segundo {background:#161616;}
+ 
+.colectivo37 {		
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo37 .primero {background:#178258; border-bottom: #161616 1px solid} 
+ .colectivo37 .segundo {background:#161616;}
+
+
+.colectivo39 {		
+background: #824331;
+background: -moz-linear-gradient(top,  #824331 48%, #6f3822 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#824331), color-stop(100%,#6f3822));
+background: -webkit-linear-gradient(top,  #824331 48%,#6f3822 100%);
+background: -o-linear-gradient(top,  #824331 48%,#6f3822 100%);
+background: -ms-linear-gradient(top,  #824331 48%,#6f3822 100%);
+background: linear-gradient(to bottom,  #824331 48%,#6f3822 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#824331', endColorstr='#6f3822',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo39 .primero {background:#e6e2e1; border-bottom: #161616 1px solid} 
+ .colectivo39 .segundo {background:#ba702b;}
+
+
+.colectivo41 {		
+background: #f1dd02;
+background: -moz-linear-gradient(top,  #f1dd02 48%, #d6c400 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f1dd02), color-stop(100%,#d6c400));
+background: -webkit-linear-gradient(top,  #f1dd02 48%,#d6c400 100%);
+background: -o-linear-gradient(top,  #f1dd02 48%,#d6c400 100%);
+background: -ms-linear-gradient(top,  #f1dd02 48%,#d6c400 100%);
+background: linear-gradient(to bottom,  #f1dd02 48%,#d6c400 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1dd02', endColorstr='#d6c400',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo41 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo41 .segundo {background:#161616;}
+
+.colectivo42 {		
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo42 .primero {background:#f1dfa7; border-bottom: #161616 1px solid} 
+ .colectivo42 .segundo {background:#161616;}
+
+.colectivo44 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo44 .primero {background:#178258; border-bottom: #161616 1px solid} 
+ .colectivo44 .segundo {background:#161616;}
+
+.colectivo45 {	
+background: #178258;
+background: -moz-linear-gradient(top,  #178258 48%, #095c34 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#178258), color-stop(100%,#095c34));
+background: -webkit-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: -o-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: -ms-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: linear-gradient(to bottom,  #178258 48%,#095c34 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#095c34',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo45 .primero {background:#c40018; border-bottom: #161616 1px solid} 
+ .colectivo45 .segundo {background:#161616;}
+
+
+.colectivo46 {	
+background: #0071b8;
+background: -moz-linear-gradient(top,  #0071b8 48%, #0a5788 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#0071b8), color-stop(100%,#0a5788));
+background: -webkit-linear-gradient(top,  #0071b8 48%,#0a5788 100%);
+background: -o-linear-gradient(top,  #0071b8 48%,#0a5788 100%);
+background: -ms-linear-gradient(top,  #0071b8 48%,#0a5788 100%);
+background: linear-gradient(to bottom,  #0071b8 48%,#0a5788 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0071b8', endColorstr='#0a5788',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo46 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo46 .segundo {background:#ffffff;}
+
+
+.colectivo47 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo47 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo47 .segundo {background:#161616;}
+
+
+.colectivo49 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo49 .primero {background:#261e85; border-bottom: #161616 1px solid} 
+ .colectivo49 .segundo {background:#261e85;}
+
+
+
+.colectivo50 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo50 .primero {background:#178258; border-bottom: #161616 1px solid} 
+ .colectivo50 .segundo {background:#161616;}
+
+
+.colectivo51 {	
+background: #3fb5e4;
+background: -moz-linear-gradient(top,  #3fb5e4 48%, #3689ab 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#3fb5e4), color-stop(100%,#3689ab));
+background: -webkit-linear-gradient(top,  #3fb5e4 48%,#3689ab 100%);
+background: -o-linear-gradient(top,  #3fb5e4 48%,#3689ab 100%);
+background: -ms-linear-gradient(top,  #3fb5e4 48%,#3689ab 100%);
+background: linear-gradient(to bottom,  #3fb5e4 48%,#3689ab 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3fb5e4', endColorstr='#3689ab',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo51 .primero {background:#fff215; border-bottom: #161616 1px solid} 
+ .colectivo51 .segundo {background:#c40018;}
+
+.colectivo53 {	
+background: #0065c9;
+background: -moz-linear-gradient(top,  #0065c9 48%, #0c5196 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#0065c9), color-stop(100%,#0c5196));
+background: -webkit-linear-gradient(top,  #0065c9 48%,#0c5196 100%);
+background: -o-linear-gradient(top,  #0065c9 48%,#0c5196 100%);
+background: -ms-linear-gradient(top,  #0065c9 48%,#0c5196 100%);
+background: linear-gradient(to bottom,  #0065c9 48%,#0c5196 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0065c9', endColorstr='#0c5196',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo53 .primero {background:#ffff06; border-bottom: #161616 1px solid} 
+ .colectivo53 .segundo {background:#227c72;}
+
+.colectivo55 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo55 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo55 .segundo {background:#161616;}
+
+.colectivo56 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo56 .primero {background:#178258; border-bottom: #161616 1px solid} 
+ .colectivo56 .segundo {background:#161616;}
+
+.colectivo57 {	
+background: #d5bfb2;
+background: -moz-linear-gradient(top,  #d5bfb2 48%, #a58674 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#d5bfb2), color-stop(100%,#a58674));
+background: -webkit-linear-gradient(top,  #d5bfb2 48%,#a58674 100%);
+background: -o-linear-gradient(top,  #d5bfb2 48%,#a58674 100%);
+background: -ms-linear-gradient(top,  #d5bfb2 48%,#a58674 100%);
+background: linear-gradient(to bottom,  #d5bfb2 48%,#a58674 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5bfb2', endColorstr='#a58674',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo57 .primero {background:#405888; border-bottom: #161616 1px solid} 
+ .colectivo57 .segundo {background:#cc8529;}
+
+.colectivo59 {	
+background: #16542d;
+background: -moz-linear-gradient(top,  #178258 48%, #095c34 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#178258), color-stop(100%,#095c34));
+background: -webkit-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: -o-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: -ms-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: linear-gradient(to bottom,  #178258 48%,#095c34 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#095c34',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo59 .primero {background:#972400; border-bottom: #161616 1px solid} 
+ .colectivo59 .segundo {background:#f7e3cb;}
+
+.colectivo60 {	
+background: #ffdb93;
+background: -moz-linear-gradient(top,  #ffdb93 48%, #dfbe7d 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffdb93), color-stop(100%,#dfbe7d));
+background: -webkit-linear-gradient(top,  #ffdb93 48%,#dfbe7d 100%);
+background: -o-linear-gradient(top,  #ffdb93 48%,#dfbe7d 100%);
+background: -ms-linear-gradient(top,  #ffdb93 48%,#dfbe7d 100%);
+background: linear-gradient(to bottom,  #ffdb93 48%,#dfbe7d 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdb93', endColorstr='#dfbe7d',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo60 .primero {background:#ff2822; border-bottom: #161616 1px solid} 
+ .colectivo60 .segundo {background:#08090a;}
+
+.colectivo61 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo61 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo61 .segundo {background:#161616;}
+
+.colectivo62 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo62 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo62 .segundo {background:#161616;}
+
+.colectivo63 {	
+background: #3c75a2;
+background: -moz-linear-gradient(top,  #3c75a2 48%, #23567e 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#3c75a2), color-stop(100%,#23567e));
+background: -webkit-linear-gradient(top,  #3c75a2 48%,#23567e 100%);
+background: -o-linear-gradient(top,  #3c75a2 48%,#23567e 100%);
+background: -ms-linear-gradient(top,  #3c75a2 48%,#23567e 100%);
+background: linear-gradient(to bottom,  #3c75a2 48%,#23567e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c75a2', endColorstr='#23567e',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo63 .primero {background:#ce9e41; border-bottom: #161616 1px solid} 
+ .colectivo63 .segundo {background:#293031;}
+
+.colectivo64 {	
+background: #0d4a92;
+background: -moz-linear-gradient(top,  #0d4a92 48%, #062243 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#0d4a92), color-stop(100%,#062243));
+background: -webkit-linear-gradient(top,  #0d4a92 48%,#062243 100%);
+background: -o-linear-gradient(top,  #0d4a92 48%,#062243 100%);
+background: -ms-linear-gradient(top,  #0d4a92 48%,#062243 100%);
+background: linear-gradient(to bottom,  #0d4a92 48%,#062243 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d4a92', endColorstr='#062243',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo64 .primero {background:#edef9c; border-bottom: #161616 1px solid} 
+ .colectivo64 .segundo {background:#c60321;}
+
+.colectivo65 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo65 .primero {background:#178258; border-bottom: #161616 1px solid} 
+ .colectivo65 .segundo {background:#437cc9;}
+
+.colectivo67 {		
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo67 .primero {background:#f1dfa7; border-bottom: #161616 1px solid} 
+ .colectivo67 .segundo {background:#161616;}
+
+
+.colectivo68 {		
+background: #215297;
+background: -moz-linear-gradient(top,  #215297 48%, #143a70 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#215297), color-stop(100%,#143a70));
+background: -webkit-linear-gradient(top,  #215297 48%,#143a70 100%);
+background: -o-linear-gradient(top,  #215297 48%,#143a70 100%);
+background: -ms-linear-gradient(top,  #215297 48%,#143a70 100%);
+background: linear-gradient(to bottom,  #215297 48%,#143a70 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#215297', endColorstr='#143a70',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo68 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo68 .segundo {background:#161616;}
+
+.colectivo70 {	
+background: #178258;
+background: -moz-linear-gradient(top,  #178258 48%, #095c34 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#178258), color-stop(100%,#095c34));
+background: -webkit-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: -o-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: -ms-linear-gradient(top,  #178258 48%,#095c34 100%);
+background: linear-gradient(to bottom,  #178258 48%,#095c34 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#095c34',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo70 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo70 .segundo {background:#161616;}
+
+
+.colectivo71 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo71 .primero {background:#4a7ed4; border-bottom: #161616 1px solid} 
+ .colectivo71 .segundo {background:#ba091d;}
+
+.colectivo74 {	
+background: #3fb5e4;
+background: -moz-linear-gradient(top,  #3fb5e4 48%, #3689ab 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#3fb5e4), color-stop(100%,#3689ab));
+background: -webkit-linear-gradient(top,  #3fb5e4 48%,#3689ab 100%);
+background: -o-linear-gradient(top,  #3fb5e4 48%,#3689ab 100%);
+background: -ms-linear-gradient(top,  #3fb5e4 48%,#3689ab 100%);
+background: linear-gradient(to bottom,  #3fb5e4 48%,#3689ab 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3fb5e4', endColorstr='#3689ab',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo74 .primero {background:#fff215; border-bottom: #161616 1px solid} 
+ .colectivo74 .segundo {background:#c40018;}
+
+.colectivo75 {		
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo75 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo75 .segundo {background:#1d4279;}
+
+.colectivo76 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo76 .primero {background:#178258; border-bottom: #161616 1px solid} 
+ .colectivo76 .segundo {background:#161616;}
+
+.colectivo78 {	
+background: #fdfec2;
+background: -moz-linear-gradient(top,  #fdfec2 48%, #c0ba98 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#fdfec2), color-stop(100%,#c0ba98));
+background: -webkit-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: -o-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: -ms-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: linear-gradient(to bottom,  #fdfec2 48%,#c0ba98 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfec2', endColorstr='#c0ba98',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo78 .primero {background:#eac52f; border-bottom: #161616 1px solid} 
+ .colectivo78 .segundo {background:#3a6146;}
+
+.colectivo79 {	
+background: #3fb5e4;
+background: -moz-linear-gradient(top,  #3fb5e4 48%, #3689ab 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#3fb5e4), color-stop(100%,#3689ab));
+background: -webkit-linear-gradient(top,  #3fb5e4 48%,#3689ab 100%);
+background: -o-linear-gradient(top,  #3fb5e4 48%,#3689ab 100%);
+background: -ms-linear-gradient(top,  #3fb5e4 48%,#3689ab 100%);
+background: linear-gradient(to bottom,  #3fb5e4 48%,#3689ab 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3fb5e4', endColorstr='#3689ab',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo79 .primero {background:#fff215; border-bottom: #161616 1px solid} 
+ .colectivo79 .segundo {background:#c40018;}
+
+.colectivo80 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo80 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo80 .segundo {background:#161616;}
+
+.colectivo84 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo84 .primero {background:#4a7ed4; border-bottom: #161616 1px solid} 
+ .colectivo84 .segundo {background:#ba091d;}
+
+.colectivo85 {	
+background: #1b7343;
+background: -moz-linear-gradient(top,  #1b7343 48%, #11522f 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#1b7343), color-stop(100%,#11522f));
+background: -webkit-linear-gradient(top,  #1b7343 48%,#11522f 100%);
+background: -o-linear-gradient(top,  #1b7343 48%,#11522f 100%);
+background: -ms-linear-gradient(top,  #1b7343 48%,#11522f 100%);
+background: linear-gradient(to bottom,  #1b7343 48%,#11522f 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b7343', endColorstr='#11522f',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo85 .primero {background:#e4d04b; border-bottom: #161616 1px solid} 
+ .colectivo85 .segundo {background:#161616;}
+
+.colectivo86 {	
+background: #5397c8;
+background: -moz-linear-gradient(top,  #5397c8 48%, #3a79a7 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#5397c8), color-stop(100%,#3a79a7));
+background: -webkit-linear-gradient(top,  #5397c8 48%,#3a79a7 100%);
+background: -o-linear-gradient(top,  #5397c8 48%,#3a79a7 100%);
+background: -ms-linear-gradient(top,  #5397c8 48%,#3a79a7 100%);
+background: linear-gradient(to bottom,  #5397c8 48%,#3a79a7 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5397c8', endColorstr='#3a79a7',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo86 .primero {background:#e6f4fd; border-bottom: #161616 1px solid} 
+ .colectivo86 .segundo {background:#161616;}
+
+.colectivo87 {	
+background: #fdfec2;
+background: -moz-linear-gradient(top,  #fdfec2 48%, #c0ba98 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#fdfec2), color-stop(100%,#c0ba98));
+background: -webkit-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: -o-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: -ms-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: linear-gradient(to bottom,  #fdfec2 48%,#c0ba98 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfec2', endColorstr='#c0ba98',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo87 .primero {background:#eac52f; border-bottom: #161616 1px solid} 
+ .colectivo87 .segundo {background:#3a6146;}
+
+.colectivo88 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo88 .primero {background:#c5001b; border-bottom: #161616 1px solid} 
+ .colectivo88 .segundo {background:#0f72ba;}
+
+.colectivo90 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo90 .primero {background:#df2e34; border-bottom: #161616 1px solid} 
+ .colectivo90 .segundo {background:#08a3ff;}
+.colectivo91 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo91 .primero {background:#178258; border-bottom: #161616 1px solid} 
+ .colectivo91 .segundo {background:#161616;}
+
+.colectivo92 {	
+background: #1d9a92;
+background: -moz-linear-gradient(top,  #1d9a92 48%, #107972 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#1d9a92), color-stop(100%,#107972));
+background: -webkit-linear-gradient(top,  #1d9a92 48%,#107972 100%);
+background: -o-linear-gradient(top,  #1d9a92 48%,#107972 100%);
+background: -ms-linear-gradient(top,  #1d9a92 48%,#107972 100%);
+background: linear-gradient(to bottom,  #1d9a92 48%,#107972 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d9a92', endColorstr='#107972',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo92 .primero {background:#f3e2b7; border-bottom: #161616 1px solid} 
+ .colectivo92 .segundo {background:#161616;}
+
+
+.colectivo93 {	
+background: #fdfec2;
+background: -moz-linear-gradient(top,  #fdfec2 48%, #c0ba98 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#fdfec2), color-stop(100%,#c0ba98));
+background: -webkit-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: -o-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: -ms-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: linear-gradient(to bottom,  #fdfec2 48%,#c0ba98 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfec2', endColorstr='#c0ba98',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo93 .primero {background:#cf8718; border-bottom: #161616 1px solid} 
+ .colectivo93 .segundo {background:#161616;}
+
+.colectivo95 {	
+background: #e0d7a0;
+background: -moz-linear-gradient(top,  #e0d7a0 48%, #c9c089 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#e0d7a0), color-stop(100%,#c9c089));
+background: -webkit-linear-gradient(top,  #e0d7a0 48%,#c9c089 100%);
+background: -o-linear-gradient(top,  #e0d7a0 48%,#c9c089 100%);
+background: -ms-linear-gradient(top,  #e0d7a0 48%,#c9c089 100%);
+background: linear-gradient(to bottom,  #e0d7a0 48%,#c9c089 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0d7a0', endColorstr='#c9c089',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo95 .primero {background:#4f342d; border-bottom: #161616 1px solid} 
+ .colectivo95 .segundo {background:#5a5b5f;}
+
+.colectivo96 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo96 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo96 .segundo {background:#161616;}
+
+.colectivo97 {	
+background: #5a92cb;
+background: -moz-linear-gradient(top,  #5a92cb 48%, #356596 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#5a92cb), color-stop(100%,#356596));
+background: -webkit-linear-gradient(top,  #5a92cb 48%,#356596 100%);
+background: -o-linear-gradient(top,  #5a92cb 48%,#356596 100%);
+background: -ms-linear-gradient(top,  #5a92cb 48%,#356596 100%);
+background: linear-gradient(to bottom,  #5a92cb 48%,#356596 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a92cb', endColorstr='#356596',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo97 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo97 .segundo {background:#161616;}
+
+.colectivo98 {	
+background: #eadea2;
+background: -moz-linear-gradient(top,  #eadea2 48%, #c4bb8b 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#eadea2), color-stop(100%,#c4bb8b));
+background: -webkit-linear-gradient(top,  #eadea2 48%,#c4bb8b 100%);
+background: -o-linear-gradient(top,  #eadea2 48%,#c4bb8b 100%);
+background: -ms-linear-gradient(top,  #eadea2 48%,#c4bb8b 100%);
+background: linear-gradient(to bottom,  #eadea2 48%,#c4bb8b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eadea2', endColorstr='#c4bb8b',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo98 .primero {background:#297e5d; border-bottom: #161616 1px solid} 
+ .colectivo98 .segundo {background:#e55b41;}
+
+.colectivo99 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo99 .primero {background:#bb0017; border-bottom: #161616 1px solid} 
+ .colectivo99 .segundo {background:#178258;}
+
+.colectivo100 {		
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo100 .primero {background:#f1dfa7; border-bottom: #161616 1px solid} 
+ .colectivo100 .segundo {background:#161616;}
+
+
+.colectivo101 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo101 .primero {background:#178258; border-bottom: #161616 1px solid} 
+ .colectivo101 .segundo {background:#161616;}
+
+.colectivo102 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo102 .primero {background:#036bdd; border-bottom: #161616 1px solid} 
+ .colectivo102 .segundo {background:#9ba6b2;}
+
+.colectivo103 {		
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo103 .primero {background:#f1dfa7; border-bottom: #161616 1px solid} 
+ .colectivo103 .segundo {background:#161616;}
+
+
+.colectivo104 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo104 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo104 .segundo {background:#161616;}
+
+.colectivo105 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo105 .primero {background:#233a5c; border-bottom: #161616 1px solid} 
+ .colectivo105 .segundo {background:#233a5c;}
+
+ .colectivo106 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo106 .primero {background:#bb0017; border-bottom: #161616 1px solid} 
+ .colectivo106 .segundo {background:#178258;}
+
+ .colectivo107 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo107 .primero {background:#bb0017; border-bottom: #161616 1px solid} 
+ .colectivo107 .segundo {background:#178258;}
+
+.colectivo108 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo108 .primero {background:#448dc4; border-bottom: #161616 1px solid} 
+ .colectivo108 .segundo {background:#448dc4;}
+
+.colectivo109 {		
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo109 .primero {background:#f1dfa7; border-bottom: #161616 1px solid} 
+ .colectivo109 .segundo {background:#161616;}
+
+.colectivo110 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo110 .primero {background:#036bdd; border-bottom: #161616 1px solid} 
+ .colectivo110 .segundo {background:#9ba6b2;}
+
+.colectivo111 {	
+background: #fdfec2;
+background: -moz-linear-gradient(top,  #fdfec2 48%, #c0ba98 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#fdfec2), color-stop(100%,#c0ba98));
+background: -webkit-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: -o-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: -ms-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: linear-gradient(to bottom,  #fdfec2 48%,#c0ba98 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfec2', endColorstr='#c0ba98',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo111 .primero {background:#eac52f; border-bottom: #161616 1px solid} 
+ .colectivo111 .segundo {background:#3a6146;}
+
+.colectivo112 {	
+background: #4fb8fa;
+background: -moz-linear-gradient(top,  #4fb8fa 48%, #3c8cbf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#4fb8fa), color-stop(100%,#3c8cbf));
+background: -webkit-linear-gradient(top,  #4fb8fa 48%,#3c8cbf 100%);
+background: -o-linear-gradient(top,  #4fb8fa 48%,#3c8cbf 100%);
+background: -ms-linear-gradient(top,  #4fb8fa 48%,#3c8cbf 100%);
+background: linear-gradient(to bottom,  #4fb8fa 48%,#3c8cbf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fb8fa', endColorstr='#3c8cbf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo112 .primero {background:#023c2e; border-bottom: #161616 1px solid} 
+ .colectivo112 .segundo {background:#fca902;}
+
+.colectivo113 {	
+background: #3c75a2;
+background: -moz-linear-gradient(top,  #3c75a2 48%, #23567e 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#3c75a2), color-stop(100%,#23567e));
+background: -webkit-linear-gradient(top,  #3c75a2 48%,#23567e 100%);
+background: -o-linear-gradient(top,  #3c75a2 48%,#23567e 100%);
+background: -ms-linear-gradient(top,  #3c75a2 48%,#23567e 100%);
+background: linear-gradient(to bottom,  #3c75a2 48%,#23567e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c75a2', endColorstr='#23567e',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo113 .primero {background:#ce9e41; border-bottom: #161616 1px solid} 
+ .colectivo113 .segundo {background:#293031;}
+
+.colectivo114 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo114 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo114 .segundo {background:#161616;}
+
+.colectivo115 {		
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo115 .primero {background:#f1dfa7; border-bottom: #161616 1px solid} 
+ .colectivo115 .segundo {background:#161616;}
+
+.colectivo117 {		
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo117 .primero {background:#be1f1c; border-bottom: #161616 1px solid} 
+ .colectivo117 .segundo {background:#161616;} 
+
+.colectivo118 {	
+color: #111;
+text-shadow: none;
+border: 1px solid #999; 
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 48%, #f1f1f1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 48%,#f1f1f1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 48%,#f1f1f1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 48%,#f1f1f1 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 48%,#f1f1f1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
+} 
+.colectivo118 .primero {background:#cf2a2a;border-bottom: #666 1px solid} 
+.colectivo118 .segundo {background:#3465d9;}
+
+.colectivo123 {		
+background: #2a79be;
+background: -moz-linear-gradient(top,  #2a79be 48%, #1c5c94 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#2a79be), color-stop(100%,#1c5c94));
+background: -webkit-linear-gradient(top,  #2a79be 48%,#1c5c94 100%);
+background: -o-linear-gradient(top,  #2a79be 48%,#1c5c94 100%);
+background: -ms-linear-gradient(top,  #2a79be 48%,#1c5c94 100%);
+background: linear-gradient(to bottom,  #2a79be 48%,#1c5c94 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a79be', endColorstr='#1c5c94',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo123 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo123 .segundo {background:#ffffff;} 
+
+.colectivo124 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo124 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo124 .segundo {background:#161616;}
+
+.colectivo126 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo126 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo126 .segundo {background:#161616;}
+
+.colectivo127 {	
+background: #fdfec2;
+background: -moz-linear-gradient(top,  #fdfec2 48%, #c0ba98 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#fdfec2), color-stop(100%,#c0ba98));
+background: -webkit-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: -o-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: -ms-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: linear-gradient(to bottom,  #fdfec2 48%,#c0ba98 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfec2', endColorstr='#c0ba98',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo127 .primero {background:#eac52f; border-bottom: #161616 1px solid} 
+ .colectivo127 .segundo {background:#3a6146;}
+
+.colectivo128 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo128 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo128 .segundo {background:#161616;}
+
+.colectivo129 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo129 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo129 .segundo {background:#161616;}
+
+.colectivo130 {	
+background: #fdfec2;
+background: -moz-linear-gradient(top,  #fdfec2 48%, #c0ba98 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#fdfec2), color-stop(100%,#c0ba98));
+background: -webkit-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: -o-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: -ms-linear-gradient(top,  #fdfec2 48%,#c0ba98 100%);
+background: linear-gradient(to bottom,  #fdfec2 48%,#c0ba98 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfec2', endColorstr='#c0ba98',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo130 .primero {background:#eac52f; border-bottom: #161616 1px solid} 
+ .colectivo130 .segundo {background:#3a6146;}
+
+.colectivo132 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo132 .primero {background:#4a7ed4; border-bottom: #161616 1px solid} 
+ .colectivo132 .segundo {background:#ba091d;}
+
+.colectivo133 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo133 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo133 .segundo {background:#161616;}
+
+.colectivo134 {		
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo134 .primero {background:#f1dfa7; border-bottom: #161616 1px solid} 
+ .colectivo134 .segundo {background:#161616;}
+
+.colectivo135 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo135 .primero {background:#178258; border-bottom: #161616 1px solid} 
+ .colectivo135 .segundo {background:#161616;}
+
+.colectivo136 {	
+background: #99cb34;
+background: -moz-linear-gradient(top,  #99cb34 48%, #7ca32f 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#99cb34), color-stop(100%,#7ca32f));
+background: -webkit-linear-gradient(top,  #99cb34 48%,#7ca32f 100%);
+background: -o-linear-gradient(top,  #99cb34 48%,#7ca32f 100%);
+background: -ms-linear-gradient(top,  #99cb34 48%,#7ca32f 100%);
+background: linear-gradient(to bottom,  #99cb34 48%,#7ca32f 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cb34', endColorstr='#7ca32f',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo136 .primero {background:#d0cbc8; border-bottom: #161616 1px solid} 
+ .colectivo136 .segundo {background:#d0cbc8;}
+
+.colectivo140 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo140 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo140 .segundo {background:#161616;}
+
+.colectivo141 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo141 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo141 .segundo {background:#161616;}
+
+.colectivo143 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo143 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo143 .segundo {background:#161616;}
+
+.colectivo146 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo146 .primero {background:#0095d9; border-bottom: #161616 1px solid} 
+ .colectivo146 .segundo {background:#0095d9;}
+
+.colectivo148 {	
+background: #d6cf0b;
+background: -moz-linear-gradient(top,  #d6cf0b 48%, #bdb707 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#d6cf0b), color-stop(100%,#bdb707));
+background: -webkit-linear-gradient(top,  #d6cf0b 48%,#bdb707 100%);
+background: -o-linear-gradient(top,  #d6cf0b 48%,#bdb707 100%);
+background: -ms-linear-gradient(top,  #d6cf0b 48%,#bdb707 100%);
+background: linear-gradient(to bottom,  #d6cf0b 48%,#bdb707 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6cf0b', endColorstr='#bdb707',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo148 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo148 .segundo {background:#ffffff;}
+
+.colectivo150 {		
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo150 .primero {background:#f1dfa7; border-bottom: #161616 1px solid} 
+ .colectivo150 .segundo {background:#161616;}
+
+.colectivo151 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo151 .primero {background:#4a7ed4; border-bottom: #161616 1px solid} 
+ .colectivo151 .segundo {background:#ba091d;}
+
+.colectivo152 {	
+background: #002168;
+background: -moz-linear-gradient(top,  #3288db 48%, #3585d2 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#3288db), color-stop(100%,#3585d2));
+background: -webkit-linear-gradient(top,  #3288db 48%,#3585d2 100%);
+background: -o-linear-gradient(top,  #3288db 48%,#3585d2 100%);
+background: -ms-linear-gradient(top,  #3288db 48%,#3585d2 100%);
+background: linear-gradient(to bottom,  #3288db 48%,#3585d2 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3288db', endColorstr='#3585d2',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo152 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo152 .segundo {background:#ba091d;}
+
+.colectivo153 {	
+background: #99cb34;
+background: -moz-linear-gradient(top,  #99cb34 48%, #7ca32f 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#99cb34), color-stop(100%,#7ca32f));
+background: -webkit-linear-gradient(top,  #99cb34 48%,#7ca32f 100%);
+background: -o-linear-gradient(top,  #99cb34 48%,#7ca32f 100%);
+background: -ms-linear-gradient(top,  #99cb34 48%,#7ca32f 100%);
+background: linear-gradient(to bottom,  #99cb34 48%,#7ca32f 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cb34', endColorstr='#7ca32f',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo153 .primero {background:#d0cbc8; border-bottom: #161616 1px solid} 
+ .colectivo153 .segundo {background:#d0cbc8;}
+
+.colectivo154 {	
+background: #3fb5e4;
+background: -moz-linear-gradient(top,  #3fb5e4 48%, #3689ab 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#3fb5e4), color-stop(100%,#3689ab));
+background: -webkit-linear-gradient(top,  #3fb5e4 48%,#3689ab 100%);
+background: -o-linear-gradient(top,  #3fb5e4 48%,#3689ab 100%);
+background: -ms-linear-gradient(top,  #3fb5e4 48%,#3689ab 100%);
+background: linear-gradient(to bottom,  #3fb5e4 48%,#3689ab 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3fb5e4', endColorstr='#3689ab',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo154 .primero {background:#fff215; border-bottom: #161616 1px solid} 
+ .colectivo154 .segundo {background:#c40018;}
+
+.colectivo155 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo155 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo155 .segundo {background:#385f7e;}
+
+.colectivo158 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo158 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo158 .segundo {background:#242b51;}
+
+.colectivo159 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo159 .primero {background:#5e9e2c; border-bottom: #161616 1px solid} 
+ .colectivo159 .segundo {background:#104438;}
+
+.colectivo160 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo160 .primero {background:#929799; border-bottom: #161616 1px solid} 
+ .colectivo160 .segundo {background:#161616;}
+
+
+.colectivo161 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo161 .primero {background:#c40018; border-bottom: #161616 1px solid} 
+ .colectivo161 .segundo {background:#c40018;}
+
+.colectivo163 {	
+background: #99cb34;
+background: -moz-linear-gradient(top,  #99cb34 48%, #7ca32f 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#99cb34), color-stop(100%,#7ca32f));
+background: -webkit-linear-gradient(top,  #99cb34 48%,#7ca32f 100%);
+background: -o-linear-gradient(top,  #99cb34 48%,#7ca32f 100%);
+background: -ms-linear-gradient(top,  #99cb34 48%,#7ca32f 100%);
+background: linear-gradient(to bottom,  #99cb34 48%,#7ca32f 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cb34', endColorstr='#7ca32f',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo163 .primero {background:#242b51; border-bottom: #161616 1px solid} 
+ .colectivo163 .segundo {background:#fff215;}
+
+.colectivo165 {	
+background: #4fb8fa;
+background: -moz-linear-gradient(top,  #4fb8fa 48%, #3c8cbf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#4fb8fa), color-stop(100%,#3c8cbf));
+background: -webkit-linear-gradient(top,  #4fb8fa 48%,#3c8cbf 100%);
+background: -o-linear-gradient(top,  #4fb8fa 48%,#3c8cbf 100%);
+background: -ms-linear-gradient(top,  #4fb8fa 48%,#3c8cbf 100%);
+background: linear-gradient(to bottom,  #4fb8fa 48%,#3c8cbf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fb8fa', endColorstr='#3c8cbf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo165 .primero {background:#023c2e; border-bottom: #161616 1px solid} 
+ .colectivo165 .segundo {background:#fca902;}
+
+.colectivo166 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo166 .primero {background:#f1dca5; border-bottom: #161616 1px solid} 
+ .colectivo166 .segundo {background:#18192b;}
+
+.colectivo168 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo168 .primero {background:#339bdd; border-bottom: #161616 1px solid} 
+ .colectivo168 .segundo {background:#120e11;}
+
+.colectivo169 {	
+background: #1363b0;
+background: -moz-linear-gradient(top,  #1363b0 48%, #0a4681 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#1363b0), color-stop(100%,#0a4681));
+background: -webkit-linear-gradient(top,  #1363b0 48%,#0a4681 100%);
+background: -o-linear-gradient(top,  #1363b0 48%,#0a4681 100%);
+background: -ms-linear-gradient(top,  #1363b0 48%,#0a4681 100%);
+background: linear-gradient(to bottom,  #1363b0 48%,#0a4681 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1363b0', endColorstr='#0a4681',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo169 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo169 .segundo {background:#161616;}
+
+.colectivo172 {	
+background: #1e57b1;
+background: -moz-linear-gradient(top,  #1e57b1 48%, #113e84 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#1e57b1), color-stop(100%,#113e84));
+background: -webkit-linear-gradient(top,  #1e57b1 48%,#113e84 100%);
+background: -o-linear-gradient(top,  #1e57b1 48%,#113e84 100%);
+background: -ms-linear-gradient(top,  #1e57b1 48%,#113e84 100%);
+background: linear-gradient(to bottom,  #1e57b1 48%,#113e84 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e57b1', endColorstr='#113e84',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo172 .primero {background:#dd941d; border-bottom: #161616 1px solid} 
+ .colectivo172 .segundo {background:#161616;}
+
+.colectivo174 {	
+background: #c40018;
+background: -moz-linear-gradient(top,  #c40018 48%, #a00316 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#c40018), color-stop(100%,#a00316));
+background: -webkit-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -o-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: -ms-linear-gradient(top,  #c40018 48%,#a00316 100%);
+background: linear-gradient(to bottom,  #c40018 48%,#a00316 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c40018', endColorstr='#a00316',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo174 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo174 .segundo {background:#161616;}
+
+.colectivo175 {	
+background: #ffffff;
+background: -moz-linear-gradient(top,  #ffffff 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ffffff), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #ffffff 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #ffffff 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178258', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo175 .primero {background:#0095d9; border-bottom: #161616 1px solid} 
+ .colectivo175 .segundo {background:#0095d9;}
+
+.colectivo176 {	
+background: #0e3264;
+background: -moz-linear-gradient(top,  #0e3264 48%, #062249 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#0e3264), color-stop(100%,#062249));
+background: -webkit-linear-gradient(top,  #0e3264 48%,#062249 100%);
+background: -o-linear-gradient(top,  #0e3264 48%,#062249 100%);
+background: -ms-linear-gradient(top,  #0e3264 48%,#062249 100%);
+background: linear-gradient(to bottom,  #0e3264 48%,#062249 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e3264', endColorstr='#062249',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo176 .primero {background:#e6d8a9; border-bottom: #161616 1px solid} 
+ .colectivo176 .segundo {background:#e09805;}
+
+.colectivo177 {	
+background: #3fb5e4;
+background: -moz-linear-gradient(top,  #3fb5e4 48%, #3689ab 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#3fb5e4), color-stop(100%,#3689ab));
+background: -webkit-linear-gradient(top,  #3fb5e4 48%,#3689ab 100%);
+background: -o-linear-gradient(top,  #3fb5e4 48%,#3689ab 100%);
+background: -ms-linear-gradient(top,  #3fb5e4 48%,#3689ab 100%);
+background: linear-gradient(to bottom,  #3fb5e4 48%,#3689ab 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3fb5e4', endColorstr='#3689ab',GradientType=0 );
+; 
+border: 1px solid #05482B;}
+
+ .colectivo177 .primero {background:#fff215; border-bottom: #161616 1px solid} 
+ .colectivo177 .segundo {background:#c40018;}
+
+.colectivo179 {	
+background: #524f9c;
+background: -moz-linear-gradient(top,  #524f9c 48%, #2a2a5e 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#524f9c), color-stop(100%,#2a2a5e));
+background: -webkit-linear-gradient(top,  #524f9c 48%,#2a2a5e 100%);
+background: -o-linear-gradient(top,  #524f9c 48%,#2a2a5e 100%);
+background: -ms-linear-gradient(top,  #524f9c 48%,#2a2a5e 100%);
+background: linear-gradient(to bottom,  #524f9c 48%,#2a2a5e 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#524f9c', endColorstr='#2a2a5e',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo179 .primero {background:#c3c2ba; border-bottom: #161616 1px solid} 
+ .colectivo179 .segundo {background:#161616;}
+
+.colectivo180 {	
+background: #ca202b;
+background: -moz-linear-gradient(top,  #ca202b 48%, #a90b16 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ca202b), color-stop(100%,#a90b16));
+background: -webkit-linear-gradient(top,  #ca202b 48%,#a90b16 100%);
+background: -o-linear-gradient(top,  #ca202b 48%,#a90b16 100%);
+background: -ms-linear-gradient(top,  #ca202b 48%,#a90b16 100%);
+background: linear-gradient(to bottom,  #ca202b 48%,#a90b16 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca202b', endColorstr='#a90b16',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo180 .primero {background:#fbd003; border-bottom: #161616 1px solid} 
+ .colectivo180 .segundo {background:#0183dc;}
+
+.colectivo181 {	
+background: #ca202b;
+background: -moz-linear-gradient(top,  #ca202b 48%, #a90b16 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ca202b), color-stop(100%,#a90b16));
+background: -webkit-linear-gradient(top,  #ca202b 48%,#a90b16 100%);
+background: -o-linear-gradient(top,  #ca202b 48%,#a90b16 100%);
+background: -ms-linear-gradient(top,  #ca202b 48%,#a90b16 100%);
+background: linear-gradient(to bottom,  #ca202b 48%,#a90b16 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca202b', endColorstr='#a90b16',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo181 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo181 .segundo {background:#161616;}
+
+.colectivo182 {	
+background: #ca202b;
+background: -moz-linear-gradient(top,  #ca202b 48%, #a90b16 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ca202b), color-stop(100%,#a90b16));
+background: -webkit-linear-gradient(top,  #ca202b 48%,#a90b16 100%);
+background: -o-linear-gradient(top,  #ca202b 48%,#a90b16 100%);
+background: -ms-linear-gradient(top,  #ca202b 48%,#a90b16 100%);
+background: linear-gradient(to bottom,  #ca202b 48%,#a90b16 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca202b', endColorstr='#a90b16',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo182 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo182 .segundo {background:#3e699e;}
+
+.colectivo184 {	
+background: #08a3ff;
+background: -moz-linear-gradient(top,  #08a3ff 48%, #0480ca 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#08a3ff), color-stop(100%,#0480ca));
+background: -webkit-linear-gradient(top,  #08a3ff 48%,#0480ca 100%);
+background: -o-linear-gradient(top,  #08a3ff 48%,#0480ca 100%);
+background: -ms-linear-gradient(top,  #08a3ff 48%,#0480ca 100%);
+background: linear-gradient(to bottom,  #08a3ff 48%,#0480ca 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08a3ff', endColorstr='#0480ca',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo184 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo184 .segundo {background:#df2e34;}
+
+.colectivo185 {	
+background: #ca202b;
+background: -moz-linear-gradient(top,  #ca202b 48%, #a90b16 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#ca202b), color-stop(100%,#a90b16));
+background: -webkit-linear-gradient(top,  #ca202b 48%,#a90b16 100%);
+background: -o-linear-gradient(top,  #ca202b 48%,#a90b16 100%);
+background: -ms-linear-gradient(top,  #ca202b 48%,#a90b16 100%);
+background: linear-gradient(to bottom,  #ca202b 48%,#a90b16 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca202b', endColorstr='#a90b16',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo185 .primero {background:#ffffff; border-bottom: #161616 1px solid} 
+ .colectivo185 .segundo {background:#ffffff;}
+
+.colectivo188 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo188 .primero {background:#c40018; border-bottom: #161616 1px solid} 
+ .colectivo188 .segundo {background:#c40018;}
+
+.colectivo193 {	
+background: #f5f6f9;
+background: -moz-linear-gradient(top,  #f5f6f9 48%, #cdcabf 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#f5f6f9), color-stop(100%,#cdcabf));
+background: -webkit-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -o-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: -ms-linear-gradient(top,  #f5f6f9 48%,#cdcabf 100%);
+background: linear-gradient(to bottom,  #f5f6f9 48%,#cdcabf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f9', endColorstr='#cdcabf',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo193 .primero {background:#2765a0; border-bottom: #161616 1px solid} 
+ .colectivo193 .segundo {background:#2765a0;}
+
+.colectivo194 {	
+background: #fdfa3d;
+background: -moz-linear-gradient(top,  #fdfa3d 48%, #e9e628 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#fdfa3d), color-stop(100%,#e9e628));
+background: -webkit-linear-gradient(top,  #fdfa3d 48%,#e9e628 100%);
+background: -o-linear-gradient(top,  #fdfa3d 48%,#e9e628 100%);
+background: -ms-linear-gradient(top,  #fdfa3d 48%,#e9e628 100%);
+background: linear-gradient(to bottom,  #fdfa3d 48%,#e9e628 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfa3d', endColorstr='#e9e628',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo194 .primero {background:#f64ab6; border-bottom: #161616 1px solid} 
+ .colectivo194 .segundo {background:#02d2f6;}
+
+.colectivo195 {	
+background: #fdfa3d;
+background: -moz-linear-gradient(top,  #fdfa3d 48%, #e9e628 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(48%,#fdfa3d), color-stop(100%,#e9e628));
+background: -webkit-linear-gradient(top,  #fdfa3d 48%,#e9e628 100%);
+background: -o-linear-gradient(top,  #fdfa3d 48%,#e9e628 100%);
+background: -ms-linear-gradient(top,  #fdfa3d 48%,#e9e628 100%);
+background: linear-gradient(to bottom,  #fdfa3d 48%,#e9e628 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfa3d', endColorstr='#e9e628',GradientType=0 );
+; 
+border: 1px solid #05482B; }
+
+ .colectivo195 .primero {background:#f64ab6; border-bottom: #161616 1px solid} 
+ .colectivo195 .segundo {background:#02d2f6;}
+
+ .subteA {
+	background: #01b5e3;
+	background: -moz-linear-gradient(top,  #78d6ee 8%, #01b5e3 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(8%,#78d6ee), color-stop(100%,#01b5e3));
+	background: -webkit-linear-gradient(top,  #78d6ee 8%,#01b5e3 100%);
+	background: -o-linear-gradient(top,  #78d6ee 8%,#01b5e3 100%);
+	background: -ms-linear-gradient(top,  #78d6ee 8%,#01b5e3 100%);
+	background: linear-gradient(to bottom,  #78d6ee 8%,#01b5e3 100%);
+}
+
+.subteB {
+	background: #e55757; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e55757 8%, #b81616 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(8%,#e55757), color-stop(100%,#b81616)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e55757 8%,#b81616 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e55757 8%,#b81616 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e55757 8%,#b81616 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e55757 8%,#b81616 100%); /* W3C */
+}
+.subteC {
+	background: #3488d2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3488d2 8%, #1b348f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(8%,#3488d2), color-stop(100%,#1b348f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3488d2 8%,#1b348f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3488d2 8%,#1b348f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3488d2 8%,#1b348f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3488d2 8%,#1b348f 100%); /* W3C */
+}
+.subteD {
+	background: #3bc13f; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3bc13f 8%, #298b27 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(8%,#3bc13f), color-stop(100%,#298b27)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3bc13f 8%,#298b27 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3bc13f 8%,#298b27 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3bc13f 8%,#298b27 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3bc13f 8%,#298b27 100%); /* W3C */
+}
+.subteE {
+	background: #a238cc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #a238cc 8%, #891f85 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(8%,#a238cc), color-stop(100%,#891f85)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #a238cc 8%,#891f85 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #a238cc 8%,#891f85 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #a238cc 8%,#891f85 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #a238cc 8%,#891f85 100%); /* W3C */
+}
+.subteH {
+	background: #e8d240; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e8d240 8%, #c2ab12 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(8%,#e8d240), color-stop(100%,#c2ab12)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e8d240 8%,#c2ab12 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e8d240 8%,#c2ab12 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e8d240 8%,#c2ab12 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e8d240 8%,#c2ab12 100%); /* W3C */
+}
+
+.subtePremetro {
+	background: #f7b55a;
+	background: -moz-linear-gradient(top,#f7b55a 8%,#dd9f4a 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(8%,#a238cc),color-stop(100%,#dd9f4a));
+	background: -webkit-linear-gradient(top,#f7b55a 8%,#dd9f4a 100%);
+	background: -o-linear-gradient(top,#f7b55a 8%,#dd9f4a 100%);
+	background: -ms-linear-gradient(top,#f7b55a 8%,#dd9f4a 100%);
+	background: linear-gradient(to bottom,#f7b55a 8%,#dd9f4a 100%);
+}
+
+.subteH, .colectivo4, .colectivo5, .colectivo7, .colectivo8, .colectivo9, .colectivo20, .colectivo21, .colectivo23, .colectivo24, .colectivo25, .colectivo26, .colectivo28, .colectivo34, .colectivo37, .colectivo41, .colectivo44, .colectivo49, .colectivo50, .colectivo56, .colectivo60, .colectivo65, .colectivo71, .colectivo76, .colectivo84, .colectivo88, .colectivo91, .colectivo98, .colectivo99, .colectivo101, .colectivo105, .colectivo106, .colectivo107, .colectivo108, .colectivo117, .colectivo127, .colectivo132, .colectivo135, .colectivo146, .colectivo151, .colectivo159, .colectivo161, .colectivo175, .colectivo188, .colectivo193, .colectivo194, .colectivo195
+, .colectivo57, .colectivo78, .colectivo87, .colectivo90, .colectivo93, .colectivo95, .colectivo111, .colectivo130, .colectivo136, .colectivo148, .colectivo153{
+	color:#000!important;
+	text-shadow: 0 0 0 #FFF!important;	
+}
