@@ -74,6 +74,7 @@
 				6E5F7C91211E11B900E4E7B5 /* Sources */,
 				6E5F7C92211E11B900E4E7B5 /* Frameworks */,
 				6E5F7C93211E11B900E4E7B5 /* Resources */,
+				6E017C532124A48E00227488 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +130,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E017C532124A48E00227488 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/scripts/update_build_number.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E5F7C91211E11B900E4E7B5 /* Sources */ = {
@@ -300,8 +317,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XF2KB83BBC;
 				INFOPLIST_FILE = Bicisendas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,7 +327,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.quadiontech.Bicisendas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "fdb2782f-7813-4d65-8b4e-863adf35769b";
+				PROVISIONING_PROFILE_SPECIFIER = "Bicisendas AppStore";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
