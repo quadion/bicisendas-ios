@@ -309,7 +309,7 @@
 				PROVISIONING_PROFILE = "fc81501d-212f-43a1-9b5b-dd6b848968c4";
 				PROVISIONING_PROFILE_SPECIFIER = "Bicisendas Development";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,7 +330,7 @@
 				PROVISIONING_PROFILE = "fdb2782f-7813-4d65-8b4e-863adf35769b";
 				PROVISIONING_PROFILE_SPECIFIER = "Bicisendas AppStore";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
