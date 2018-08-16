@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     var userTrackingButton: MKUserTrackingButton!
+    var compassButton: MKCompassButton!
 
     fileprivate var bikePathsRenderer: MKTileOverlayRenderer!
 
@@ -28,14 +29,24 @@ class ViewController: UIViewController {
         let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: -34.6052088, longitude: -58.45),
                                         span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
         mapView.setRegion(region, animated: true)
+        mapView.showsCompass = false
 
         userTrackingButton = MKUserTrackingButton(mapView: mapView)
         userTrackingButton.translatesAutoresizingMaskIntoConstraints = false
 
         view.addSubview(userTrackingButton)
 
-        userTrackingButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        userTrackingButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 20).isActive = true
         userTrackingButton.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -20).isActive = true
+
+        compassButton = MKCompassButton(mapView: mapView)
+        compassButton.compassVisibility = .adaptive
+
+        view.addSubview(compassButton)
+
+        compassButton.translatesAutoresizingMaskIntoConstraints = false
+        compassButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        compassButton.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -20).isActive = true
 
         let overlay = BiciTileOverlay(urlTemplate: "https://tiles1.usig.buenosaires.gob.ar/mapcache/tms/1.0.0/ciclovias_caba_3857@GoogleMapsCompatible/{z}/{x}/{y}.png")
 
@@ -44,7 +55,7 @@ class ViewController: UIViewController {
 
         bikePathsRenderer = MKTileOverlayRenderer(overlay: overlay)
 
-        mapView.add(overlay, level: .aboveLabels)
+        mapView.add(overlay, level: .aboveRoads)
     }
 
     override func didReceiveMemoryWarning() {
