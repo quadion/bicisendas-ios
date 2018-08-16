@@ -13,6 +13,8 @@ import MapKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var buttonContainerView: UIVisualEffectView!
+
     var userTrackingButton: MKUserTrackingButton!
     var compassButton: MKCompassButton!
 
@@ -34,10 +36,10 @@ class ViewController: UIViewController {
         userTrackingButton = MKUserTrackingButton(mapView: mapView)
         userTrackingButton.translatesAutoresizingMaskIntoConstraints = false
 
-        view.addSubview(userTrackingButton)
+        buttonContainerView.contentView.addSubview(userTrackingButton)
 
-        userTrackingButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 20).isActive = true
-        userTrackingButton.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -20).isActive = true
+        userTrackingButton.centerXAnchor.constraint(equalTo: buttonContainerView.contentView.centerXAnchor).isActive = true
+        userTrackingButton.centerYAnchor.constraint(equalTo: buttonContainerView.contentView.centerYAnchor).isActive = true
 
         compassButton = MKCompassButton(mapView: mapView)
         compassButton.compassVisibility = .adaptive
