@@ -19,6 +19,7 @@ platform :ios do
 
   desc "Build the app"
   lane :build do
+  	sigh
   	build_app(scheme: "Bicisendas")
   end
 
