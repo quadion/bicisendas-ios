@@ -1,0 +1,6 @@
+framework module Pods_Bicisendas {
+  umbrella header "Pods-Bicisendas-umbrella.h"
+
+  export *
+  module * { export * }
+}

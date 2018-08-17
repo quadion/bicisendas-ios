@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12DB66AC61603ADB5AC77EF9 /* Pods_Bicisendas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C919799863352F86DC5DA96B /* Pods_Bicisendas.framework */; };
 		6E5F7C99211E11B900E4E7B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7C98211E11B900E4E7B5 /* AppDelegate.swift */; };
 		6E5F7C9B211E11B900E4E7B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7C9A211E11B900E4E7B5 /* ViewController.swift */; };
 		6E5F7C9E211E11B900E4E7B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7C9C211E11B900E4E7B5 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22FE738DC1193FD5C2E95070 /* Pods-Bicisendas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bicisendas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bicisendas/Pods-Bicisendas.release.xcconfig"; sourceTree = "<group>"; };
+		613F2C873179532AFB7D892F /* Pods-Bicisendas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bicisendas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bicisendas/Pods-Bicisendas.debug.xcconfig"; sourceTree = "<group>"; };
 		6E5F7C95211E11B900E4E7B5 /* Bicisendas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bicisendas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5F7C98211E11B900E4E7B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E5F7C9A211E11B900E4E7B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		6E5F7C9F211E11BB00E4E7B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E5F7CA2211E11BB00E4E7B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E5F7CA4211E11BB00E4E7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C919799863352F86DC5DA96B /* Pods_Bicisendas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bicisendas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12DB66AC61603ADB5AC77EF9 /* Pods_Bicisendas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26702554596B7B1FADC555C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				613F2C873179532AFB7D892F /* Pods-Bicisendas.debug.xcconfig */,
+				22FE738DC1193FD5C2E95070 /* Pods-Bicisendas.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6E5F7C8C211E11B900E4E7B5 = {
 			isa = PBXGroup;
 			children = (
 				6E5F7C97211E11B900E4E7B5 /* Bicisendas */,
 				6E5F7C96211E11B900E4E7B5 /* Products */,
+				26702554596B7B1FADC555C9 /* Pods */,
+				CB1A78EC0C2FEF3F33002C6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = Bicisendas;
 			sourceTree = "<group>";
 		};
+		CB1A78EC0C2FEF3F33002C6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C919799863352F86DC5DA96B /* Pods_Bicisendas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,10 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E5F7CA7211E11BB00E4E7B5 /* Build configuration list for PBXNativeTarget "Bicisendas" */;
 			buildPhases = (
+				AEDD623B0B3936AC2268677D /* [CP] Check Pods Manifest.lock */,
 				6E5F7C91211E11B900E4E7B5 /* Sources */,
 				6E5F7C92211E11B900E4E7B5 /* Frameworks */,
 				6E5F7C93211E11B900E4E7B5 /* Resources */,
 				6E017C532124A48E00227488 /* ShellScript */,
+				6E79B4402127102800CC5B15 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -144,6 +170,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "${SRCROOT}/scripts/update_build_number.sh";
+		};
+		6E79B4402127102800CC5B15 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 24647e4ab26ec7f84723318ce0a80d69f90daecf 9d069b76830834b8552a6a4ead3d83ad9ac00dae882cb1ba436b369875979547";
+		};
+		AEDD623B0B3936AC2268677D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bicisendas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -295,6 +352,7 @@
 		};
 		6E5F7CA8211E11BB00E4E7B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 613F2C873179532AFB7D892F /* Pods-Bicisendas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -315,6 +373,7 @@
 		};
 		6E5F7CA9211E11BB00E4E7B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22FE738DC1193FD5C2E95070 /* Pods-Bicisendas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
