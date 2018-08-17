@@ -1,1 +1,4 @@
 xcuserdata
+fastlane/report.xml
+*.ipa
+*.dSYM.zip
