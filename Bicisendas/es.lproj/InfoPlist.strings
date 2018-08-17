@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  Bicisendas
+
+  Created by Pablo Bendersky on 17/08/2018.
+  Copyright © 2018 Pablo Bendersky. All rights reserved.
+*/
+"NSLocationWhenInUseUsageDescription" = "Usaremos tu ubicación para mostrar donde estás en el mapa.";
