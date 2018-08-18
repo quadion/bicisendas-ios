@@ -29,10 +29,31 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PpJ-wM-e4s">
                                     <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="le3-wK-Wns">
+                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                            <subviews>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vn-gx-6l2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="33" height="0.0"/>
+                                                    <color key="tintColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" image="warningIcon"/>
+                                                    <connections>
+                                                        <action selector="warningButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VZK-5B-a8x"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="le3-wK-Wns" firstAttribute="height" secondItem="PpJ-wM-e4s" secondAttribute="height" id="Kly-K6-Yef"/>
+                                        <constraint firstItem="le3-wK-Wns" firstAttribute="centerY" secondItem="PpJ-wM-e4s" secondAttribute="centerY" id="Wxq-Ca-J9c"/>
+                                        <constraint firstItem="le3-wK-Wns" firstAttribute="centerX" secondItem="PpJ-wM-e4s" secondAttribute="centerX" id="gEm-56-IeD"/>
+                                        <constraint firstItem="le3-wK-Wns" firstAttribute="width" secondItem="PpJ-wM-e4s" secondAttribute="width" id="pQY-DS-vas"/>
+                                    </constraints>
                                 </view>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="36" id="R8i-WR-hfx"/>
-                                    <constraint firstAttribute="height" constant="36" id="kpL-Wk-Cds"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="kpL-Wk-Cds"/>
                                 </constraints>
                                 <blurEffect style="light"/>
                             </visualEffectView>
@@ -49,8 +70,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="buttonContainerView" destination="yPO-bn-dVl" id="Vyy-gJ-qXB"/>
+                        <outlet property="buttonContainerStackView" destination="le3-wK-Wns" id="QyY-NK-vaD"/>
                         <outlet property="mapView" destination="5uM-wO-qJh" id="7v8-59-FJV"/>
+                        <outlet property="warningButton" destination="6Vn-gx-6l2" id="awt-CN-HMc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -58,4 +80,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="99.753694581280797"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="warningIcon" width="33" height="30"/>
+    </resources>
 </document>

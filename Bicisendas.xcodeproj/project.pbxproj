@@ -14,6 +14,7 @@
 		6E5F7CA0211E11BB00E4E7B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7C9F211E11BB00E4E7B5 /* Assets.xcassets */; };
 		6E5F7CA3211E11BB00E4E7B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7CA1211E11BB00E4E7B5 /* LaunchScreen.storyboard */; };
 		6E79B44821272CF200CC5B15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E79B44A21272CF200CC5B15 /* InfoPlist.strings */; };
+		6EC8452E2128CB5E00E34491 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EC8452C2128CB5E00E34491 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		6E79B44C21272E4800CC5B15 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		6E79B44D21272E4800CC5B15 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6E79B44E21272E4900CC5B15 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6EC8452D2128CB5E00E34491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6EC8452F2128CB6F00E34491 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C919799863352F86DC5DA96B /* Pods_Bicisendas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bicisendas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +83,7 @@
 				6E5F7C9C211E11B900E4E7B5 /* Main.storyboard */,
 				6E5F7C9F211E11BB00E4E7B5 /* Assets.xcassets */,
 				6E5F7CA1211E11BB00E4E7B5 /* LaunchScreen.storyboard */,
+				6EC8452C2128CB5E00E34491 /* Localizable.strings */,
 				6E5F7CA4211E11BB00E4E7B5 /* Info.plist */,
 				6E79B44A21272CF200CC5B15 /* InfoPlist.strings */,
 			);
@@ -156,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC8452E2128CB5E00E34491 /* Localizable.strings in Resources */,
 				6E5F7CA3211E11BB00E4E7B5 /* LaunchScreen.storyboard in Resources */,
 				6E79B44821272CF200CC5B15 /* InfoPlist.strings in Resources */,
 				6E5F7CA0211E11BB00E4E7B5 /* Assets.xcassets in Resources */,
@@ -250,6 +255,15 @@
 				6E79B44E21272E4900CC5B15 /* es */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6EC8452C2128CB5E00E34491 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EC8452D2128CB5E00E34491 /* Base */,
+				6EC8452F2128CB6F00E34491 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
