@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var buttonContainerStackView: UIStackView!
+    @IBOutlet weak var buttonContainerBackgroundView: UIVisualEffectView!
     @IBOutlet weak var warningButton: UIButton!
 
     var userTrackingButton: MKUserTrackingButton!
@@ -25,6 +26,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        buttonContainerBackgroundView.layer.cornerRadius = 5
 
         locationManager.delegate = self
 

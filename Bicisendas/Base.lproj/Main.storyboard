@@ -55,7 +55,7 @@
                                     <constraint firstAttribute="width" constant="36" id="R8i-WR-hfx"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="kpL-Wk-Cds"/>
                                 </constraints>
-                                <blurEffect style="light"/>
+                                <blurEffect style="prominent"/>
                             </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -70,6 +70,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="buttonContainerBackgroundView" destination="yPO-bn-dVl" id="bRg-lb-WHn"/>
                         <outlet property="buttonContainerStackView" destination="le3-wK-Wns" id="QyY-NK-vaD"/>
                         <outlet property="mapView" destination="5uM-wO-qJh" id="7v8-59-FJV"/>
                         <outlet property="warningButton" destination="6Vn-gx-6l2" id="awt-CN-HMc"/>
