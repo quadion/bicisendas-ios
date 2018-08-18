@@ -13,7 +13,8 @@ import MapKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var buttonContainerView: UIVisualEffectView!
+    @IBOutlet weak var buttonContainerStackView: UIStackView!
+    @IBOutlet weak var warningButton: UIButton!
 
     var userTrackingButton: MKUserTrackingButton!
     var compassButton: MKCompassButton!
@@ -24,6 +25,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        locationManager.delegate = self
 
         requestLocationPermission()
 
@@ -36,10 +39,9 @@ class ViewController: UIViewController {
         userTrackingButton = MKUserTrackingButton(mapView: mapView)
         userTrackingButton.translatesAutoresizingMaskIntoConstraints = false
 
-        buttonContainerView.contentView.addSubview(userTrackingButton)
+        updateButtons(forLocationServicesEnabled: CLLocationManager.locationServicesEnabled())
 
-        userTrackingButton.centerXAnchor.constraint(equalTo: buttonContainerView.contentView.centerXAnchor).isActive = true
-        userTrackingButton.centerYAnchor.constraint(equalTo: buttonContainerView.contentView.centerYAnchor).isActive = true
+        buttonContainerStackView.addArrangedSubview(userTrackingButton)
 
         compassButton = MKCompassButton(mapView: mapView)
         compassButton.compassVisibility = .adaptive
@@ -60,13 +62,37 @@ class ViewController: UIViewController {
         mapView.add(overlay, level: .aboveRoads)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     private func requestLocationPermission() {
         locationManager.requestWhenInUseAuthorization()
+    }
+
+    fileprivate func updateButtons(forLocationServicesEnabled locationServicesEnabled: Bool) {
+        userTrackingButton.isHidden = !locationServicesEnabled
+        warningButton.isHidden = locationServicesEnabled
+    }
+
+    @IBAction func warningButtonTapped(_ sender: Any) {
+        let alertController = UIAlertController(title: NSLocalizedString("Location Disabled",
+                                                                         comment: "Location Disabled Alert Title"),
+                                                message: NSLocalizedString("Please enable access to your Location for this app to allow us to track you on the map.", comment: "Location Disabled Alert Text"),
+                                                preferredStyle: .alert)
+
+        let cancelAction = UIAlertAction(title: NSLocalizedString("Later", comment: "Location Disabled Alert Cancel Action"),
+                                         style: .cancel,
+                                         handler: nil)
+        alertController.addAction(cancelAction)
+
+        let settingsAction = UIAlertAction(title: NSLocalizedString("Go to Settings", comment: "Location Disabled Alert Settings Action"),
+                                           style: .default) { (_) in
+
+            guard let settingsURL = URL(string: UIApplicationOpenSettingsURLString) else { return }
+
+            UIApplication.shared.open(settingsURL, options: [:], completionHandler: nil)
+        }
+
+        alertController.addAction(settingsAction)
+
+        present(alertController, animated: true, completion: nil)
     }
 }
 
@@ -89,4 +115,13 @@ extension ViewController: MKMapViewDelegate {
         return bikePathsRenderer
     }
 
+}
+
+extension ViewController: CLLocationManagerDelegate {
+
+    public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        let locationAvailable = (status == .authorizedAlways || status == .authorizedWhenInUse)
+
+        updateButtons(forLocationServicesEnabled: locationAvailable)
+    }
 }
