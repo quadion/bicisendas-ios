@@ -5,6 +5,9 @@
       location = "group:Bicisendas.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:GeoJSON/GeoJSON.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

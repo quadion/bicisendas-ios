@@ -10,12 +10,16 @@ import UIKit
 
 import MapKit
 
-class ViewController: UIViewController {
+import RxSwift
+import RxCocoa
+
+class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var buttonContainerStackView: UIStackView!
     @IBOutlet weak var buttonContainerBackgroundView: UIVisualEffectView!
     @IBOutlet weak var warningButton: UIButton!
+    @IBOutlet weak var bikeStationsButton: UIButton!
 
     var userTrackingButton: MKUserTrackingButton!
     var compassButton: MKCompassButton!
@@ -24,8 +28,14 @@ class ViewController: UIViewController {
 
     private let locationManager = CLLocationManager()
 
+    private let viewModel = MapViewModel()
+
+    private let disposeBag = DisposeBag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        mapView.register(BikeStandMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: "bikeStation")
 
         buttonContainerBackgroundView.layer.cornerRadius = 5
 
@@ -63,6 +73,28 @@ class ViewController: UIViewController {
         bikePathsRenderer = MKTileOverlayRenderer(overlay: overlay)
 
         mapView.add(overlay, level: .aboveRoads)
+
+        bindUI()
+    }
+
+    private func bindUI() {
+        bikeStationsButton.rx.tap
+            .bind(to: viewModel.showStationsAction)
+            .disposed(by: disposeBag)
+
+        viewModel.annotations
+            .debug("👍 viewModel.annotations")
+            .subscribe(onNext: { [weak self] (annotations) in
+
+                guard let strongSelf = self else { return }
+
+                strongSelf.mapView.removeAnnotations(strongSelf.mapView.annotations)
+                strongSelf.mapView.addAnnotations(annotations)
+
+            }, onError: { (error) in
+                print(error)
+            })
+            .disposed(by: disposeBag)
     }
 
     private func requestLocationPermission() {
@@ -111,16 +143,38 @@ class BiciTileOverlay: MKTileOverlay {
 
 }
 
-extension ViewController: MKMapViewDelegate {
+extension MapViewController: MKMapViewDelegate {
 
     public func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
 
         return bikePathsRenderer
     }
 
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+
+        guard !annotation.isKind(of: MKUserLocation.self) else { return nil }
+
+        guard let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "bikeStation", for: annotation)
+            as? MKMarkerAnnotationView else { fatalError("MapView not configured properly") }
+
+        if let cluster = annotation as? MKClusterAnnotation {
+            annotationView.glyphText = "\(cluster.memberAnnotations.count)"
+            annotationView.glyphImage = nil
+        } else {
+            annotationView.glyphText = nil
+            annotationView.glyphImage = UIImage(named: "bikeStationIcon")
+        }
+
+        annotationView.canShowCallout = true
+        annotationView.titleVisibility = .hidden
+        annotationView.markerTintColor = UIColor(named: "bikeStationColor")
+
+        return annotationView
+    }
+
 }
 
-extension ViewController: CLLocationManagerDelegate {
+extension MapViewController: CLLocationManagerDelegate {
 
     public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         let locationAvailable = (status == .authorizedAlways || status == .authorizedWhenInUse)
