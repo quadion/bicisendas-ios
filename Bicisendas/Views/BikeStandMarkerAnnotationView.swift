@@ -12,10 +12,26 @@ import MapKit
 
 class BikeStandMarkerAnnotationView: MKMarkerAnnotationView {
 
+    override var annotation: MKAnnotation? {
+        willSet {
+            if let cluster = annotation as? MKClusterAnnotation {
+                glyphText = "\(cluster.memberAnnotations.count)"
+                glyphImage = nil
+            } else {
+                glyphText = nil
+                glyphImage = #imageLiteral(resourceName: "bikeStationIcon")
+            }
+
+            canShowCallout = true
+            titleVisibility = .hidden
+            markerTintColor = UIColor(named: "bikeStationColor")
+        }
+    }
+
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
 
-        clusteringIdentifier = "reuseIdentifier"
+        clusteringIdentifier = "bikeStationClusterIdentifier"
     }
 
     required init?(coder aDecoder: NSCoder) {

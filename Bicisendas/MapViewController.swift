@@ -35,7 +35,7 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        mapView.register(BikeStandMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: "bikeStation")
+        registerMapViewAnnotations()
 
         buttonContainerBackgroundView.layer.cornerRadius = 5
 
@@ -77,13 +77,17 @@ class MapViewController: UIViewController {
         bindUI()
     }
 
+    private func registerMapViewAnnotations() {
+        mapView.register(BikeStandMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        mapView.register(BikeStandMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultClusterAnnotationViewReuseIdentifier)
+    }
+
     private func bindUI() {
         bikeStationsButton.rx.tap
             .bind(to: viewModel.showStationsAction)
             .disposed(by: disposeBag)
 
         viewModel.annotations
-            .debug("👍 viewModel.annotations")
             .subscribe(onNext: { [weak self] (annotations) in
 
                 guard let strongSelf = self else { return }
@@ -150,27 +154,29 @@ extension MapViewController: MKMapViewDelegate {
         return bikePathsRenderer
     }
 
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-
-        guard !annotation.isKind(of: MKUserLocation.self) else { return nil }
-
-        guard let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "bikeStation", for: annotation)
-            as? MKMarkerAnnotationView else { fatalError("MapView not configured properly") }
-
-        if let cluster = annotation as? MKClusterAnnotation {
-            annotationView.glyphText = "\(cluster.memberAnnotations.count)"
-            annotationView.glyphImage = nil
-        } else {
-            annotationView.glyphText = nil
-            annotationView.glyphImage = UIImage(named: "bikeStationIcon")
-        }
-
-        annotationView.canShowCallout = true
-        annotationView.titleVisibility = .hidden
-        annotationView.markerTintColor = UIColor(named: "bikeStationColor")
-
-        return annotationView
-    }
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//
+//        guard !annotation.isKind(of: MKUserLocation.self) else { return nil }
+//
+//        guard let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "bikeStation", for: annotation)
+//            as? MKMarkerAnnotationView else { fatalError("MapView not configured properly") }
+//
+//        annotationView.annotation = annotation
+//
+//        if let cluster = annotation as? MKClusterAnnotation {
+//            annotationView.glyphText = "\(cluster.memberAnnotations.count)"
+//            annotationView.glyphImage = nil
+//        } else {
+//            annotationView.glyphText = nil
+//            annotationView.glyphImage = UIImage(named: "bikeStationIcon")
+//        }
+//
+//        annotationView.canShowCallout = true
+//        annotationView.titleVisibility = .hidden
+//        annotationView.markerTintColor = UIColor(named: "bikeStationColor")
+//
+//        return annotationView
+//    }
 
 }
 
