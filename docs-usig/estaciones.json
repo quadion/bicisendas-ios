@@ -1,0 +1,3533 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.392456,
+          -34.583133
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|1",
+      "properties": {
+        "Nombre": "1 - Facultad de Derecho",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|1",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 7
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.374826,
+          -34.592588
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|2",
+      "properties": {
+        "Nombre": "2 - Retiro",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|2",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 12
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.368931,
+          -34.611229
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|3",
+      "properties": {
+        "Nombre": "3 - Aduana",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|3",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.368944,
+          -34.601732
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|4",
+      "properties": {
+        "Nombre": "4 - Plaza Roma",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|4",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 15
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.420999,
+          -34.580127
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|6",
+      "properties": {
+        "Nombre": "5 - Plaza Italia",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|6",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.369724,
+          -34.628302
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|5",
+      "properties": {
+        "Nombre": "6 - Parque Lezama",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|5",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.380975,
+          -34.605746
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|7",
+      "properties": {
+        "Nombre": "7 - Obelisco ",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|7",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.389257,
+          -34.60993
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|8",
+      "properties": {
+        "Nombre": "8 - Congreso",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|8",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 5
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.407148,
+          -34.583914
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|9",
+      "properties": {
+        "Nombre": "9 - Parque Las Heras",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|9",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 13
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.36575,
+          -34.61555
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|10",
+      "properties": {
+        "Nombre": "10 - Madero UCA",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|10",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 9
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.385025,
+          -34.601312
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|11",
+      "properties": {
+        "Nombre": "11 - Tribunales",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|11",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.388952,
+          -34.593177
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|12",
+      "properties": {
+        "Nombre": "12 - Plaza Vicente López",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|12",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 5
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.406602,
+          -34.609621
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|13",
+      "properties": {
+        "Nombre": "13 - Once",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|13",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.426322,
+          -34.577787
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|14",
+      "properties": {
+        "Nombre": "14 - Pacífico",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|14",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 7
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.374721,
+          -34.609958
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|16",
+      "properties": {
+        "Nombre": "16 - Legislatura",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|16",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.418834,
+          -34.606398
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|17",
+      "properties": {
+        "Nombre": "17 - Plaza Almagro",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|17",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.380457,
+          -34.617769
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|18",
+      "properties": {
+        "Nombre": "18 - Independencia",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|18",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.377553,
+          -34.595404
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|19",
+      "properties": {
+        "Nombre": "19 - Plaza San Martín",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|19",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 21
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.44179,
+          -34.580036
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|20",
+      "properties": {
+        "Nombre": "20 - Distrito Audiovisual",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|20",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 13
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.406617,
+          -34.640029
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|32",
+      "properties": {
+        "Nombre": "21 - Parque Patricios",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|32",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 14
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.382574,
+          -34.594099
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|22",
+      "properties": {
+        "Nombre": "22 - Arenales",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|22",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 6
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.37957,
+          -34.600295
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|23",
+      "properties": {
+        "Nombre": "23 - Suipacha",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|23",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 4
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.380771,
+          -34.610571
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|24",
+      "properties": {
+        "Nombre": "24 - Alsina",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|24",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.416067,
+          -34.58952
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|25",
+      "properties": {
+        "Nombre": "25 - Plaza Güemes",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|25",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.363608,
+          -34.601
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|26",
+      "properties": {
+        "Nombre": "26 - Juana Manso",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|26",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 14
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.389899,
+          -34.599567
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|27",
+      "properties": {
+        "Nombre": "27 - Montevideo",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|27",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.412401,
+          -34.622849
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|28",
+      "properties": {
+        "Nombre": "28 - Plaza Boedo",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|28",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.434578,
+          -34.608458
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|30",
+      "properties": {
+        "Nombre": "29 - Parque Centenario ",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|30",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.397285,
+          -34.590617
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|33",
+      "properties": {
+        "Nombre": "30 - Peña",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|33",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.439728,
+          -34.603158
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|52",
+      "properties": {
+        "Nombre": "31 - Padilla",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|52",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.373536,
+          -34.607727
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|34",
+      "properties": {
+        "Nombre": "32 - Catedral",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|34",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.398691,
+          -34.597124
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|41",
+      "properties": {
+        "Nombre": "33 - Facultad de Medicina",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|41",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.374166,
+          -34.599549
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|42",
+      "properties": {
+        "Nombre": "34 - Galerías Pacífico",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|42",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 7
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.371862,
+          -34.596327
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|35",
+      "properties": {
+        "Nombre": "35 - Ingeniero Butty",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|35",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 17
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3766,
+          -34.605368
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|36",
+      "properties": {
+        "Nombre": "36 - Maipú",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|36",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.377868,
+          -34.607913
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|37",
+      "properties": {
+        "Nombre": "37 - Piedras",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|37",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.382899,
+          -34.596989
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|38",
+      "properties": {
+        "Nombre": "38 - Plaza Libertad",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|38",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.38765,
+          -34.608997
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|224",
+      "properties": {
+        "Nombre": "39 - Congreso II",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|224",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.373515,
+          -34.604409
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|43",
+      "properties": {
+        "Nombre": "40 - Sarmiento",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|43",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 15
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.407594,
+          -34.636526
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|40",
+      "properties": {
+        "Nombre": "41 - Urquiza",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|40",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 4
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.398061,
+          -34.599569
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|54",
+      "properties": {
+        "Nombre": "43 - Plaza Houssay",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|54",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.414641,
+          -34.575459
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|44",
+      "properties": {
+        "Nombre": "44 - Zoológico",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|44",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 13
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.386908,
+          -34.601602
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|134",
+      "properties": {
+        "Nombre": "45 - Uruguay",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|134",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.374399,
+          -34.61639
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|46",
+      "properties": {
+        "Nombre": "46 - Chile",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|46",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.37349,
+          -34.610821
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|56",
+      "properties": {
+        "Nombre": "47 - Colegio Nacional Buenos Aires",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|56",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 12
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.371528,
+          -34.605429
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|57",
+      "properties": {
+        "Nombre": "48 - Perón",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|57",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 4
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.422468,
+          -34.628826
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|115",
+      "properties": {
+        "Nombre": "49 - Treinta y Tres Orientales",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|115",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.401138,
+          -34.583682
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|59",
+      "properties": {
+        "Nombre": "50 - Hospital Rivadavia",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|59",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.382447,
+          -34.601583
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|45",
+      "properties": {
+        "Nombre": "51 - Tucumán",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|45",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.414677,
+          -34.60707
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|70",
+      "properties": {
+        "Nombre": "52 - Sánchez de Bustamante",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|70",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.374296,
+          -34.595871
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|48",
+      "properties": {
+        "Nombre": "53 - Ricardo Rojas",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|48",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 16
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.421743,
+          -34.598204
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|145",
+      "properties": {
+        "Nombre": "54 - Acuña de Figueroa",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|145",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.369619,
+          -34.59934
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|60",
+      "properties": {
+        "Nombre": "55 - Bouchard",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|60",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 12
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.425072,
+          -34.589375
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|73",
+      "properties": {
+        "Nombre": "56 - Plaza Palermo Viejo",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|73",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 11
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.37058,
+          -34.613427
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|76",
+      "properties": {
+        "Nombre": "57 - Belgrano",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|76",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 5
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.434609,
+          -34.575207
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|74",
+      "properties": {
+        "Nombre": "58 - Ministro Carranza",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|74",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 8
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.41153,
+          -34.5902
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|78",
+      "properties": {
+        "Nombre": "59 - Coronel Díaz",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|78",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.371162,
+          -34.601611
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|50",
+      "properties": {
+        "Nombre": "60 - 25 de Mayo",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|50",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 18
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.370844,
+          -34.609098
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|96",
+      "properties": {
+        "Nombre": "61 - Ministerio de Economía",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|96",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.376905,
+          -34.598502
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|47",
+      "properties": {
+        "Nombre": "62 - Córdoba",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|47",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 12
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.372811,
+          -34.598822
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|99",
+      "properties": {
+        "Nombre": "63 - Reconquista",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|99",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 17
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.394391,
+          -34.593789
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|63",
+      "properties": {
+        "Nombre": "64 - Riobamba",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|63",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.415925,
+          -34.587225
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|79",
+      "properties": {
+        "Nombre": "65 - Julián Álvarez",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|79",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 8
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.413863,
+          -34.59463
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|103",
+      "properties": {
+        "Nombre": "66 - Billinghurst",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|103",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.425491,
+          -34.638479
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|111",
+      "properties": {
+        "Nombre": "67 - Senillosa",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|111",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 6
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.385411,
+          -34.60657
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|75",
+      "properties": {
+        "Nombre": "68 - Rivarola",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|75",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 8
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.404421,
+          -34.595952
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|97",
+      "properties": {
+        "Nombre": "69 - Ecuador",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|97",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.425818,
+          -34.592675
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|102",
+      "properties": {
+        "Nombre": "70 - Aráoz",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|102",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.382991,
+          -34.603016
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|90",
+      "properties": {
+        "Nombre": "71 - Cerrito",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|90",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.374569,
+          -34.613642
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|98",
+      "properties": {
+        "Nombre": "72 - Venezuela",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|98",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.371708,
+          -34.630798
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|163",
+      "properties": {
+        "Nombre": "73 - Ruy Díaz de Guzmán",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|163",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.434617,
+          -34.604742
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|92",
+      "properties": {
+        "Nombre": "74 - Instituto Leloir",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|92",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.398908,
+          -34.612157
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|126",
+      "properties": {
+        "Nombre": "75 - Plaza Primero de Mayo",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|126",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.394988,
+          -34.607198
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|65",
+      "properties": {
+        "Nombre": "76 - Ayacucho",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|65",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.39483,
+          -34.611321
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|125",
+      "properties": {
+        "Nombre": "77 - Sarandí",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|125",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.380331,
+          -34.591412
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|67",
+      "properties": {
+        "Nombre": "78 - Suipacha y Arroyo",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|67",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.36404,
+          -34.611743
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|120",
+      "properties": {
+        "Nombre": "79 - Azucena Villaflor",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|120",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 18
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.430314,
+          -34.624184
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|110",
+      "properties": {
+        "Nombre": "80 - Doblas",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|110",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.37087,
+          -34.61586
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|100",
+      "properties": {
+        "Nombre": "81 - Balcarce",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|100",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 16
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.426268,
+          -34.60744
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|77",
+      "properties": {
+        "Nombre": "82 - Hospital Italiano",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|77",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.388441,
+          -34.603005
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|170",
+      "properties": {
+        "Nombre": "83 - Paraná",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|170",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 5
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.395476,
+          -34.602288
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|104",
+      "properties": {
+        "Nombre": "84 - Lavalle",
+        "Estado": "mantenimiento",
+        "Id": "estaciones_de_bicicletas|104",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.409089,
+          -34.594677
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|95",
+      "properties": {
+        "Nombre": "85 - Agüero",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|95",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.401725,
+          -34.621381
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|117",
+      "properties": {
+        "Nombre": "86 - Saavedra",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|117",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.431607,
+          -34.619832
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|113",
+      "properties": {
+        "Nombre": "87 - Guayaquil",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|113",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.404227,
+          -34.612864
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|82",
+      "properties": {
+        "Nombre": "88 - Misiones",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|82",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.405319,
+          -34.582471
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|160",
+      "properties": {
+        "Nombre": "89 - Cabello",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|160",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 10
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.399457,
+          -34.587085
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|152",
+      "properties": {
+        "Nombre": "90 - Gutierrez",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|152",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.397552,
+          -34.617498
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|85",
+      "properties": {
+        "Nombre": "91 - Pasco",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|85",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.405001,
+          -34.631714
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|124",
+      "properties": {
+        "Nombre": "92 - Salcedo",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|124",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.39472,
+          -34.620598
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|173",
+      "properties": {
+        "Nombre": "93 - Carlos Calvo",
+        "Estado": "mantenimiento",
+        "Id": "estaciones_de_bicicletas|173",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 15
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.449664,
+          -34.591576
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|88",
+      "properties": {
+        "Nombre": "94 - Guzmán",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|88",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 13
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.378171,
+          -34.602164
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|89",
+      "properties": {
+        "Nombre": "95 - Esmeralda",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|89",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 9
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.411578,
+          -34.602896
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|101",
+      "properties": {
+        "Nombre": "96 - Carlos Gardel",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|101",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 4
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.427393,
+          -34.635245
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|114",
+      "properties": {
+        "Nombre": "97 - Avelino Díaz",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|114",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 6
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.378335,
+          -34.61173
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|109",
+      "properties": {
+        "Nombre": "98 - Moreno",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|109",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.435624,
+          -34.596286
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|107",
+      "properties": {
+        "Nombre": "99 - Malabia",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|107",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 5
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.436784,
+          -34.59269
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|146",
+      "properties": {
+        "Nombre": "100 - Castillo",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|146",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 9
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.442444,
+          -34.589057
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|130",
+      "properties": {
+        "Nombre": "101 - Fitz Roy",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|130",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 16
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.445987,
+          -34.586441
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|225",
+      "properties": {
+        "Nombre": "102 - Roseti",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|225",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 15
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.403553,
+          -34.577381
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|176",
+      "properties": {
+        "Nombre": "103 - Malba",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|176",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 9
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.455079,
+          -34.587583
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|162",
+      "properties": {
+        "Nombre": "104 - Federico Lacroze",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|162",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.40098,
+          -34.633972
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|144",
+      "properties": {
+        "Nombre": "105 - 15 de Noviembre",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|144",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.395903,
+          -34.615194
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|123",
+      "properties": {
+        "Nombre": "106 - Rincón",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|123",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.395945,
+          -34.630431
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|179",
+      "properties": {
+        "Nombre": "107 - Hospital Garrahan",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|179",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.356399,
+          -34.628912
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|129",
+      "properties": {
+        "Nombre": "108 - Usina del Arte",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|129",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 12
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.429598,
+          -34.596682
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|149",
+      "properties": {
+        "Nombre": "109 - Lerma",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|149",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 8
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.415467,
+          -34.601766
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|147",
+      "properties": {
+        "Nombre": "110 - Guardia Vieja",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|147",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.363041,
+          -34.604959
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|174",
+      "properties": {
+        "Nombre": "111 - Macacha Guemes",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|174",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 23
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.380764,
+          -34.612365
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|135",
+      "properties": {
+        "Nombre": "112 - 9 de Julio",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|135",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.425211,
+          -34.585665
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|150",
+      "properties": {
+        "Nombre": "113 - Guatemala",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|150",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.372344,
+          -34.594858
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|106",
+      "properties": {
+        "Nombre": "114 - Della Paolera",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|106",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 14
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.39098,
+          -34.587696
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|105",
+      "properties": {
+        "Nombre": "115 - Quintana",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|105",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.40262,
+          -34.592092
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|187",
+      "properties": {
+        "Nombre": "116 - Hospital Alemán",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|187",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 6
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.374235,
+          -34.619917
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|186",
+      "properties": {
+        "Nombre": "117 - Humberto Primo",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|186",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.402823,
+          -34.616807
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|122",
+      "properties": {
+        "Nombre": "118 - México",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|122",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.39765,
+          -34.588269
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|136",
+      "properties": {
+        "Nombre": "119 - Emilio Mitre",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|136",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.409188,
+          -34.617554
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|83",
+      "properties": {
+        "Nombre": "120 - Hospital Ramos Mejía",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|83",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.428276,
+          -34.600711
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|108",
+      "properties": {
+        "Nombre": "121 - Yatay",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|108",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.420389,
+          -34.591621
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|148",
+      "properties": {
+        "Nombre": "122 - Costa Rica",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|148",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.419762,
+          -34.584601
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|155",
+      "properties": {
+        "Nombre": "123 - Armenia",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|155",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 4
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.412297,
+          -34.581053
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|156",
+      "properties": {
+        "Nombre": "124 - Ugarteche",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|156",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 7
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.428233,
+          -34.583487
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|185",
+      "properties": {
+        "Nombre": "125 - Oro",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|185",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.369434,
+          -34.639955
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|161",
+      "properties": {
+        "Nombre": "126 - Ministerio de Justicia y Seguridad",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|161",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.452926,
+          -34.592209
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|189",
+      "properties": {
+        "Nombre": "127 - Santos Dumont y Otero",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|189",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 10
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.368231,
+          -34.60415
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|137",
+      "properties": {
+        "Nombre": "128 - Plaza Hipólito Bouchard",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|137",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 5
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.434924,
+          -34.60018
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|153",
+      "properties": {
+        "Nombre": "129 - Velasco",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|153",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.374304,
+          -34.591951
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|180",
+      "properties": {
+        "Nombre": "130 - Retiro II",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|180",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 4
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.374196,
+          -34.591811
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|181",
+      "properties": {
+        "Nombre": "131 - Retiro III",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|181",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 4
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.372565,
+          -34.60336
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|138",
+      "properties": {
+        "Nombre": "132 - Corrientes",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|138",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 13
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.43429,
+          -34.581122
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|182",
+      "properties": {
+        "Nombre": "133 - Nicaragua",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|182",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 16
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.415557,
+          -34.611893
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|131",
+      "properties": {
+        "Nombre": "134 - Don Bosco",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|131",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 5
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.379793,
+          -34.596458
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|139",
+      "properties": {
+        "Nombre": "135 - Marcelo T. de Alvear",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|139",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 9
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.442894,
+          -34.599787
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|128",
+      "properties": {
+        "Nombre": "136 - Acevedo",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|128",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.367478,
+          -34.61589
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|184",
+      "properties": {
+        "Nombre": "137 - Azopardo y Chile",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|184",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 14
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.387756,
+          -34.634938
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|178",
+      "properties": {
+        "Nombre": "138 - Hospital Británico",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|178",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.413159,
+          -34.633312
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|157",
+      "properties": {
+        "Nombre": "139 - Virrey Liniers",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|157",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.415785,
+          -34.635145
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|158",
+      "properties": {
+        "Nombre": "140 - Las Casas",
+        "Estado": "mantenimiento",
+        "Id": "estaciones_de_bicicletas|158",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 11
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.390418,
+          -34.611753
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|188",
+      "properties": {
+        "Nombre": "141 - Solís y Alsina",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|188",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.428916,
+          -34.590573
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|190",
+      "properties": {
+        "Nombre": "142 - Armenia y Gorriti",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|190",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 4
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.415765,
+          -34.604621
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|183",
+      "properties": {
+        "Nombre": "143 - Billinghurst y Valentín Gomez",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|183",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.405831,
+          -34.601785
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|151",
+      "properties": {
+        "Nombre": "144 - Pueyrredón",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|151",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.437851,
+          -34.580481
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|166",
+      "properties": {
+        "Nombre": "145 - Ravignani",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|166",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 19
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.407858,
+          -34.622205
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|172",
+      "properties": {
+        "Nombre": "146 - Hospital Francés",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|172",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.379098,
+          -34.627456
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|191",
+      "properties": {
+        "Nombre": "147 - Constitución I",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|191",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.379192,
+          -34.62748
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|192",
+      "properties": {
+        "Nombre": "148 - Constitución II",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|192",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 9
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.381473,
+          -34.615362
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|140",
+      "properties": {
+        "Nombre": "149 - Lima",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|140",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.363095,
+          -34.618064
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|121",
+      "properties": {
+        "Nombre": "150 - Vera Peñaloza",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|121",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.361007,
+          -34.611829
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|127",
+      "properties": {
+        "Nombre": "151 - Aimé Painé",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|127",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 15
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.359107,
+          -34.617532
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|132",
+      "properties": {
+        "Nombre": "152 - Julieta Lanteri",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|132",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 18
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.362078,
+          -34.630674
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|168",
+      "properties": {
+        "Nombre": "153 - Juan Manuel Blanes",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|168",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.412105,
+          -34.600224
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|141",
+      "properties": {
+        "Nombre": "154 - Gallo",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|141",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.412532,
+          -34.64166
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|193",
+      "properties": {
+        "Nombre": "155 - Parque José Evaristo Uriburu",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|193",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 16
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.408055,
+          -34.577801
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|202",
+      "properties": {
+        "Nombre": "156 - Plaza Alemania",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|202",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 16
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.427957,
+          -34.62831
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|195",
+      "properties": {
+        "Nombre": "157 - Senillosa y Zuviría",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|195",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.445124,
+          -34.592855
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|169",
+      "properties": {
+        "Nombre": "158 - Villarroel",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|169",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 4
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4374,
+          -34.585035
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|196",
+      "properties": {
+        "Nombre": "159 - Gorriti",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|196",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 12
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.420766,
+          -34.572859
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|175",
+      "properties": {
+        "Nombre": "160 - Godoy Cruz y Libertador",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|175",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 9
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.419694,
+          -34.602062
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|133",
+      "properties": {
+        "Nombre": "161 - Humahuaca",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|133",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.401952,
+          -34.609246
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|197",
+      "properties": {
+        "Nombre": "162 - Larrea y Bartolomé Mitre",
+        "Estado": "mantenimiento",
+        "Id": "estaciones_de_bicicletas|197",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.406678,
+          -34.609371
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|194",
+      "properties": {
+        "Nombre": "163 - Once II",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|194",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.36676,
+          -34.618067
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|142",
+      "properties": {
+        "Nombre": "164 - Facultad de Ingeniería",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|142",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 9
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.407852,
+          -34.597757
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|199",
+      "properties": {
+        "Nombre": "165 - Plaza Monseñor Miguel de Andrea",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|199",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.393321,
+          -34.589154
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|118",
+      "properties": {
+        "Nombre": "166 - Cementerio de la Recoleta",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|118",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.428826,
+          -34.615046
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|154",
+      "properties": {
+        "Nombre": "167 - Hipólito Yrigoyen",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|154",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.381291,
+          -34.618634
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|200",
+      "properties": {
+        "Nombre": "168 - Estados Unidos",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|200",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.411937,
+          -34.612018
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|203",
+      "properties": {
+        "Nombre": "169 - Facultad de Psicología",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|203",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.405988,
+          -34.599732
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|198",
+      "properties": {
+        "Nombre": "170 - San Luis y Ecuador",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|198",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.399526,
+          -34.603247
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|201",
+      "properties": {
+        "Nombre": "171 - Pasteur",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|201",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.370999,
+          -34.625639
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|171",
+      "properties": {
+        "Nombre": "172 - Brasil",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|171",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 4
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.391548,
+          -34.59726
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|204",
+      "properties": {
+        "Nombre": "174 - Ministerio de Educación",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|204",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 6
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.378109,
+          -34.603713
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|143",
+      "properties": {
+        "Nombre": "175 - Esmeralda y Corrientes",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|143",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 9
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.360937,
+          -34.634063
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|159",
+      "properties": {
+        "Nombre": "176 - Pinzón",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|159",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.412105,
+          -34.568103
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|205",
+      "properties": {
+        "Nombre": "177 - Planetario",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|205",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 5
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.424874,
+          -34.623465
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|206",
+      "properties": {
+        "Nombre": "178 - José Marmol",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|206",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 2
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.360496,
+          -34.639061
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|227",
+      "properties": {
+        "Nombre": "179 - La Boca",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|227",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 9
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.420477,
+          -34.619808
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|207",
+      "properties": {
+        "Nombre": "180 - Castro y México",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|207",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 4
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.411914,
+          -34.592689
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|167",
+      "properties": {
+        "Nombre": "181 - Billinghurst y Mansilla",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|167",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.435237,
+          -34.578198
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|177",
+      "properties": {
+        "Nombre": "182 - Ravignani y Guatemala",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|177",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 9
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.389693,
+          -34.615637
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|208",
+      "properties": {
+        "Nombre": "183 - Virrey Cevallos",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|208",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.39127,
+          -34.630668
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|215",
+      "properties": {
+        "Nombre": "184 - Pedro Echague",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|215",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.421788,
+          -34.631373
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|209",
+      "properties": {
+        "Nombre": "185 - Av. Pavón y 33 Orientales",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|209",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.407097,
+          -34.612548
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|210",
+      "properties": {
+        "Nombre": "186 - Catamarca",
+        "Estado": "mantenimiento",
+        "Id": "estaciones_de_bicicletas|210",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.431743,
+          -34.617676
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|217",
+      "properties": {
+        "Nombre": "187 - Parque Rivadavia",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|217",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 6
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.433516,
+          -34.610794
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|214",
+      "properties": {
+        "Nombre": "188 - Aranguren",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|214",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.385579,
+          -34.588486
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|216",
+      "properties": {
+        "Nombre": "189 - Posadas",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|216",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 12
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.411252,
+          -34.585065
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|219",
+      "properties": {
+        "Nombre": "190 - Juncal",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|219",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.380941,
+          -34.60823
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|164",
+      "properties": {
+        "Nombre": "191 - Rivadavia y 9 de Julio",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|164",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.385748,
+          -34.596552
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|211",
+      "properties": {
+        "Nombre": "192 - Talcahuano",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|211",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 3
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.405964,
+          -34.591128
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|212",
+      "properties": {
+        "Nombre": "193 - Arenales y Aguero",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|212",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 6
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.387467,
+          -34.627039
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|218",
+      "properties": {
+        "Nombre": "195 - Plaza Garay",
+        "Estado": "vacia",
+        "Id": "estaciones_de_bicicletas|218",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 0
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.366028,
+          -34.627784
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|223",
+      "properties": {
+        "Nombre": "196 - Hospital Argerich",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|223",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 10
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.423507,
+          -34.613601
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|220",
+      "properties": {
+        "Nombre": "197 - Quintino Bocayuva",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|220",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.404156,
+          -34.634373
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|222",
+      "properties": {
+        "Nombre": "198 - Hospital Sardá",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|222",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.415879,
+          -34.622436
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|221",
+      "properties": {
+        "Nombre": "199 - Estados Unidos y Boedo",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|221",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 1
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.404356,
+          -34.588185
+        ]
+      },
+      "type": "Feature",
+      "id": "estaciones_de_bicicletas|226",
+      "properties": {
+        "Nombre": "200 - Austria y French",
+        "Estado": "disponible",
+        "Id": "estaciones_de_bicicletas|226",
+        "Tipo": "automatica",
+        "CantidadBicicletas": 4
+      }
+    }
+  ]
+}

@@ -10,5 +10,11 @@ target 'Bicisendas' do
   # Pods for Bicisendas
   pod 'Fabric'
   pod 'Crashlytics'
+  
+  pod 'Alamofire'
+  pod 'CodableAlamofire'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxSwiftUtilities'
 
 end
