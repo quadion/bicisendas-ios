@@ -15,5 +15,6 @@ target 'Bicisendas' do
   pod 'CodableAlamofire'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxSwiftUtilities'
 
 end

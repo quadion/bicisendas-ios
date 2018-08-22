@@ -1,11 +1,15 @@
 //
 //  ActivityIndicator.swift
-//  RxExample
+//  RxSwiftUtilities
 //
-//  Created by Krunoslav Zaher on 10/18/15.
-//  Copyright © 2015 Krunoslav Zaher. All rights reserved.
+//  Created by Jesse Farless on 11/21/16.
+//  Copyright © 2016 RxSwiftCommunity. All rights reserved.
+//
+//  This file was copied from RxSwift's example app:
+//  https://github.com/ReactiveX/RxSwift/blob/d6dfcfa/RxExample/RxExample/Services/ActivityIndicator.swift
 //
 
+import Foundation
 import RxSwift
 import RxCocoa
 

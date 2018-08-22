@@ -11,6 +11,7 @@ import MapKit
 import GeoJSON
 
 import RxSwift
+import RxSwiftUtilities
 
 class MapViewModel {
 
