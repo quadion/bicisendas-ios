@@ -37,6 +37,7 @@ class MapViewController: UIViewController {
 
         registerMapViewAnnotations()
 
+        bikeStationsButton.layer.cornerRadius = 5
         buttonContainerBackgroundView.layer.cornerRadius = 5
 
         locationManager.delegate = self
@@ -98,6 +99,27 @@ class MapViewController: UIViewController {
             }, onError: { (error) in
                 print(error)
             })
+            .disposed(by: disposeBag)
+
+        viewModel.showBikeStations
+            .asObservable()
+            .bind(to: bikeStationsButton.rx.isSelected)
+            .disposed(by: disposeBag)
+
+        viewModel.showBikeStations
+            .asObservable()
+            .filter { !$0 }
+            .asDriver(onErrorJustReturn: false)
+            .drive(onNext: { [weak self] _ in
+                guard let strongSelf = self else { return }
+
+                strongSelf.mapView.removeAnnotations(strongSelf.mapView.annotations)
+            })
+            .disposed(by: disposeBag)
+
+        viewModel.activityIndicator
+            .map { !$0 }
+            .drive(bikeStationsButton.rx.isEnabled)
             .disposed(by: disposeBag)
     }
 

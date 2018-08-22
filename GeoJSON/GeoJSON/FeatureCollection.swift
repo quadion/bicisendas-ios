@@ -23,4 +23,12 @@ public struct FeatureCollection: Decodable {
         let myDecoder = try decoder.container(keyedBy: CodingKeys.self)
         features = try myDecoder.decode([Feature].self, forKey: .features)
     }
+
+    private init() {
+        features = []
+    }
+
+    public static func empty() -> FeatureCollection {
+        return FeatureCollection()
+    }
 }

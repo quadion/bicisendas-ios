@@ -14,7 +14,7 @@ class BikeStandMarkerAnnotationView: MKMarkerAnnotationView {
 
     override var annotation: MKAnnotation? {
         willSet {
-            if let cluster = annotation as? MKClusterAnnotation {
+            if let cluster = newValue as? MKClusterAnnotation {
                 glyphText = "\(cluster.memberAnnotations.count)"
                 glyphImage = nil
             } else {
@@ -36,6 +36,12 @@ class BikeStandMarkerAnnotationView: MKMarkerAnnotationView {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+
+        clusteringIdentifier = "bikeStationClusterIdentifier"
     }
 
 }
