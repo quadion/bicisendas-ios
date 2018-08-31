@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		12DB66AC61603ADB5AC77EF9 /* Pods_Bicisendas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C919799863352F86DC5DA96B /* Pods_Bicisendas.framework */; };
 		6E0F52D1212DCDBF000F1D5D /* ToggleBikeStationsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F52D0212DCDBF000F1D5D /* ToggleBikeStationsButton.swift */; };
+		6E51B0D021396D9C006BDC1F /* BicisendasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E51B0CF21396D9C006BDC1F /* BicisendasUITests.swift */; };
+		6E51B0D821396DC3006BDC1F /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E51B0D721396DC3006BDC1F /* SnapshotHelper.swift */; };
 		6E5F7C99211E11B900E4E7B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7C98211E11B900E4E7B5 /* AppDelegate.swift */; };
 		6E5F7C9B211E11B900E4E7B5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7C9A211E11B900E4E7B5 /* MapViewController.swift */; };
 		6E5F7C9E211E11B900E4E7B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7C9C211E11B900E4E7B5 /* Main.storyboard */; };
@@ -25,6 +27,16 @@
 		6EF57738212CCDC800A17152 /* GeoJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF57717212C851400A17152 /* GeoJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6EF5773C212CD8F000A17152 /* BikeStandMarkerAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5773B212CD8F000A17152 /* BikeStandMarkerAnnotationView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E51B0D221396D9C006BDC1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5F7C8D211E11B900E4E7B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5F7C94211E11B900E4E7B5;
+			remoteInfo = Bicisendas;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6EF57739212CCDC800A17152 /* Embed Frameworks */ = {
@@ -44,6 +56,10 @@
 		22FE738DC1193FD5C2E95070 /* Pods-Bicisendas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bicisendas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bicisendas/Pods-Bicisendas.release.xcconfig"; sourceTree = "<group>"; };
 		613F2C873179532AFB7D892F /* Pods-Bicisendas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bicisendas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bicisendas/Pods-Bicisendas.debug.xcconfig"; sourceTree = "<group>"; };
 		6E0F52D0212DCDBF000F1D5D /* ToggleBikeStationsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleBikeStationsButton.swift; sourceTree = "<group>"; };
+		6E51B0CD21396D9C006BDC1F /* BicisendasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BicisendasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E51B0CF21396D9C006BDC1F /* BicisendasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicisendasUITests.swift; sourceTree = "<group>"; };
+		6E51B0D121396D9C006BDC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E51B0D721396DC3006BDC1F /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		6E5F7C95211E11B900E4E7B5 /* Bicisendas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bicisendas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5F7C98211E11B900E4E7B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E5F7C9A211E11B900E4E7B5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +85,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6E51B0CA21396D9C006BDC1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E5F7C92211E11B900E4E7B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,10 +112,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6E51B0CE21396D9C006BDC1F /* BicisendasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E51B0D721396DC3006BDC1F /* SnapshotHelper.swift */,
+				6E51B0CF21396D9C006BDC1F /* BicisendasUITests.swift */,
+				6E51B0D121396D9C006BDC1F /* Info.plist */,
+			);
+			path = BicisendasUITests;
+			sourceTree = "<group>";
+		};
 		6E5F7C8C211E11B900E4E7B5 = {
 			isa = PBXGroup;
 			children = (
 				6E5F7C97211E11B900E4E7B5 /* Bicisendas */,
+				6E51B0CE21396D9C006BDC1F /* BicisendasUITests */,
 				6E5F7C96211E11B900E4E7B5 /* Products */,
 				26702554596B7B1FADC555C9 /* Pods */,
 				CB1A78EC0C2FEF3F33002C6A /* Frameworks */,
@@ -103,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				6E5F7C95211E11B900E4E7B5 /* Bicisendas.app */,
+				6E51B0CD21396D9C006BDC1F /* BicisendasUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,6 +233,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6E51B0CC21396D9C006BDC1F /* BicisendasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E51B0D621396D9C006BDC1F /* Build configuration list for PBXNativeTarget "BicisendasUITests" */;
+			buildPhases = (
+				6E51B0C921396D9C006BDC1F /* Sources */,
+				6E51B0CA21396D9C006BDC1F /* Frameworks */,
+				6E51B0CB21396D9C006BDC1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E51B0D321396D9C006BDC1F /* PBXTargetDependency */,
+			);
+			name = BicisendasUITests;
+			productName = BicisendasUITests;
+			productReference = 6E51B0CD21396D9C006BDC1F /* BicisendasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		6E5F7C94211E11B900E4E7B5 /* Bicisendas */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E5F7CA7211E11BB00E4E7B5 /* Build configuration list for PBXNativeTarget "Bicisendas" */;
@@ -226,10 +279,14 @@
 		6E5F7C8D211E11B900E4E7B5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Pablo Bendersky";
 				TargetAttributes = {
+					6E51B0CC21396D9C006BDC1F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 6E5F7C94211E11B900E4E7B5;
+					};
 					6E5F7C94211E11B900E4E7B5 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -250,11 +307,19 @@
 			projectRoot = "";
 			targets = (
 				6E5F7C94211E11B900E4E7B5 /* Bicisendas */,
+				6E51B0CC21396D9C006BDC1F /* BicisendasUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6E51B0CB21396D9C006BDC1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E5F7C93211E11B900E4E7B5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,6 +373,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwiftUtilities/RxSwiftUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SimulatorStatusMagic/SimulatorStatusMagic.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -316,6 +382,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimulatorStatusMagic.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -343,6 +410,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6E51B0C921396D9C006BDC1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E51B0D021396D9C006BDC1F /* BicisendasUITests.swift in Sources */,
+				6E51B0D821396DC3006BDC1F /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E5F7C91211E11B900E4E7B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,6 +437,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E51B0D321396D9C006BDC1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5F7C94211E11B900E4E7B5 /* Bicisendas */;
+			targetProxy = 6E51B0D221396D9C006BDC1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6E5F7C9C211E11B900E4E7B5 /* Main.storyboard */ = {
@@ -402,6 +486,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6E51B0D421396D9C006BDC1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BicisendasUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quadiontech.BicisendasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fdb2782f-7813-4d65-8b4e-863adf35769b";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bicisendas;
+			};
+			name = Debug;
+		};
+		6E51B0D521396D9C006BDC1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BicisendasUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quadiontech.BicisendasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fdb2782f-7813-4d65-8b4e-863adf35769b";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bicisendas;
+			};
+			name = Release;
+		};
 		6E5F7CA5211E11BB00E4E7B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -564,6 +691,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6E51B0D621396D9C006BDC1F /* Build configuration list for PBXNativeTarget "BicisendasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E51B0D421396D9C006BDC1F /* Debug */,
+				6E51B0D521396D9C006BDC1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6E5F7C90211E11B900E4E7B5 /* Build configuration list for PBXProject "Bicisendas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

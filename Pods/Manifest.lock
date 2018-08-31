@@ -11,6 +11,7 @@ PODS:
   - RxSwiftUtilities (2.0.1):
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
+  - SimulatorStatusMagic (2.2)
 
 DEPENDENCIES:
   - Alamofire
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - RxCocoa
   - RxSwift
   - RxSwiftUtilities
+  - SimulatorStatusMagic
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -30,6 +32,7 @@ SPEC REPOS:
     - RxCocoa
     - RxSwift
     - RxSwiftUtilities
+    - SimulatorStatusMagic
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
@@ -39,7 +42,8 @@ SPEC CHECKSUMS:
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   RxSwiftUtilities: 0edb01ef16c527c10fb352485b62cbd951e4a04d
+  SimulatorStatusMagic: 0389a805fa8bd001e2977c4046730bdbd6642861
 
-PODFILE CHECKSUM: 8b2114443c25f07c4f58be2f774c68499288ddaa
+PODFILE CHECKSUM: 71e7f2972d4c2bb63c9c3f720c22b3e33d36f526
 
 COCOAPODS: 1.5.2
