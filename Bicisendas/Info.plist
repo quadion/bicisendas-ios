@@ -57,5 +57,10 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We&apos;ll use the location to track you in the map.</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

@@ -11,6 +11,8 @@
 		6E0F52D1212DCDBF000F1D5D /* ToggleBikeStationsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F52D0212DCDBF000F1D5D /* ToggleBikeStationsButton.swift */; };
 		6E51B0D021396D9C006BDC1F /* BicisendasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E51B0CF21396D9C006BDC1F /* BicisendasUITests.swift */; };
 		6E51B0D821396DC3006BDC1F /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E51B0D721396DC3006BDC1F /* SnapshotHelper.swift */; };
+		6E51B0DA21398B14006BDC1F /* CLLocationCoordinate2D+Bicisendas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E51B0D921398B14006BDC1F /* CLLocationCoordinate2D+Bicisendas.swift */; };
+		6E51B0DC21398B64006BDC1F /* MKCoordinateSpan+Bicisendas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E51B0DB21398B64006BDC1F /* MKCoordinateSpan+Bicisendas.swift */; };
 		6E5F7C99211E11B900E4E7B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7C98211E11B900E4E7B5 /* AppDelegate.swift */; };
 		6E5F7C9B211E11B900E4E7B5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7C9A211E11B900E4E7B5 /* MapViewController.swift */; };
 		6E5F7C9E211E11B900E4E7B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7C9C211E11B900E4E7B5 /* Main.storyboard */; };
@@ -60,6 +62,8 @@
 		6E51B0CF21396D9C006BDC1F /* BicisendasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicisendasUITests.swift; sourceTree = "<group>"; };
 		6E51B0D121396D9C006BDC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E51B0D721396DC3006BDC1F /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		6E51B0D921398B14006BDC1F /* CLLocationCoordinate2D+Bicisendas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Bicisendas.swift"; sourceTree = "<group>"; };
+		6E51B0DB21398B64006BDC1F /* MKCoordinateSpan+Bicisendas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateSpan+Bicisendas.swift"; sourceTree = "<group>"; };
 		6E5F7C95211E11B900E4E7B5 /* Bicisendas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bicisendas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5F7C98211E11B900E4E7B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E5F7C9A211E11B900E4E7B5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				6EF5772B212C92C700A17152 /* Alamofire */,
+				6E51B0D921398B14006BDC1F /* CLLocationCoordinate2D+Bicisendas.swift */,
+				6E51B0DB21398B64006BDC1F /* MKCoordinateSpan+Bicisendas.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -433,6 +439,8 @@
 				6EF57734212CB00800A17152 /* BikeStation.swift in Sources */,
 				6EF57721212C8AA200A17152 /* MapViewModel.swift in Sources */,
 				6EF57727212C90D200A17152 /* NetworkOperation+Rx.swift in Sources */,
+				6E51B0DC21398B64006BDC1F /* MKCoordinateSpan+Bicisendas.swift in Sources */,
+				6E51B0DA21398B14006BDC1F /* CLLocationCoordinate2D+Bicisendas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

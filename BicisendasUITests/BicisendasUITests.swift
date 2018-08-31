@@ -10,11 +10,13 @@ import XCTest
 
 class BicisendasUITests: XCTestCase {
 
+    private var app: XCUIApplication!
+
     override func setUp() {
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
 
-        let app = XCUIApplication()
+        app = XCUIApplication()
         setupSnapshot(app)
         app.launch()
     }
@@ -26,7 +28,19 @@ class BicisendasUITests: XCTestCase {
             allowBtn.tap()
         }
 
+        sleep(1)
+
         snapshot("01Map")
+
+        app.buttons["bikeStationIcon"].tap()
+
+        snapshot("02ClusteredBikeStations")
+
+        app.maps.element.pinch(withScale: 2, velocity: 0.5)
+
+        sleep(1)
+
+        snapshot("03ZoomedIn")
     }
 
 }

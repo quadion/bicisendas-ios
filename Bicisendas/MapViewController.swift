@@ -44,9 +44,10 @@ class MapViewController: UIViewController {
 
         requestLocationPermission()
 
-        mapView.centerCoordinate = CLLocationCoordinate2D(latitude: -34.6052088, longitude: -58.4811313)
-        let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: -34.6052088, longitude: -58.45),
-                                        span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
+        let cabaRegion = MKCoordinateRegion(center: CLLocationCoordinate2D.cabaCenter(),
+                                            span: MKCoordinateSpan.cabaSpan())
+
+        let region = mapView.regionThatFits(cabaRegion)
         mapView.setRegion(region, animated: true)
         mapView.showsCompass = false
 
