@@ -85,8 +85,78 @@
 	<script src="http://servicios.usig.buenosaires.gob.ar/usig-js/3.2/usig.MapaInteractivo.min.js" type="text/javascript"></script> 
     
 	<script type="text/javascript">
+    
+    class API {
+      
+      constructor() {
+        this.readyValue = false;
+      }
+      
+      get ready() {
+        return this.readyValue;
+      }
+      
+      get suggester() {
+        return this.suggester;
+      }
+      
+      set suggester(value) {
+        this.suggesterValue = value;
+        this.readyValue = true;
+
+        if (window.webkit.messageHandlers) {
+          window.webkit.messageHandlers.ready.postMessage(true);
+        }
+      }
+
+      getUSIGType(obj) {
+          if (obj instanceof usig.Calle) {
+              return "Calle";
+          } else if (obj instanceof usig.Direccion) {
+              return "Direccion";
+          } else {
+              return "Unknown";
+          }
+      }
+
+      getSuggestions(string) {
+        var callbackSuggestions = function(results) {
+            var resultsWithType = results.map(r => {
+                                                var json = r.toJson();
+                                                json['usigType'] = this.getUSIGType(r);
+
+                                                return json;
+                                              });
+            window.webkit.messageHandlers.suggestions.postMessage(resultsWithType);
+        }
+        return this.suggesterValue.getSuggestions(string, callbackSuggestions.bind(this));
+      }
+      
+    }
+    
+    let api = new API();
+    console.log(api.ready);
+    
 	$.noConflict();
 	jQuery(document).ready(function($) {
+    
+    var callbackSugerir = function callbackSugerir(results, inputStr) {
+      var json = results[0].toJson();
+      console.log(json);
+      var dir = usig.Direccion.fromObj(json);
+    }
+    
+    var sd = usig.createSuggester('Direcciones', {
+      onReady: function(s) {
+        console.log('ready!');
+        
+        api.suggester = sd;
+        
+        sd.getSuggestions('lavalle 1625', callbackSugerir.createDelegate(this, ['lavalle 1625'], 1));
+      }
+    });
+    
+    
 		var origen, destino, recorridos;
 
 		var ac = new usig.AutoCompleter('o', {

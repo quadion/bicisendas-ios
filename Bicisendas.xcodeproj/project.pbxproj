@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		12DB66AC61603ADB5AC77EF9 /* Pods_Bicisendas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C919799863352F86DC5DA96B /* Pods_Bicisendas.framework */; };
+		6E0B4DBE2134679D0038ED9D /* Routes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0B4DBD2134679D0038ED9D /* Routes.storyboard */; };
+		6E0B4DC1213467CE0038ED9D /* RoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0B4DC0213467CE0038ED9D /* RoutesViewController.swift */; };
+		6E0B4DC62134697A0038ED9D /* usig-api.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E0B4DC52134697A0038ED9D /* usig-api.html */; };
+		6E0B4DCA21348B110038ED9D /* USIGWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0B4DC921348B110038ED9D /* USIGWrapper.swift */; };
 		6E0F52D1212DCDBF000F1D5D /* ToggleBikeStationsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F52D0212DCDBF000F1D5D /* ToggleBikeStationsButton.swift */; };
 		6E51B0D021396D9C006BDC1F /* BicisendasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E51B0CF21396D9C006BDC1F /* BicisendasUITests.swift */; };
 		6E51B0D821396DC3006BDC1F /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E51B0D721396DC3006BDC1F /* SnapshotHelper.swift */; };
 		6E51B0DA21398B14006BDC1F /* CLLocationCoordinate2D+Bicisendas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E51B0D921398B14006BDC1F /* CLLocationCoordinate2D+Bicisendas.swift */; };
 		6E51B0DC21398B64006BDC1F /* MKCoordinateSpan+Bicisendas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E51B0DB21398B64006BDC1F /* MKCoordinateSpan+Bicisendas.swift */; };
+		6E5152BA2136BF9600803C51 /* CalleDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5152B92136BF9600803C51 /* CalleDAO.swift */; };
+		6E5152BC2136C1F100803C51 /* DireccionDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5152BB2136C1F100803C51 /* DireccionDAO.swift */; };
+		6E5152BE2136C21B00803C51 /* TipoDireccionDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5152BD2136C21B00803C51 /* TipoDireccionDAO.swift */; };
+		6E5152C02136CB9000803C51 /* USIGType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5152BF2136CB9000803C51 /* USIGType.swift */; };
 		6E5F7C99211E11B900E4E7B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7C98211E11B900E4E7B5 /* AppDelegate.swift */; };
 		6E5F7C9B211E11B900E4E7B5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F7C9A211E11B900E4E7B5 /* MapViewController.swift */; };
 		6E5F7C9E211E11B900E4E7B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E5F7C9C211E11B900E4E7B5 /* Main.storyboard */; };
@@ -57,6 +65,10 @@
 /* Begin PBXFileReference section */
 		22FE738DC1193FD5C2E95070 /* Pods-Bicisendas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bicisendas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bicisendas/Pods-Bicisendas.release.xcconfig"; sourceTree = "<group>"; };
 		613F2C873179532AFB7D892F /* Pods-Bicisendas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bicisendas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bicisendas/Pods-Bicisendas.debug.xcconfig"; sourceTree = "<group>"; };
+		6E0B4DBD2134679D0038ED9D /* Routes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Routes.storyboard; sourceTree = "<group>"; };
+		6E0B4DC0213467CE0038ED9D /* RoutesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesViewController.swift; sourceTree = "<group>"; };
+		6E0B4DC52134697A0038ED9D /* usig-api.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "usig-api.html"; sourceTree = "<group>"; };
+		6E0B4DC921348B110038ED9D /* USIGWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USIGWrapper.swift; sourceTree = "<group>"; };
 		6E0F52D0212DCDBF000F1D5D /* ToggleBikeStationsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleBikeStationsButton.swift; sourceTree = "<group>"; };
 		6E51B0CD21396D9C006BDC1F /* BicisendasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BicisendasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E51B0CF21396D9C006BDC1F /* BicisendasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicisendasUITests.swift; sourceTree = "<group>"; };
@@ -64,6 +76,10 @@
 		6E51B0D721396DC3006BDC1F /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		6E51B0D921398B14006BDC1F /* CLLocationCoordinate2D+Bicisendas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Bicisendas.swift"; sourceTree = "<group>"; };
 		6E51B0DB21398B64006BDC1F /* MKCoordinateSpan+Bicisendas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateSpan+Bicisendas.swift"; sourceTree = "<group>"; };
+		6E5152B92136BF9600803C51 /* CalleDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalleDAO.swift; sourceTree = "<group>"; };
+		6E5152BB2136C1F100803C51 /* DireccionDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DireccionDAO.swift; sourceTree = "<group>"; };
+		6E5152BD2136C21B00803C51 /* TipoDireccionDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoDireccionDAO.swift; sourceTree = "<group>"; };
+		6E5152BF2136CB9000803C51 /* USIGType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USIGType.swift; sourceTree = "<group>"; };
 		6E5F7C95211E11B900E4E7B5 /* Bicisendas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bicisendas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E5F7C98211E11B900E4E7B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E5F7C9A211E11B900E4E7B5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +142,36 @@
 			path = BicisendasUITests;
 			sourceTree = "<group>";
 		};
+		6E0B4DBF213467B70038ED9D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E5F7C9A211E11B900E4E7B5 /* MapViewController.swift */,
+				6E0B4DC0213467CE0038ED9D /* RoutesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6E0B4DC2213469320038ED9D /* USIG */ = {
+			isa = PBXGroup;
+			children = (
+				6E5152B82136BF8700803C51 /* DAO */,
+				6E0B4DC52134697A0038ED9D /* usig-api.html */,
+				6E0B4DC921348B110038ED9D /* USIGWrapper.swift */,
+			);
+			path = USIG;
+			sourceTree = "<group>";
+		};
+		6E5152B82136BF8700803C51 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				6E5152BF2136CB9000803C51 /* USIGType.swift */,
+				6E5152B92136BF9600803C51 /* CalleDAO.swift */,
+				6E5152BB2136C1F100803C51 /* DireccionDAO.swift */,
+				6E5152BD2136C21B00803C51 /* TipoDireccionDAO.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
 		6E5F7C8C211E11B900E4E7B5 = {
 			isa = PBXGroup;
 			children = (
@@ -149,14 +195,16 @@
 		6E5F7C97211E11B900E4E7B5 /* Bicisendas */ = {
 			isa = PBXGroup;
 			children = (
+				6E0B4DC2213469320038ED9D /* USIG */,
 				6EF5772A212C92BF00A17152 /* Extensions */,
 				6EF57722212C8D8300A17152 /* Network */,
 				6EF57732212CAFFF00A17152 /* Model */,
 				6EF5771F212C8A9100A17152 /* ViewModels */,
 				6EF5773A212CD8CB00A17152 /* Views */,
+				6E0B4DBF213467B70038ED9D /* ViewControllers */,
 				6E5F7C98211E11B900E4E7B5 /* AppDelegate.swift */,
-				6E5F7C9A211E11B900E4E7B5 /* MapViewController.swift */,
 				6E5F7C9C211E11B900E4E7B5 /* Main.storyboard */,
+				6E0B4DBD2134679D0038ED9D /* Routes.storyboard */,
 				6E5F7C9F211E11BB00E4E7B5 /* Assets.xcassets */,
 				6E5F7CA1211E11BB00E4E7B5 /* LaunchScreen.storyboard */,
 				6EC8452C2128CB5E00E34491 /* Localizable.strings */,
@@ -332,8 +380,10 @@
 			files = (
 				6EC8452E2128CB5E00E34491 /* Localizable.strings in Resources */,
 				6E5F7CA3211E11BB00E4E7B5 /* LaunchScreen.storyboard in Resources */,
+				6E0B4DBE2134679D0038ED9D /* Routes.storyboard in Resources */,
 				6E5F7CA0211E11BB00E4E7B5 /* Assets.xcassets in Resources */,
 				6E5F7C9E211E11B900E4E7B5 /* Main.storyboard in Resources */,
+				6E0B4DC62134697A0038ED9D /* usig-api.html in Resources */,
 				6EF57735212CCB9700A17152 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,13 +480,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E0F52D1212DCDBF000F1D5D /* ToggleBikeStationsButton.swift in Sources */,
+				6E0B4DC1213467CE0038ED9D /* RoutesViewController.swift in Sources */,
 				6EF5773C212CD8F000A17152 /* BikeStandMarkerAnnotationView.swift in Sources */,
+				6E5152C02136CB9000803C51 /* USIGType.swift in Sources */,
 				6EF57724212C8DAF00A17152 /* NetworkOperation.swift in Sources */,
 				6E5F7C9B211E11B900E4E7B5 /* MapViewController.swift in Sources */,
 				6E5F7C99211E11B900E4E7B5 /* AppDelegate.swift in Sources */,
+				6E5152BE2136C21B00803C51 /* TipoDireccionDAO.swift in Sources */,
 				6EF5772D212C92D300A17152 /* Request+Debugging.swift in Sources */,
+				6E5152BA2136BF9600803C51 /* CalleDAO.swift in Sources */,
 				6EF57729212C921F00A17152 /* BikeStationsOperation.swift in Sources */,
 				6EF57734212CB00800A17152 /* BikeStation.swift in Sources */,
+				6E0B4DCA21348B110038ED9D /* USIGWrapper.swift in Sources */,
+				6E5152BC2136C1F100803C51 /* DireccionDAO.swift in Sources */,
 				6EF57721212C8AA200A17152 /* MapViewModel.swift in Sources */,
 				6EF57727212C90D200A17152 /* NetworkOperation+Rx.swift in Sources */,
 				6E51B0DC21398B64006BDC1F /* MKCoordinateSpan+Bicisendas.swift in Sources */,
