@@ -1,5 +1,6 @@
 xcuserdata
 fastlane/report.xml
+fastlane/Preview.html
 *.ipa
 *.dSYM.zip
 *.mobileprovision
