@@ -1,7 +1,7 @@
 xcuserdata
 fastlane/report.xml
 fastlane/Preview.html
+fastlane/screenshots/*
 *.ipa
 *.dSYM.zip
 *.mobileprovision
-screenshots/*
