@@ -61,7 +61,7 @@ extension USIGWrapper: WKScriptMessageHandler {
         case USIGHandlers.suggestions.rawValue:
             let decoder = JSONDecoder()
             let data = message.body as! Data
-            decoder.decode([Suggestion].self, from: data)
+            try! decoder.decode([USIGContainer].self, from: data)
         default:
             print("👍 default case in \(#function)")
         }

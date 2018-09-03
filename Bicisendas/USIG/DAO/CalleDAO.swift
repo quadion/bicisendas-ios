@@ -6,7 +6,7 @@
 //  Copyright © 2018 Pablo Bendersky. All rights reserved.
 //
 
-public class CalleDAO: USIGType, Codable {
+public class CalleDAO: USIGObject, Codable {
 
     public var codigo: Int
     public var nombre: String

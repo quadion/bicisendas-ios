@@ -16,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E1BB8CD213898E100E99047 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = ../../../Desktop/MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6EF5770C212C84D300A17152 /* GeoJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GeoJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EF5770F212C84D300A17152 /* GeoJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeoJSON.h; sourceTree = "<group>"; };
 		6EF57710212C84D300A17152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,7 +40,6 @@
 		6EF57702212C84D300A17152 = {
 			isa = PBXGroup;
 			children = (
-				6E1BB8CD213898E100E99047 /* MyPlayground.playground */,
 				6EF5770E212C84D300A17152 /* GeoJSON */,
 				6EF5770D212C84D300A17152 /* Products */,
 			);

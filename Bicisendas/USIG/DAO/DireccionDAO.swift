@@ -6,7 +6,7 @@
 //  Copyright © 2018 Pablo Bendersky. All rights reserved.
 //
 
-public class DireccionDAO: USIGType, Codable {
+public class DireccionDAO: USIGObject, Codable {
 
     public var tipo: TipoDireccionDAO
     public var calle: CalleDAO
