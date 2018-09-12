@@ -85,7 +85,7 @@
 	<script src="http://servicios.usig.buenosaires.gob.ar/usig-js/3.2/usig.MapaInteractivo.min.js" type="text/javascript"></script> 
     
 	<script type="text/javascript">
-    
+
     class API {
       
       constructor() {
@@ -122,16 +122,24 @@
       getSuggestions(string) {
         var callbackSuggestions = function(results) {
             var resultsWithType = results.map(r => {
-                                                var json = r.toJson();
-                                                json['usigType'] = this.getUSIGType(r);
-
-                                                return json;
+                                                var usigObject =
+                                                  {
+                                                    usigType: this.getUSIGType(r),
+                                                    usigObject: r.toJson()
+                                                  };
+                                                  
+                                                return usigObject;
                                               });
-            window.webkit.messageHandlers.suggestions.postMessage(resultsWithType);
+            //console.log(resultsWithType);
+            window.webkit.messageHandlers.suggestions.postMessage(JSON.stringify(resultsWithType));
         }
         return this.suggesterValue.getSuggestions(string, callbackSuggestions.bind(this));
       }
       
+    }
+    
+    if (!window.webkit) {
+      window.webkit = new Object();
     }
     
     let api = new API();

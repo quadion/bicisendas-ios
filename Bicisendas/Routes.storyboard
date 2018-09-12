@@ -29,15 +29,13 @@
                                 <rect key="frame" x="16" y="77" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="searchTapped:" destination="71p-Qn-2Td" eventType="touchUpInside" id="ih7-RF-tMP"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xtP-IB-jMe"/>
                     </view>
                     <connections>
+                        <outlet property="searchButton" destination="I2r-L6-dbq" id="0jw-te-3jR"/>
                         <outlet property="textField" destination="qNJ-1H-yME" id="7eS-ZW-MQm"/>
                     </connections>
                 </viewController>

@@ -8,7 +8,16 @@
 
 import WebKit
 
+import RxSwift
+import RxCocoa
+
 class USIGWrapper: NSObject {
+
+    public var isReady = BehaviorRelay<Bool>(value: false)
+    public var searchTerm = PublishSubject<String>()
+    public var suggestions = BehaviorRelay<[USIGContainer]>(value: [])
+
+    private let disposeBag = DisposeBag()
 
     private enum USIGHandlers: String {
         case ready
@@ -17,11 +26,22 @@ class USIGWrapper: NSObject {
 
     private var webView: WKWebView!
 
-    private var ready = false
+    private var ready = false {
+        didSet {
+            isReady.accept(ready)
+        }
+    }
 
     override init() {
         super.init()
         createWebView()
+        createBindings()
+    }
+
+    private func createBindings() {
+        searchTerm
+            .subscribe(onNext: suggestions(for:))
+            .disposed(by: disposeBag)
     }
 
     private func createWebView() {
@@ -60,13 +80,15 @@ extension USIGWrapper: WKScriptMessageHandler {
             ready = true
         case USIGHandlers.suggestions.rawValue:
             let decoder = JSONDecoder()
-            let data = message.body as! Data
-            try! decoder.decode([USIGContainer].self, from: data)
+            if let dataString = message.body as? String, let data = dataString.data(using: .utf8) {
+
+                let elements = try! decoder.decode([USIGContainer].self, from: data)
+
+                suggestions.accept(elements)
+            }
         default:
             print("👍 default case in \(#function)")
         }
-        print("👍 \(message.name)")
-        print("👍 \(message.body)")
     }
 
 }
