@@ -13,33 +13,31 @@ import RxCocoa
 
 class RoutesViewController: UIViewController {
 
-    private var usigWrapper = USIGWrapper()
+    private var viewModel = RoutesViewModel()
 
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var searchButton: UIButton!
-    
+    @IBOutlet weak var searchBar: UISearchBar!
+
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        usigWrapper.isReady
-            .bind(to: searchButton.rx.isEnabled)
+        viewModel.isReady
+            .bind(to: searchBar.rx.isUserInteractionEnabled)
             .disposed(by: disposeBag)
 
-        searchButton.rx.tap
-            .withLatestFrom(textField.rx.text.orEmpty)
-            .bind(to: usigWrapper.searchTerm)
-            .disposed(by: disposeBag)
-
-        usigWrapper.suggestions
-            .subscribe(onNext: { (suggestions) in
-                print("👍 \(suggestions)")
-            })
+        searchBar.rx.text.orEmpty
+            .throttle(0.5, scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .observeOn(MainScheduler.instance)
+            .bind(to: viewModel.searchTerm)
             .disposed(by: disposeBag)
     }
 
-    @IBAction func searchTapped(_ sender: Any) {
-        usigWrapper.suggestions(for: textField.text!)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let suggestions = segue.destination as? SuggestionsTableViewController {
+            suggestions.viewModel = viewModel
+        }
     }
+
 }

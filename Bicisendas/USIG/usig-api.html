@@ -121,6 +121,11 @@
 
       getSuggestions(string) {
         var callbackSuggestions = function(results) {
+            if (results instanceof usig.ErrorCalleInexistente) {
+               window.webkit.messageHandlers.suggestions.postMessage(JSON.stringify([]));
+               return;
+            }
+            
             var resultsWithType = results.map(r => {
                                                 var usigObject =
                                                   {
