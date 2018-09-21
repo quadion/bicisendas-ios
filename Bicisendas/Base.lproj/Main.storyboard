@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,30 +15,37 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="Bicisendas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" mapType="mutedStandard" translatesAutoresizingMaskIntoConstraints="NO" id="5uM-wO-qJh">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="DYo-Hx-xG9"/>
                                 </connections>
                             </mapView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPO-bn-dVl">
-                                <rect key="frame" x="554" y="566" width="36" height="36"/>
+                                <rect key="frame" x="329" y="594" width="36" height="75"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PpJ-wM-e4s">
-                                    <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="36" height="75"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="le3-wK-Wns">
-                                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="36" height="75"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0K2-nE-VEx" customClass="ToggleBikeStationsButton" customModule="Bicisendas" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrP-ZR-maJ">
                                                     <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="36" id="PCv-GO-hOU"/>
+                                                    </constraints>
+                                                    <state key="normal" image="routesIcon"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0K2-nE-VEx" customClass="ToggleBikeStationsButton" customModule="Bicisendas" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="41" width="36" height="34"/>
                                                     <state key="normal" image="bikeStationIcon"/>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vn-gx-6l2">
-                                                    <rect key="frame" x="0.0" y="0.0" width="36" height="0.0"/>
+                                                    <rect key="frame" x="0.0" y="75" width="36" height="0.0"/>
                                                     <color key="tintColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" image="warningIcon"/>
                                                     <connections>
@@ -74,6 +85,7 @@
                         <outlet property="buttonContainerBackgroundView" destination="yPO-bn-dVl" id="bRg-lb-WHn"/>
                         <outlet property="buttonContainerStackView" destination="le3-wK-Wns" id="QyY-NK-vaD"/>
                         <outlet property="mapView" destination="5uM-wO-qJh" id="7v8-59-FJV"/>
+                        <outlet property="routesButton" destination="RrP-ZR-maJ" id="dbX-HD-GLk"/>
                         <outlet property="warningButton" destination="6Vn-gx-6l2" id="awt-CN-HMc"/>
                     </connections>
                 </viewController>
@@ -84,6 +96,7 @@
     </scenes>
     <resources>
         <image name="bikeStationIcon" width="34" height="34"/>
+        <image name="routesIcon" width="42" height="42"/>
         <image name="warningIcon" width="33" height="30"/>
     </resources>
 </document>

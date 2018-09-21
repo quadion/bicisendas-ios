@@ -11,14 +11,16 @@ class CompletionResultViewModel {
     private let usigContainer: USIGContainer
 
     public var title: String {
-        get {
-            switch usigContainer.usigType {
-            case .calle:
-                return format(calle: usigContainer.usigObject as! CalleDAO)
-            case .direccion:
-                return format(direccion: usigContainer.usigObject as! DireccionDAO)
-            }
+        switch usigContainer.usigType {
+        case .calle:
+            return format(calle: usigContainer.usigObject as! CalleDAO)
+        case .direccion:
+            return format(direccion: usigContainer.usigObject as! DireccionDAO)
         }
+    }
+
+    public var shouldHideDirections: Bool {
+        return usigContainer.usigType == .calle
     }
 
     private func format(direccion: DireccionDAO) -> String {

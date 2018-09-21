@@ -24,7 +24,8 @@ class SuggestionsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.register(SuggestionTableViewCell.self, forCellReuseIdentifier: "SuggestionCell")
+        tableView.register(UINib(nibName: "SuggestionTableViewCell", bundle: nil),
+                           forCellReuseIdentifier: "SuggestionCell")
     }
 
     private func bindViewModel() {
@@ -44,6 +45,14 @@ class SuggestionsTableViewController: UITableViewController {
 
         cell.updateWith(viewModel: viewModel.resultViewModel(atIndex: indexPath.row))
 
+        cell.directionsAction
+            .subscribe(onNext: directionsTapped(onCell:))
+            .disposed(by: cell.cellDisposeBag)
+
         return cell
+    }
+
+    private func directionsTapped(onCell cell: SuggestionTableViewCell) {
+        print("👍 \(#function)")
     }
 }

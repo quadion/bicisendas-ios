@@ -20,6 +20,7 @@ class MapViewController: UIViewController {
     @IBOutlet weak var buttonContainerBackgroundView: UIVisualEffectView!
     @IBOutlet weak var warningButton: UIButton!
     @IBOutlet weak var bikeStationsButton: UIButton!
+    @IBOutlet weak var routesButton: UIButton!
 
     var userTrackingButton: MKUserTrackingButton!
     var compassButton: MKCompassButton!
