@@ -10,5 +10,6 @@ enum USIGType: String, Codable {
 
     case calle = "Calle"
     case direccion = "Direccion"
+    case punto = "Punto"
 
 }

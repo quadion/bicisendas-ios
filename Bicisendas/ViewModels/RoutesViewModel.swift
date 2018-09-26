@@ -6,6 +6,8 @@
 //  Copyright © 2018 Pablo Bendersky. All rights reserved.
 //
 
+import CoreLocation
+
 import RxSwift
 import RxCocoa
 
@@ -17,6 +19,10 @@ class RoutesViewModel {
 
     public var newResults = BehaviorRelay<Void>(value: Void())
 
+    public var fromLocation = BehaviorRelay<USIGContainer?>(value: nil)
+
+    public var toLocation = BehaviorRelay<USIGContainer?>(value: nil)
+
     public var resultsCount: Int {
         get {
             return completionResults.value.count
@@ -26,6 +32,8 @@ class RoutesViewModel {
     private var completionResults = BehaviorRelay<[CompletionResultViewModel]>(value: [])
 
     private var usigWrapper = USIGWrapper()
+
+    private let locationManager = CLLocationManager()
 
     private let disposeBag = DisposeBag()
 
@@ -50,6 +58,32 @@ class RoutesViewModel {
                 return Void()
             }
             .bind(to: newResults)
+            .disposed(by: disposeBag)
+
+        initLocation()
+        bindSearch()
+    }
+
+    private func initLocation() {
+        if let location = locationManager.location {
+            let punto = PuntoDAO(location: location)
+
+            let usigFrom = USIGContainer(usigType: .punto, usigObject: punto)
+
+            fromLocation.accept(usigFrom)
+        }
+    }
+
+    private func bindSearch() {
+        Observable.combineLatest(fromLocation, toLocation)
+            .filter { $0.0 != nil && $0.1 != nil }
+            .subscribe(onNext: { [weak self] in
+                guard
+                    let strongSelf = self,
+                    let from = $0.0, let to = $0.1 else { return }
+
+                strongSelf.usigWrapper.directions(from: from, to: to)
+            })
             .disposed(by: disposeBag)
     }
 

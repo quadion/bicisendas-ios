@@ -8,7 +8,7 @@
 
 class CompletionResultViewModel {
 
-    private let usigContainer: USIGContainer
+    public let usigContainer: USIGContainer
 
     public var title: String {
         switch usigContainer.usigType {
@@ -16,6 +16,8 @@ class CompletionResultViewModel {
             return format(calle: usigContainer.usigObject as! CalleDAO)
         case .direccion:
             return format(direccion: usigContainer.usigObject as! DireccionDAO)
+        case .punto:
+            return format(punto: usigContainer.usigObject as! PuntoDAO)
         }
     }
 
@@ -35,6 +37,10 @@ class CompletionResultViewModel {
 
     private func format(calle: CalleDAO) -> String {
         return calle.nombre
+    }
+
+    private func format(punto: PuntoDAO) -> String {
+        return "\(punto.coordX), \(punto.coordY)"
     }
 
     init(usigContainer: USIGContainer) {

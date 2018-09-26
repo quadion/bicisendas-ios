@@ -53,6 +53,10 @@ class SuggestionsTableViewController: UITableViewController {
     }
 
     private func directionsTapped(onCell cell: SuggestionTableViewCell) {
-        print("👍 \(#function)")
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+
+        let cellViewModel = viewModel.resultViewModel(atIndex: indexPath.row)
+
+        viewModel.toLocation.accept(cellViewModel.usigContainer)
     }
 }

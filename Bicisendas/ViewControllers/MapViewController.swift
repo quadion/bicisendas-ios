@@ -77,12 +77,22 @@ class MapViewController: UIViewController {
 
         mapView.add(overlay, level: .aboveRoads)
 
+        routesButton.rx.tap
+            .subscribe(onNext: { [weak self] in
+                guard let strongSelf = self else { return }
+
+                strongSelf.performSegue(withIdentifier: "routesSegue", sender: nil)
+            })
+            .disposed(by: disposeBag)
+
         bindUI()
     }
 
     private func registerMapViewAnnotations() {
-        mapView.register(BikeStandMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
-        mapView.register(BikeStandMarkerAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultClusterAnnotationViewReuseIdentifier)
+        mapView.register(BikeStandMarkerAnnotationView.self,
+                         forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        mapView.register(BikeStandMarkerAnnotationView.self,
+                         forAnnotationViewWithReuseIdentifier: MKMapViewDefaultClusterAnnotationViewReuseIdentifier)
     }
 
     private func bindUI() {

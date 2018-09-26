@@ -97,16 +97,14 @@
       }
       
       get suggester() {
-        return this.suggester;
+        return this.suggesterValue;
       }
       
       set suggester(value) {
         this.suggesterValue = value;
         this.readyValue = true;
 
-        if (window.webkit.messageHandlers) {
-          window.webkit.messageHandlers.ready.postMessage(true);
-        }
+        window.callbacker('ready', true);
       }
 
       getUSIGType(obj) {
@@ -114,37 +112,102 @@
               return "Calle";
           } else if (obj instanceof usig.Direccion) {
               return "Direccion";
+          } else if (obj instanceof usig.Punto) {
+              return "Punto";
           } else {
               return "Unknown";
           }
       }
 
+      wrapObject(unwrappedObject) {
+        var usigObject =
+        {
+          usigType: this.getUSIGType(unwrappedObject),
+          usigObject: unwrappedObject.toJson()
+        };
+        
+        return usigObject;
+      }
+      
+      unwrapObject(wrappedObject) {
+        if (wrappedObject.usigType == "Calle") {
+          return usig.Calle.fromObj(wrappedObject.usigObject);
+        } else if (wrappedObject.usigType == "Direccion") {
+          return usig.Direccion.fromObj(wrappedObject.usigObject);
+        } else if (wrappedObject.usigType == "Punto") {
+          return usig.Punto.fromObj(wrappedObject.usigObject);
+        }
+      }
+
       getSuggestions(string) {
         var callbackSuggestions = function(results) {
             if (results instanceof usig.ErrorCalleInexistente) {
-               window.webkit.messageHandlers.suggestions.postMessage(JSON.stringify([]));
+               window.callbacker('suggestions', JSON.stringify([]));
                return;
             }
             
-            var resultsWithType = results.map(r => {
-                                                var usigObject =
-                                                  {
-                                                    usigType: this.getUSIGType(r),
-                                                    usigObject: r.toJson()
-                                                  };
-                                                  
-                                                return usigObject;
-                                              });
-            //console.log(resultsWithType);
-            window.webkit.messageHandlers.suggestions.postMessage(JSON.stringify(resultsWithType));
+            var resultsWithType = results.map(r => { return this.wrapObject(r); });
+
+            window.callbacker('suggestions', JSON.stringify(resultsWithType));
         }
         return this.suggesterValue.getSuggestions(string, callbackSuggestions.bind(this));
       }
       
+      getDirections(from, to) {
+        const fromObject = this.unwrapObject(from);
+        const toObject = this.unwrapObject(to);
+
+        window.callbacker('debug', 'getDirections');
+        window.callbacker('debug', fromObject.toJson());
+        window.callbacker('debug', toObject.toJson());
+        
+        const options = {
+          tipo: 'bici',
+          opciones_prioridad: 'avenidas',
+          opciones_incluir_autopistas: false
+        };
+        
+        var promise = new Promise((resolve, reject) => {
+
+          window.callbacker('debug', this.suggester);
+
+          this.suggester.getGeoCoding(toObject, function(pt) {
+            window.callbacker('debug', "geoCoding - " + pt.toString());
+            
+            resolve(pt);
+          });
+          
+        });
+        
+        promise.then(function(result) {
+  				usig.Recorridos.buscarRecorridos(
+            fromObject,
+            toObject,
+            function(results) {
+              window.callbacker('debug', results);
+  				  },
+            function(error) {
+              window.callbacker('debug', error);
+  				  },
+            options
+          );
+        
+          window.callbacker('debug', "getDirections - afterBuscarRecorridos");
+        }, function(error) {
+          
+        });
+      }
+      
     }
     
-    if (!window.webkit) {
-      window.webkit = new Object();
+    if (window.webkit) {
+      window.callbacker = function(name, value) {
+        window.webkit.messageHandlers[name].postMessage(value);
+      }
+    } else {
+      window.callbacker = function(name, value) {
+        console.log("CALLBACK - " + name + " " + value);
+      }
     }
     
     let api = new API();
@@ -290,7 +353,6 @@
 			onReady: function() {
 				var layerWMS = miMapa.addWMSLayer('ciclovias');
 			}
-			
 		});	
 		
 		miMapa.add

@@ -38,6 +38,7 @@ class USIGWrapper: NSObject {
     private enum USIGHandlers: String {
         case ready
         case suggestions
+        case debug // For debug purposes only
     }
 
     private var webView: WKWebView!
@@ -71,6 +72,7 @@ class USIGWrapper: NSObject {
 
         userContentController.add(self, name: USIGHandlers.ready.rawValue)
         userContentController.add(self, name: USIGHandlers.suggestions.rawValue)
+        userContentController.add(self, name: USIGHandlers.debug.rawValue)
 
         self.webView = WKWebView(frame: CGRect.zero, configuration: configuration)
 
@@ -82,6 +84,24 @@ class USIGWrapper: NSObject {
 
     public func suggestions(for inputString: String) {
         webView.evaluateJavaScript("api.getSuggestions(\"\(inputString)\")") { (_, error) in
+        }
+    }
+
+    public func directions(from: USIGContainer, to: USIGContainer) {
+        let jsonEncoder = JSONEncoder()
+
+        let fromJSON = try! jsonEncoder.encode(from)
+        let toJSON = try! jsonEncoder.encode(to)
+
+        guard
+            let fromString = String(data: fromJSON, encoding: .utf8),
+            let toString = String(data: toJSON, encoding: .utf8)
+        else { return }
+
+        webView.evaluateJavaScript("api.getDirections(\(fromString), \(toString))") { (_, error) in
+            if let error = error {
+                print("👍 👎 Error executing Javascript - \(error)")
+            }
         }
     }
 
@@ -101,6 +121,8 @@ extension USIGWrapper: WKScriptMessageHandler {
 
                 suggestions.accept(elements)
             }
+        case USIGHandlers.debug.rawValue:
+            print("👍 usig-api DEBUG \(message.body)")
         default:
             print("👍 default case in \(#function)")
         }

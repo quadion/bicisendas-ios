@@ -87,11 +87,20 @@
                         <outlet property="mapView" destination="5uM-wO-qJh" id="7v8-59-FJV"/>
                         <outlet property="routesButton" destination="RrP-ZR-maJ" id="dbX-HD-GLk"/>
                         <outlet property="warningButton" destination="6Vn-gx-6l2" id="awt-CN-HMc"/>
+                        <segue destination="Zrn-bc-UmM" kind="show" identifier="routesSegue" id="EVy-c2-rvF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="99.753694581280797"/>
+        </scene>
+        <!--Routes-->
+        <scene sceneID="MJ6-Nm-IMI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Routes" id="Zrn-bc-UmM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zyX-Xk-K9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="93"/>
         </scene>
     </scenes>
     <resources>
