@@ -1,0 +1,6 @@
+framework module SwiftProjection {
+  umbrella header "SwiftProjection-umbrella.h"
+
+  export *
+  module * { export * }
+}

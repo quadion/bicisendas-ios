@@ -16,6 +16,7 @@ target 'Bicisendas' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxSwiftUtilities'
+  pod 'SwiftProjection'
   
   pod 'SimulatorStatusMagic', :configurations => ['Debug']
 

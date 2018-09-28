@@ -13,6 +13,7 @@
 		6E0B4DC62134697A0038ED9D /* usig-api.html in Resources */ = {isa = PBXBuildFile; fileRef = 6E0B4DC52134697A0038ED9D /* usig-api.html */; };
 		6E0B4DCA21348B110038ED9D /* USIGWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0B4DC921348B110038ED9D /* USIGWrapper.swift */; };
 		6E0F52D1212DCDBF000F1D5D /* ToggleBikeStationsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0F52D0212DCDBF000F1D5D /* ToggleBikeStationsButton.swift */; };
+		6E1D6FF9215D9A1200AA0F71 /* USIGCoordinateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1D6FF8215D9A1200AA0F71 /* USIGCoordinateHelper.m */; };
 		6E47A5252151797C0071C381 /* RoutesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E47A5242151797C0071C381 /* RoutesViewModel.swift */; };
 		6E47A5452151873A0071C381 /* CompletionResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E47A5442151873A0071C381 /* CompletionResultViewModel.swift */; };
 		6E47A54721519BC50071C381 /* SuggestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E47A54621519BC50071C381 /* SuggestionsTableViewController.swift */; };
@@ -34,6 +35,8 @@
 		6E708FF9213DC12200DE052C /* USIGContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E708FF8213DC12200DE052C /* USIGContainer.swift */; };
 		6E708FFB213DC15300DE052C /* USIGObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E708FFA213DC15300DE052C /* USIGObject.swift */; };
 		6E7F762D215AA12900F4F57F /* PuntoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7F762C215AA12900F4F57F /* PuntoDAO.swift */; };
+		6EAF5A95215C1D6900C9AC34 /* USIGCoordinateTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF5A94215C1D6900C9AC34 /* USIGCoordinateTransformer.swift */; };
+		6EAF5A9E215C378B00C9AC34 /* BicisendasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF5A9D215C378B00C9AC34 /* BicisendasTests.swift */; };
 		6EC8452E2128CB5E00E34491 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EC8452C2128CB5E00E34491 /* Localizable.strings */; };
 		6EF57721212C8AA200A17152 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF57720212C8AA200A17152 /* MapViewModel.swift */; };
 		6EF57724212C8DAF00A17152 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF57723212C8DAF00A17152 /* NetworkOperation.swift */; };
@@ -48,6 +51,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		6E51B0D221396D9C006BDC1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E5F7C8D211E11B900E4E7B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5F7C94211E11B900E4E7B5;
+			remoteInfo = Bicisendas;
+		};
+		6EAF5AA0215C378B00C9AC34 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6E5F7C8D211E11B900E4E7B5 /* Project object */;
 			proxyType = 1;
@@ -78,6 +88,9 @@
 		6E0B4DC52134697A0038ED9D /* usig-api.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "usig-api.html"; sourceTree = "<group>"; };
 		6E0B4DC921348B110038ED9D /* USIGWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USIGWrapper.swift; sourceTree = "<group>"; };
 		6E0F52D0212DCDBF000F1D5D /* ToggleBikeStationsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleBikeStationsButton.swift; sourceTree = "<group>"; };
+		6E1D6FF4215D99DD00AA0F71 /* Bicisendas-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bicisendas-Bridging-Header.h"; sourceTree = "<group>"; };
+		6E1D6FF7215D9A1200AA0F71 /* USIGCoordinateHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USIGCoordinateHelper.h; sourceTree = "<group>"; };
+		6E1D6FF8215D9A1200AA0F71 /* USIGCoordinateHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USIGCoordinateHelper.m; sourceTree = "<group>"; };
 		6E47A5242151797C0071C381 /* RoutesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesViewModel.swift; sourceTree = "<group>"; };
 		6E47A5442151873A0071C381 /* CompletionResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionResultViewModel.swift; sourceTree = "<group>"; };
 		6E47A54621519BC50071C381 /* SuggestionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsTableViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +120,10 @@
 		6E79B44D21272E4800CC5B15 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6E79B44E21272E4900CC5B15 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6E7F762C215AA12900F4F57F /* PuntoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuntoDAO.swift; sourceTree = "<group>"; };
+		6EAF5A94215C1D6900C9AC34 /* USIGCoordinateTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USIGCoordinateTransformer.swift; sourceTree = "<group>"; };
+		6EAF5A9B215C378B00C9AC34 /* BicisendasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BicisendasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EAF5A9D215C378B00C9AC34 /* BicisendasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicisendasTests.swift; sourceTree = "<group>"; };
+		6EAF5A9F215C378B00C9AC34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EC8452D2128CB5E00E34491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6EC8452F2128CB6F00E34491 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6EF57717212C851400A17152 /* GeoJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GeoJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +150,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				12DB66AC61603ADB5AC77EF9 /* Pods_Bicisendas.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAF5A98215C378B00C9AC34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +188,10 @@
 				6E5152B82136BF8700803C51 /* DAO */,
 				6E0B4DC52134697A0038ED9D /* usig-api.html */,
 				6E0B4DC921348B110038ED9D /* USIGWrapper.swift */,
+				6EAF5A94215C1D6900C9AC34 /* USIGCoordinateTransformer.swift */,
+				6E1D6FF4215D99DD00AA0F71 /* Bicisendas-Bridging-Header.h */,
+				6E1D6FF7215D9A1200AA0F71 /* USIGCoordinateHelper.h */,
+				6E1D6FF8215D9A1200AA0F71 /* USIGCoordinateHelper.m */,
 			);
 			path = USIG;
 			sourceTree = "<group>";
@@ -197,6 +225,7 @@
 			children = (
 				6E5F7C97211E11B900E4E7B5 /* Bicisendas */,
 				6E51B0CE21396D9C006BDC1F /* BicisendasUITests */,
+				6EAF5A9C215C378B00C9AC34 /* BicisendasTests */,
 				6E5F7C96211E11B900E4E7B5 /* Products */,
 				26702554596B7B1FADC555C9 /* Pods */,
 				CB1A78EC0C2FEF3F33002C6A /* Frameworks */,
@@ -208,6 +237,7 @@
 			children = (
 				6E5F7C95211E11B900E4E7B5 /* Bicisendas.app */,
 				6E51B0CD21396D9C006BDC1F /* BicisendasUITests.xctest */,
+				6EAF5A9B215C378B00C9AC34 /* BicisendasTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,6 +271,15 @@
 				6E694B972154408C00EA86F6 /* SuggestionTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		6EAF5A9C215C378B00C9AC34 /* BicisendasTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EAF5A9D215C378B00C9AC34 /* BicisendasTests.swift */,
+				6EAF5A9F215C378B00C9AC34 /* Info.plist */,
+			);
+			path = BicisendasTests;
 			sourceTree = "<group>";
 		};
 		6EF5771F212C8A9100A17152 /* ViewModels */ = {
@@ -359,6 +398,24 @@
 			productReference = 6E5F7C95211E11B900E4E7B5 /* Bicisendas.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6EAF5A9A215C378B00C9AC34 /* BicisendasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EAF5AA2215C378B00C9AC34 /* Build configuration list for PBXNativeTarget "BicisendasTests" */;
+			buildPhases = (
+				6EAF5A97215C378B00C9AC34 /* Sources */,
+				6EAF5A98215C378B00C9AC34 /* Frameworks */,
+				6EAF5A99215C378B00C9AC34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EAF5AA1215C378B00C9AC34 /* PBXTargetDependency */,
+			);
+			name = BicisendasTests;
+			productName = BicisendasTests;
+			productReference = 6EAF5A9B215C378B00C9AC34 /* BicisendasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -375,6 +432,11 @@
 					};
 					6E5F7C94211E11B900E4E7B5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+					};
+					6EAF5A9A215C378B00C9AC34 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 6E5F7C94211E11B900E4E7B5;
 					};
 				};
 			};
@@ -394,6 +456,7 @@
 			targets = (
 				6E5F7C94211E11B900E4E7B5 /* Bicisendas */,
 				6E51B0CC21396D9C006BDC1F /* BicisendasUITests */,
+				6EAF5A9A215C378B00C9AC34 /* BicisendasTests */,
 			);
 		};
 /* End PBXProject section */
@@ -418,6 +481,13 @@
 				6E0B4DC62134697A0038ED9D /* usig-api.html in Resources */,
 				6EF57735212CCB9700A17152 /* InfoPlist.strings in Resources */,
 				6E694B992154408C00EA86F6 /* SuggestionTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAF5A99215C378B00C9AC34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +533,8 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwiftUtilities/RxSwiftUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/SimulatorStatusMagic/SimulatorStatusMagic.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProjection/SwiftProjection.framework",
+				"${BUILT_PRODUCTS_DIR}/Threadly/Threadly.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -472,6 +544,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimulatorStatusMagic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProjection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Threadly.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -513,6 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E0F52D1212DCDBF000F1D5D /* ToggleBikeStationsButton.swift in Sources */,
+				6E1D6FF9215D9A1200AA0F71 /* USIGCoordinateHelper.m in Sources */,
 				6E0B4DC1213467CE0038ED9D /* RoutesViewController.swift in Sources */,
 				6E708FFB213DC15300DE052C /* USIGObject.swift in Sources */,
 				6EF5773C212CD8F000A17152 /* BikeStandMarkerAnnotationView.swift in Sources */,
@@ -527,6 +602,7 @@
 				6E694B982154408C00EA86F6 /* SuggestionTableViewCell.swift in Sources */,
 				6E5152BE2136C21B00803C51 /* TipoDireccionDAO.swift in Sources */,
 				6EF5772D212C92D300A17152 /* Request+Debugging.swift in Sources */,
+				6EAF5A95215C1D6900C9AC34 /* USIGCoordinateTransformer.swift in Sources */,
 				6E5152BA2136BF9600803C51 /* CalleDAO.swift in Sources */,
 				6EF57729212C921F00A17152 /* BikeStationsOperation.swift in Sources */,
 				6EF57734212CB00800A17152 /* BikeStation.swift in Sources */,
@@ -540,6 +616,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6EAF5A97215C378B00C9AC34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAF5A9E215C378B00C9AC34 /* BicisendasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -547,6 +631,11 @@
 			isa = PBXTargetDependency;
 			target = 6E5F7C94211E11B900E4E7B5 /* Bicisendas */;
 			targetProxy = 6E51B0D221396D9C006BDC1F /* PBXContainerItemProxy */;
+		};
+		6EAF5AA1215C378B00C9AC34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5F7C94211E11B900E4E7B5 /* Bicisendas */;
+			targetProxy = 6EAF5AA0215C378B00C9AC34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -755,6 +844,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XF2KB83BBC;
 				INFOPLIST_FILE = Bicisendas/Info.plist;
@@ -766,6 +856,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fc81501d-212f-43a1-9b5b-dd6b848968c4";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.quadiontech.Bicisendas";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bicisendas/USIG/Bicisendas-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -777,6 +869,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XF2KB83BBC;
 				INFOPLIST_FILE = Bicisendas/Info.plist;
@@ -788,8 +881,52 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fdb2782f-7813-4d65-8b4e-863adf35769b";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.quadiontech.Bicisendas";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bicisendas/USIG/Bicisendas-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6EAF5AA3215C378B00C9AC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BicisendasTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quadiontech.BicisendasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bicisendas.app/Bicisendas";
+			};
+			name = Debug;
+		};
+		6EAF5AA4215C378B00C9AC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BicisendasTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quadiontech.BicisendasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bicisendas.app/Bicisendas";
 			};
 			name = Release;
 		};
@@ -819,6 +956,15 @@
 			buildConfigurations = (
 				6E5F7CA8211E11BB00E4E7B5 /* Debug */,
 				6E5F7CA9211E11BB00E4E7B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EAF5AA2215C378B00C9AC34 /* Build configuration list for PBXNativeTarget "BicisendasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAF5AA3215C378B00C9AC34 /* Debug */,
+				6EAF5AA4215C378B00C9AC34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

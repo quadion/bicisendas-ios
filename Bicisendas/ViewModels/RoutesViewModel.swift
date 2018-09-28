@@ -33,6 +33,8 @@ class RoutesViewModel {
 
     private var usigWrapper = USIGWrapper()
 
+    private let transformer = USIGCoordinateTransformer()
+
     private let locationManager = CLLocationManager()
 
     private let disposeBag = DisposeBag()
@@ -66,7 +68,10 @@ class RoutesViewModel {
 
     private func initLocation() {
         if let location = locationManager.location {
-            let punto = PuntoDAO(location: location)
+
+            let coordinate = transformer.convertToUSIG(coordinate: location.coordinate.getCoordinate()).getCoordinate()
+
+            let punto = PuntoDAO(coordX: coordinate.u, coordY: coordinate.v)
 
             let usigFrom = USIGContainer(usigType: .punto, usigObject: punto)
 

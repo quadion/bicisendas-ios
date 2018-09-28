@@ -23,14 +23,3 @@ public class PuntoDAO: USIGObject, Codable {
         self.coordY = coordY
     }
 }
-
-extension PuntoDAO {
-
-    public convenience init(location: CLLocation) {
-        let x = location.coordinate.latitude
-        let y = location.coordinate.longitude
-
-        self.init(coordX: x, coordY: y)
-    }
-
-}
