@@ -11,7 +11,7 @@ import SwiftProjection
 class USIGCoordinateTransformer {
 
     // From https://github.com/oskosk/mapabuenosaires-to-latlng/blob/master/src/mapabuenosaires-to-latlng.js
-    private static let transformation = "+proj=tmerc +lat_0=-34.6297166 +lon_0=-58.4627 +k=0.9999980000000001 +x_0=100000 +y_0=100000 +ellps=intl +towgs84=-148,136,90,0,0,0,0 +units=m +no_defs"
+    private static let transformation = "+break_cs2cs_recursion +proj=tmerc +lat_0=-34.6297166 +lon_0=-58.4627 +k=0.9999980000000001 +x_0=100000 +y_0=100000 +ellps=intl +towgs84=-148,136,90,0,0,0,0 +units=m +no_defs"
 
     private let usigProjection: Projection!
     private let mapsProjection: Projection!

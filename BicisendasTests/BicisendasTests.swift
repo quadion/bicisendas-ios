@@ -19,7 +19,7 @@ class CoordinatesTests: XCTestCase {
 
         let location = converter.convert(fromUSIGX: 106728.370109, y: 102913.336526)
 
-        XCTAssertEqual(location.latitude, -34.60298633785489)
+        XCTAssertEqual(location.latitude, -34.60298633785443)
         XCTAssertEqual(location.longitude, -58.38994744519263)
     }
 
