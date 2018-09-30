@@ -38,6 +38,7 @@ class USIGWrapper: NSObject {
     private enum USIGHandlers: String {
         case ready
         case suggestions
+        case directions
         case debug // For debug purposes only
     }
 
@@ -72,6 +73,7 @@ class USIGWrapper: NSObject {
 
         userContentController.add(self, name: USIGHandlers.ready.rawValue)
         userContentController.add(self, name: USIGHandlers.suggestions.rawValue)
+        userContentController.add(self, name: USIGHandlers.directions.rawValue)
         userContentController.add(self, name: USIGHandlers.debug.rawValue)
 
         self.webView = WKWebView(frame: CGRect.zero, configuration: configuration)
@@ -121,6 +123,8 @@ extension USIGWrapper: WKScriptMessageHandler {
 
                 suggestions.accept(elements)
             }
+        case USIGHandlers.directions.rawValue:
+            print("👍 got directions")
         case USIGHandlers.debug.rawValue:
             print("👍 usig-api DEBUG \(message.body)")
         default:

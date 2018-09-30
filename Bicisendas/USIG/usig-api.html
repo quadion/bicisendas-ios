@@ -166,35 +166,60 @@
           opciones_prioridad: 'avenidas',
           opciones_incluir_autopistas: false
         };
-        
+
+        // Prueba simplificada de geoCoding, tampoco funciona :(
+        // this.suggester.getGeoCoding(toObject, function(pt) {
+        //   window.callbacker('debug', JSON.stringify(pt.toJson()));
+        // });
+
+
+        // Prueba simplificada: tampoco anda
+        // usig.Recorridos.buscarRecorridos(
+        //           fromObject,
+        //           toObject,
+        //           function(results) {
+        //             window.callbacker('debug', 'got results');
+        //             window.callbacker('directions', results[0].toJson());
+        //   },
+        //           function(error) {
+        //             window.callbacker('debug', error);
+        //   },
+        //           options
+        //         );
+
+        // Le puedo pegar derecho a la URL:
+        // http://recorridos.usig.buenosaires.gob.ar/2.0/consultar_gba?tipo=bici&gml=true&precargar=3&opciones_caminata=800&opciones_medios_colectivo=true&opciones_medios_subte=true&opciones_medios_tren=true&opciones_prioridad=avenidas&opciones_incluir_autopistas=false&opciones_cortes=true&max_results=10&origen=98941.40902175845%2C108073.86590339453&origen_calles2=0&origen_calles=0&origen_calle_altura=0&destino_calles2=0&destino_calles=12089&destino_calle_altura=1625&_=1538342266081
+
+        // Opcion original, no anda
         var promise = new Promise((resolve, reject) => {
 
-          window.callbacker('debug', this.suggester);
+          window.callbacker('debug', 'in Promise');
 
           this.suggester.getGeoCoding(toObject, function(pt) {
             window.callbacker('debug', "geoCoding - " + pt.toString());
-            
+
             resolve(pt);
           });
-          
+
         });
-        
+
         promise.then(function(result) {
-  				usig.Recorridos.buscarRecorridos(
+usig.Recorridos.buscarRecorridos(
             fromObject,
             toObject,
             function(results) {
-              window.callbacker('debug', results);
-  				  },
+              window.callbacker('debug', 'got results');
+              window.callbacker('directions', results[0].toJson());
+  },
             function(error) {
               window.callbacker('debug', error);
-  				  },
+  },
             options
           );
-        
+
           window.callbacker('debug', "getDirections - afterBuscarRecorridos");
         }, function(error) {
-          
+
         });
       }
       
@@ -212,6 +237,10 @@
     
     let api = new API();
     console.log(api.ready);
+    
+    window.onerror = function(error) {
+      window.callbacker('debug', 'error!');
+    };
     
 	$.noConflict();
 	jQuery(document).ready(function($) {
