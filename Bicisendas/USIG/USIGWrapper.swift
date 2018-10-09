@@ -28,6 +28,9 @@ class USIGWrapper: NSObject {
     /// Those objects are either `CalleDAO` or `DireccionDAO`.
     public var suggestions = BehaviorRelay<[USIGContainer]>(value: [])
 
+    /// Emits a RecorridoDAO when a new pathway is found.
+    public var pathWay = BehaviorRelay<RecorridoDAO?>(value: nil)
+
     private let disposeBag = DisposeBag()
 
 
@@ -78,6 +81,11 @@ class USIGWrapper: NSObject {
 
         self.webView = WKWebView(frame: CGRect.zero, configuration: configuration)
 
+        // We need to add the web view to the view hierarchy.
+        // Otherwise, the system assumes the web view is in background and triggers
+        // watchdog issues when running async code in usig-api.html.
+        UIApplication.shared.keyWindow?.addSubview(self.webView)
+
         webView.load(data,
                      mimeType: "text/html",
                      characterEncodingName: "UTF8",
@@ -124,7 +132,14 @@ extension USIGWrapper: WKScriptMessageHandler {
                 suggestions.accept(elements)
             }
         case USIGHandlers.directions.rawValue:
-            print("👍 got directions")
+            let decoder = JSONDecoder()
+            if let dataString = message.body as? String,
+                let data = dataString.data(using: .utf8) {
+
+                let recorrido = try! decoder.decode(RecorridoDAO.self, from: data)
+
+                pathWay.accept(recorrido)
+            }
         case USIGHandlers.debug.rawValue:
             print("👍 usig-api DEBUG \(message.body)")
         default:

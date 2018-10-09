@@ -16,6 +16,7 @@ class RoutesViewController: UIViewController {
     private var viewModel = RoutesViewModel()
 
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var dismissButton: UIBarButtonItem!
 
     private let disposeBag = DisposeBag()
 
@@ -32,12 +33,20 @@ class RoutesViewController: UIViewController {
             .observeOn(MainScheduler.instance)
             .bind(to: viewModel.searchTerm)
             .disposed(by: disposeBag)
+
+        dismissButton.rx.tap
+            .bind(onNext: dismissTapped)
+            .disposed(by: disposeBag)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let suggestions = segue.destination as? SuggestionsTableViewController {
             suggestions.viewModel = viewModel
         }
+    }
+
+    private func dismissTapped() {
+        dismiss(animated: true, completion: nil)
     }
 
 }

@@ -58,5 +58,7 @@ class SuggestionsTableViewController: UITableViewController {
         let cellViewModel = viewModel.resultViewModel(atIndex: indexPath.row)
 
         viewModel.toLocation.accept(cellViewModel.usigContainer)
+
+        dismiss(animated: true, completion: nil)
     }
 }

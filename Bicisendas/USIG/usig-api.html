@@ -209,7 +209,7 @@ usig.Recorridos.buscarRecorridos(
             toObject,
             function(results) {
               window.callbacker('debug', 'got results');
-              window.callbacker('directions', results[0].toJson());
+              window.callbacker('directions', JSON.stringify(results[0].toJson()));
   },
             function(error) {
               window.callbacker('debug', error);

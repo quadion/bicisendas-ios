@@ -64,6 +64,7 @@ class RoutesViewModel {
 
         initLocation()
         bindSearch()
+        bindResults()
     }
 
     private func initLocation() {
@@ -88,6 +89,14 @@ class RoutesViewModel {
                     let from = $0.0, let to = $0.1 else { return }
 
                 strongSelf.usigWrapper.directions(from: from, to: to)
+            })
+            .disposed(by: disposeBag)
+    }
+
+    private func bindResults() {
+        usigWrapper.pathWay
+            .subscribe(onNext: { (recorrido) in
+                print("👍 \(recorrido)")
             })
             .disposed(by: disposeBag)
     }
