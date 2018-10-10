@@ -17,9 +17,15 @@ default_platform(:ios)
 
 platform :ios do
 
+  desc "Get the certificates and provisioning profiles"
+  lane :certificates do
+    match(type: "development", readonly: true)
+    match(type: "appstore", readonly: true)
+  end
+
   desc "Build the app"
   lane :build do
-  	sigh
+  	certificates
   	build_app(scheme: "Bicisendas")
   end
 

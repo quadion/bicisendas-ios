@@ -2,6 +2,10 @@ stages:
   - build
   - archive
 
+job:
+  tags:
+    - xcode10
+
 build_project:
   stage: build
   script:
