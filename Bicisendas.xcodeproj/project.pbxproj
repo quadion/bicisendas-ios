@@ -658,27 +658,6 @@
 			baseConfigurationReference = 613F2C873179532AFB7D892F /* Pods-Bicisendas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = XF2KB83BBC;
-				INFOPLIST_FILE = Bicisendas/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.quadiontech.Bicisendas;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fc81501d-212f-43a1-9b5b-dd6b848968c4";
-				PROVISIONING_PROFILE_SPECIFIER = "Bicisendas Development";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		6E5F7CA9211E11BB00E4E7B5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22FE738DC1193FD5C2E95070 /* Pods-Bicisendas.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XF2KB83BBC;
@@ -689,8 +668,30 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.quadiontech.Bicisendas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fc81501d-212f-43a1-9b5b-dd6b848968c4";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.quadiontech.Bicisendas";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6E5F7CA9211E11BB00E4E7B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22FE738DC1193FD5C2E95070 /* Pods-Bicisendas.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = XF2KB83BBC;
+				INFOPLIST_FILE = Bicisendas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.quadiontech.Bicisendas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fdb2782f-7813-4d65-8b4e-863adf35769b";
-				PROVISIONING_PROFILE_SPECIFIER = "Bicisendas AppStore";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.quadiontech.Bicisendas";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
