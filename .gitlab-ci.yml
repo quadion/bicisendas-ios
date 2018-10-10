@@ -2,11 +2,9 @@ stages:
   - build
   - archive
 
-job:
+build_project:
   tags:
     - xcode10
-
-build_project:
   stage: build
   script:
     - bundle install
