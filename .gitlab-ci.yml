@@ -8,5 +8,4 @@ build_project:
   stage: build
   script:
     - bundle install
-    - security unlock-keychain -p quadion ~/Library/Keychains/Quadion.keychain
     - bundle exec fastlane build
