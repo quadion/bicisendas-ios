@@ -18,9 +18,6 @@ public struct GMLLineString: Decodable {
 
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let coordinateString = try container.decode(String.self, forKey: .coordinates)
-//
-//        let container = try decoder.singleValueContainer()
-//        let coordinateString = try container.decode(String.self)
 
         let splittedString = coordinateString.split(separator: " ")
 
