@@ -1,0 +1,24 @@
+{
+  "name": "XMLParsing",
+  "version": "0.0.3",
+  "summary": "XMLEncoder & XMLDecoder using the Codable protocol in Swift 4",
+  "description": "XMLParsing allows Swift 4 Codable-conforming objects to be translated to and from XML",
+  "homepage": "https://github.com/ShawnMoore/XMLParsing",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Shawn Moore": "sm5@me.com"
+  },
+  "platforms": {
+    "ios": "10.0",
+    "osx": "10.12"
+  },
+  "source": {
+    "git": "https://github.com/ShawnMoore/XMLParsing.git",
+    "tag": "0.0.3"
+  },
+  "source_files": "Sources/XMLParsing/**/*.swift",
+  "requires_arc": true
+}

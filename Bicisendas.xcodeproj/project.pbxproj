@@ -39,6 +39,14 @@
 		6EB2A51F2170E57A00BF0CD8 /* RouteReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A51E2170E57A00BF0CD8 /* RouteReceiver.swift */; };
 		6EB2A521217103DC00BF0CD8 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A520217103DC00BF0CD8 /* Route.swift */; };
 		6EB2A52321710E5400BF0CD8 /* RecorridoPasoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A52221710E5400BF0CD8 /* RecorridoPasoDAO.swift */; };
+		6EB2A5262171206800BF0CD8 /* GMLFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A5252171206800BF0CD8 /* GMLFeature.swift */; };
+		6EB2A5282171209A00BF0CD8 /* GMLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A5272171209A00BF0CD8 /* GMLType.swift */; };
+		6EB2A52A2171210000BF0CD8 /* GMLParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A5292171210000BF0CD8 /* GMLParsingTests.swift */; };
+		6EB2A52E2171248F00BF0CD8 /* GMLPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A52D2171248F00BF0CD8 /* GMLPoint.swift */; };
+		6EB2A5302171254600BF0CD8 /* GMLCoordinateString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A52F2171254600BF0CD8 /* GMLCoordinateString.swift */; };
+		6EB2A532217126CD00BF0CD8 /* GMLMultilineString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A531217126CD00BF0CD8 /* GMLMultilineString.swift */; };
+		6EB2A5342171274200BF0CD8 /* GMLLineStringMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A5332171274200BF0CD8 /* GMLLineStringMember.swift */; };
+		6EB2A5362171291F00BF0CD8 /* GMLLineString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A5352171291F00BF0CD8 /* GMLLineString.swift */; };
 		6EC8452E2128CB5E00E34491 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EC8452C2128CB5E00E34491 /* Localizable.strings */; };
 		6EF24ACA2164103500FD812A /* RecorridoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF24AC92164103500FD812A /* RecorridoDAO.swift */; };
 		6EF24ACC21652AA400FD812A /* USIGCoordinateString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF24ACB21652AA400FD812A /* USIGCoordinateString.swift */; };
@@ -51,6 +59,7 @@
 		6EF57735212CCB9700A17152 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E79B44A21272CF200CC5B15 /* InfoPlist.strings */; };
 		6EF57738212CCDC800A17152 /* GeoJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF57717212C851400A17152 /* GeoJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6EF5773C212CD8F000A17152 /* BikeStandMarkerAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5773B212CD8F000A17152 /* BikeStandMarkerAnnotationView.swift */; };
+		8E5628DDAD64FE81F1B790F9 /* Pods_BicisendasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7979A354AB85D4528DB2E46 /* Pods_BicisendasTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +95,7 @@
 
 /* Begin PBXFileReference section */
 		22FE738DC1193FD5C2E95070 /* Pods-Bicisendas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bicisendas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bicisendas/Pods-Bicisendas.release.xcconfig"; sourceTree = "<group>"; };
+		50AF24838A564C79E196A614 /* Pods-BicisendasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BicisendasTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BicisendasTests/Pods-BicisendasTests.debug.xcconfig"; sourceTree = "<group>"; };
 		613F2C873179532AFB7D892F /* Pods-Bicisendas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bicisendas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bicisendas/Pods-Bicisendas.debug.xcconfig"; sourceTree = "<group>"; };
 		6E0B4DBD2134679D0038ED9D /* Routes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Routes.storyboard; sourceTree = "<group>"; };
 		6E0B4DC0213467CE0038ED9D /* RoutesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +140,14 @@
 		6EB2A51E2170E57A00BF0CD8 /* RouteReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteReceiver.swift; sourceTree = "<group>"; };
 		6EB2A520217103DC00BF0CD8 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		6EB2A52221710E5400BF0CD8 /* RecorridoPasoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorridoPasoDAO.swift; sourceTree = "<group>"; };
+		6EB2A5252171206800BF0CD8 /* GMLFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLFeature.swift; sourceTree = "<group>"; };
+		6EB2A5272171209A00BF0CD8 /* GMLType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLType.swift; sourceTree = "<group>"; };
+		6EB2A5292171210000BF0CD8 /* GMLParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLParsingTests.swift; sourceTree = "<group>"; };
+		6EB2A52D2171248F00BF0CD8 /* GMLPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLPoint.swift; sourceTree = "<group>"; };
+		6EB2A52F2171254600BF0CD8 /* GMLCoordinateString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLCoordinateString.swift; sourceTree = "<group>"; };
+		6EB2A531217126CD00BF0CD8 /* GMLMultilineString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLMultilineString.swift; sourceTree = "<group>"; };
+		6EB2A5332171274200BF0CD8 /* GMLLineStringMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLLineStringMember.swift; sourceTree = "<group>"; };
+		6EB2A5352171291F00BF0CD8 /* GMLLineString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMLLineString.swift; sourceTree = "<group>"; };
 		6EC8452D2128CB5E00E34491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6EC8452F2128CB6F00E34491 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6EF24AC92164103500FD812A /* RecorridoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorridoDAO.swift; sourceTree = "<group>"; };
@@ -142,7 +160,9 @@
 		6EF5772C212C92D300A17152 /* Request+Debugging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Debugging.swift"; sourceTree = "<group>"; };
 		6EF57733212CB00800A17152 /* BikeStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStation.swift; sourceTree = "<group>"; };
 		6EF5773B212CD8F000A17152 /* BikeStandMarkerAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStandMarkerAnnotationView.swift; sourceTree = "<group>"; };
+		BE39E7D31B08F1D8B6556061 /* Pods-BicisendasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BicisendasTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BicisendasTests/Pods-BicisendasTests.release.xcconfig"; sourceTree = "<group>"; };
 		C919799863352F86DC5DA96B /* Pods_Bicisendas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bicisendas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7979A354AB85D4528DB2E46 /* Pods_BicisendasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BicisendasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E5628DDAD64FE81F1B790F9 /* Pods_BicisendasTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +197,8 @@
 			children = (
 				613F2C873179532AFB7D892F /* Pods-Bicisendas.debug.xcconfig */,
 				22FE738DC1193FD5C2E95070 /* Pods-Bicisendas.release.xcconfig */,
+				50AF24838A564C79E196A614 /* Pods-BicisendasTests.debug.xcconfig */,
+				BE39E7D31B08F1D8B6556061 /* Pods-BicisendasTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -256,6 +279,7 @@
 		6E5F7C97211E11B900E4E7B5 /* Bicisendas */ = {
 			isa = PBXGroup;
 			children = (
+				6EB2A5242171205200BF0CD8 /* GML */,
 				6E0B4DC2213469320038ED9D /* USIG */,
 				6EF5772A212C92BF00A17152 /* Extensions */,
 				6EF57722212C8D8300A17152 /* Network */,
@@ -288,9 +312,24 @@
 			isa = PBXGroup;
 			children = (
 				6EAF5A9D215C378B00C9AC34 /* BicisendasTests.swift */,
+				6EB2A5292171210000BF0CD8 /* GMLParsingTests.swift */,
 				6EAF5A9F215C378B00C9AC34 /* Info.plist */,
 			);
 			path = BicisendasTests;
+			sourceTree = "<group>";
+		};
+		6EB2A5242171205200BF0CD8 /* GML */ = {
+			isa = PBXGroup;
+			children = (
+				6EB2A5252171206800BF0CD8 /* GMLFeature.swift */,
+				6EB2A5272171209A00BF0CD8 /* GMLType.swift */,
+				6EB2A52F2171254600BF0CD8 /* GMLCoordinateString.swift */,
+				6EB2A52D2171248F00BF0CD8 /* GMLPoint.swift */,
+				6EB2A531217126CD00BF0CD8 /* GMLMultilineString.swift */,
+				6EB2A5332171274200BF0CD8 /* GMLLineStringMember.swift */,
+				6EB2A5352171291F00BF0CD8 /* GMLLineString.swift */,
+			);
+			path = GML;
 			sourceTree = "<group>";
 		};
 		6EF5771F212C8A9100A17152 /* ViewModels */ = {
@@ -363,6 +402,7 @@
 			children = (
 				6EF57717212C851400A17152 /* GeoJSON.framework */,
 				C919799863352F86DC5DA96B /* Pods_Bicisendas.framework */,
+				D7979A354AB85D4528DB2E46 /* Pods_BicisendasTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -414,9 +454,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EAF5AA2215C378B00C9AC34 /* Build configuration list for PBXNativeTarget "BicisendasTests" */;
 			buildPhases = (
+				3A42F16BB3CE29D67051CBA7 /* [CP] Check Pods Manifest.lock */,
 				6EAF5A97215C378B00C9AC34 /* Sources */,
 				6EAF5A98215C378B00C9AC34 /* Frameworks */,
 				6EAF5A99215C378B00C9AC34 /* Resources */,
+				D9DD33A4C31DF3649E4ACD4D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -506,6 +548,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3A42F16BB3CE29D67051CBA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BicisendasTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6E017C532124A48E00227488 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -547,6 +607,7 @@
 				"${BUILT_PRODUCTS_DIR}/SimulatorStatusMagic/SimulatorStatusMagic.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftProjection/SwiftProjection.framework",
 				"${BUILT_PRODUCTS_DIR}/Threadly/Threadly.framework",
+				"${BUILT_PRODUCTS_DIR}/XMLParsing/XMLParsing.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -558,6 +619,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimulatorStatusMagic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProjection.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Threadly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMLParsing.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -582,6 +644,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D9DD33A4C31DF3649E4ACD4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BicisendasTests/Pods-BicisendasTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/XMLParsing/XMLParsing.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMLParsing.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BicisendasTests/Pods-BicisendasTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -598,6 +678,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EB2A5282171209A00BF0CD8 /* GMLType.swift in Sources */,
+				6EB2A5362171291F00BF0CD8 /* GMLLineString.swift in Sources */,
 				6EF24ACC21652AA400FD812A /* USIGCoordinateString.swift in Sources */,
 				6E0F52D1212DCDBF000F1D5D /* ToggleBikeStationsButton.swift in Sources */,
 				6E1D6FF9215D9A1200AA0F71 /* USIGCoordinateHelper.m in Sources */,
@@ -610,21 +692,26 @@
 				6EF57724212C8DAF00A17152 /* NetworkOperation.swift in Sources */,
 				6E708FF9213DC12200DE052C /* USIGContainer.swift in Sources */,
 				6E5F7C9B211E11B900E4E7B5 /* MapViewController.swift in Sources */,
+				6EB2A532217126CD00BF0CD8 /* GMLMultilineString.swift in Sources */,
 				6E5F7C99211E11B900E4E7B5 /* AppDelegate.swift in Sources */,
 				6E47A5452151873A0071C381 /* CompletionResultViewModel.swift in Sources */,
 				6E7F762D215AA12900F4F57F /* PuntoDAO.swift in Sources */,
 				6E47A54721519BC50071C381 /* SuggestionsTableViewController.swift in Sources */,
 				6E694B982154408C00EA86F6 /* SuggestionTableViewCell.swift in Sources */,
 				6EF24ACA2164103500FD812A /* RecorridoDAO.swift in Sources */,
+				6EB2A5342171274200BF0CD8 /* GMLLineStringMember.swift in Sources */,
 				6E5152BE2136C21B00803C51 /* TipoDireccionDAO.swift in Sources */,
 				6EB2A52321710E5400BF0CD8 /* RecorridoPasoDAO.swift in Sources */,
+				6EB2A52E2171248F00BF0CD8 /* GMLPoint.swift in Sources */,
 				6EF5772D212C92D300A17152 /* Request+Debugging.swift in Sources */,
 				6E5152BA2136BF9600803C51 /* CalleDAO.swift in Sources */,
 				6EF57729212C921F00A17152 /* BikeStationsOperation.swift in Sources */,
+				6EB2A5262171206800BF0CD8 /* GMLFeature.swift in Sources */,
 				6EF57734212CB00800A17152 /* BikeStation.swift in Sources */,
 				6E0B4DCA21348B110038ED9D /* USIGWrapper.swift in Sources */,
 				6E5152BC2136C1F100803C51 /* DireccionDAO.swift in Sources */,
 				6EF57721212C8AA200A17152 /* MapViewModel.swift in Sources */,
+				6EB2A5302171254600BF0CD8 /* GMLCoordinateString.swift in Sources */,
 				6EF57727212C90D200A17152 /* NetworkOperation+Rx.swift in Sources */,
 				6E51B0DC21398B64006BDC1F /* MKCoordinateSpan+Bicisendas.swift in Sources */,
 				6E51B0DA21398B14006BDC1F /* CLLocationCoordinate2D+Bicisendas.swift in Sources */,
@@ -637,6 +724,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EAF5A9E215C378B00C9AC34 /* BicisendasTests.swift in Sources */,
+				6EB2A52A2171210000BF0CD8 /* GMLParsingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -905,6 +993,7 @@
 		};
 		6EAF5AA3215C378B00C9AC34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50AF24838A564C79E196A614 /* Pods-BicisendasTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -919,7 +1008,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.quadiontech.BicisendasTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bicisendas.app/Bicisendas";
 			};
@@ -927,6 +1016,7 @@
 		};
 		6EAF5AA4215C378B00C9AC34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE39E7D31B08F1D8B6556061 /* Pods-BicisendasTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -940,7 +1030,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.quadiontech.BicisendasTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bicisendas.app/Bicisendas";
 			};

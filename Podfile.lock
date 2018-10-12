@@ -15,6 +15,7 @@ PODS:
   - SwiftProjection (1.0.4):
     - Threadly (~> 2.0.1)
   - Threadly (2.0.1)
+  - XMLParsing (0.0.3)
 
 DEPENDENCIES:
   - Alamofire
@@ -26,6 +27,7 @@ DEPENDENCIES:
   - RxSwiftUtilities
   - SimulatorStatusMagic
   - SwiftProjection
+  - XMLParsing (from `https://github.com/ShawnMoore/XMLParsing.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -40,6 +42,15 @@ SPEC REPOS:
     - SwiftProjection
     - Threadly
 
+EXTERNAL SOURCES:
+  XMLParsing:
+    :git: https://github.com/ShawnMoore/XMLParsing.git
+
+CHECKOUT OPTIONS:
+  XMLParsing:
+    :commit: 594272e4df40798c53ae1735ee65f3f387291670
+    :git: https://github.com/ShawnMoore/XMLParsing.git
+
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   CodableAlamofire: e2d2edcec7cf413f7862c30c8fa98eded27a83f9
@@ -51,7 +62,8 @@ SPEC CHECKSUMS:
   SimulatorStatusMagic: 0389a805fa8bd001e2977c4046730bdbd6642861
   SwiftProjection: ecb419680cebd2b775e17b682510137a1d4c0ec3
   Threadly: 749ce89c59c17b77db00549fd2a643537296645e
+  XMLParsing: 085edb6fa22c71d6b53a79299f990a91e7414d19
 
-PODFILE CHECKSUM: 92d916f30bd339b7813a95d88b2b483ac1adc684
+PODFILE CHECKSUM: 73515f6cc454968bad610313aec4e8c94cadab74
 
 COCOAPODS: 1.5.2
