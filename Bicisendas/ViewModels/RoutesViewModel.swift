@@ -99,8 +99,6 @@ class RoutesViewModel {
     }
 
     private func bindResults() {
-        // TODO: Here is probably the place to convert from USIG objects to model objects and do the
-        //       required coordinate transformations.
         usigWrapper.pathWay
             .filter { $0 != nil }
             .map { Route(fromRecorrido: $0!) }
