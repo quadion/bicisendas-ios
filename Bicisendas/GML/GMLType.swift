@@ -10,5 +10,6 @@ public enum GMLType: String, Decodable {
 
     case bike = "bike"
     case ciclovia = "Ciclovía"
+    case end = "end"
 
 }

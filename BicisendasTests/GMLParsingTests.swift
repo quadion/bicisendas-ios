@@ -53,6 +53,13 @@ class GMLParsingTests: XCTestCase {
         XCTAssertEqual(gmlFeature.multilineString?.lineStringMembers.first?.lineString.coordinates.count, 3)
     }
 
+    func testFinishPath() {
+        let gml = "<gml:feature><gml:type>end</gml:type><gml:Point srsName=\"EPSG:97433\"><gml:coordinates>98947.387759299890604,108063.893492999603041</gml:coordinates></gml:Point></gml:feature>"
+
+        let gmlFeature = feature(fromString: gml)
+
+        XCTAssertNotNil(gmlFeature)
+    }
 
     private func feature(fromString string: String) -> GMLFeature {
         let data = string.data(using: .utf8)!
