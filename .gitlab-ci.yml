@@ -9,3 +9,7 @@ build_project:
   script:
     - bundle install
     - bundle exec fastlane build
+    - bundle exec fastlane tests
+  artifacts:
+    reports:
+      junit: fastlane/test_output/report.junit

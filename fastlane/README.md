@@ -26,6 +26,11 @@ Get the certificates and provisioning profiles
 fastlane ios build
 ```
 Build the app
+### ios tests
+```
+fastlane ios tests
+```
+Run the unit tests
 ### ios beta
 ```
 fastlane ios beta
