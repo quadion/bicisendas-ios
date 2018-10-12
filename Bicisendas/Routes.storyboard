@@ -80,8 +80,12 @@
                             <outlet property="delegate" destination="PFM-ry-oK4" id="GI8-3V-BDf"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="hj2-3q-SLj" kind="unwind" identifier="unwindToMapSegue" unwindAction="unwindToMapViewController:" id="dba-PU-e6P"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ku9-IH-VxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hj2-3q-SLj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1639.2" y="557.88177339901483"/>
         </scene>

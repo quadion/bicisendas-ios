@@ -21,6 +21,7 @@ class MapViewController: UIViewController {
     @IBOutlet weak var warningButton: UIButton!
     @IBOutlet weak var bikeStationsButton: UIButton!
     @IBOutlet weak var routesButton: UIButton!
+    @IBOutlet weak var currentRouteContainerBottomConstraint: NSLayoutConstraint!
 
     var userTrackingButton: MKUserTrackingButton!
     var compassButton: MKCompassButton!
@@ -133,6 +134,12 @@ class MapViewController: UIViewController {
             .map { !$0 }
             .drive(bikeStationsButton.rx.isEnabled)
             .disposed(by: disposeBag)
+
+        viewModel.currentRoute
+            .asDriver(onErrorJustReturn: nil)
+            .filter { $0 != nil }
+            .drive(onNext: displayRoute(_:))
+            .disposed(by: disposeBag)
     }
 
     private func requestLocationPermission() {
@@ -142,6 +149,24 @@ class MapViewController: UIViewController {
     fileprivate func updateButtons(forLocationServicesEnabled locationServicesEnabled: Bool) {
         userTrackingButton.isHidden = !locationServicesEnabled
         warningButton.isHidden = locationServicesEnabled
+    }
+
+    private func displayRoute(_ route: Route?) {
+        guard let _ = route else { return }
+
+        UIView.animate(withDuration: 0.3,
+                       delay: 0,
+                       usingSpringWithDamping: 0.8,
+                       initialSpringVelocity: 0.8,
+                       options: .allowAnimatedContent,
+                       animations: { [weak self] in
+
+                        guard let strongSelf = self else { return }
+
+                        strongSelf.currentRouteContainerBottomConstraint.constant = 0
+                        strongSelf.view.setNeedsLayout()
+
+        }, completion: nil)
     }
 
     @IBAction func warningButtonTapped(_ sender: Any) {
@@ -167,6 +192,9 @@ class MapViewController: UIViewController {
 
         present(alertController, animated: true, completion: nil)
     }
+
+    @IBAction func unwindToMapViewController(_ segue: UIStoryboardSegue) -> Void {
+    }
 }
 
 class BiciTileOverlay: MKTileOverlay {
@@ -188,30 +216,6 @@ extension MapViewController: MKMapViewDelegate {
         return bikePathsRenderer
     }
 
-//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//
-//        guard !annotation.isKind(of: MKUserLocation.self) else { return nil }
-//
-//        guard let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "bikeStation", for: annotation)
-//            as? MKMarkerAnnotationView else { fatalError("MapView not configured properly") }
-//
-//        annotationView.annotation = annotation
-//
-//        if let cluster = annotation as? MKClusterAnnotation {
-//            annotationView.glyphText = "\(cluster.memberAnnotations.count)"
-//            annotationView.glyphImage = nil
-//        } else {
-//            annotationView.glyphText = nil
-//            annotationView.glyphImage = UIImage(named: "bikeStationIcon")
-//        }
-//
-//        annotationView.canShowCallout = true
-//        annotationView.titleVisibility = .hidden
-//        annotationView.markerTintColor = UIColor(named: "bikeStationColor")
-//
-//        return annotationView
-//    }
-
 }
 
 extension MapViewController: CLLocationManagerDelegate {
@@ -221,4 +225,12 @@ extension MapViewController: CLLocationManagerDelegate {
 
         updateButtons(forLocationServicesEnabled: locationAvailable)
     }
+}
+
+extension MapViewController: RouteReceiver {
+
+    func setRoute(_ route: Route) {
+        viewModel.currentRoute.onNext(route)
+    }
+
 }

@@ -23,6 +23,8 @@ class MapViewModel {
 
     public let activityIndicator = ActivityIndicator()
 
+    public let currentRoute = BehaviorSubject<Route?>(value: nil)
+
     private let disposeBag = DisposeBag()
 
     init() {

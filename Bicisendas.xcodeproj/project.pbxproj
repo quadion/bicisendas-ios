@@ -36,6 +36,9 @@
 		6E708FFB213DC15300DE052C /* USIGObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E708FFA213DC15300DE052C /* USIGObject.swift */; };
 		6E7F762D215AA12900F4F57F /* PuntoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7F762C215AA12900F4F57F /* PuntoDAO.swift */; };
 		6EAF5A9E215C378B00C9AC34 /* BicisendasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF5A9D215C378B00C9AC34 /* BicisendasTests.swift */; };
+		6EB2A51F2170E57A00BF0CD8 /* RouteReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A51E2170E57A00BF0CD8 /* RouteReceiver.swift */; };
+		6EB2A521217103DC00BF0CD8 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A520217103DC00BF0CD8 /* Route.swift */; };
+		6EB2A52321710E5400BF0CD8 /* RecorridoPasoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A52221710E5400BF0CD8 /* RecorridoPasoDAO.swift */; };
 		6EC8452E2128CB5E00E34491 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EC8452C2128CB5E00E34491 /* Localizable.strings */; };
 		6EF24ACA2164103500FD812A /* RecorridoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF24AC92164103500FD812A /* RecorridoDAO.swift */; };
 		6EF24ACC21652AA400FD812A /* USIGCoordinateString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF24ACB21652AA400FD812A /* USIGCoordinateString.swift */; };
@@ -124,6 +127,9 @@
 		6EAF5A9B215C378B00C9AC34 /* BicisendasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BicisendasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EAF5A9D215C378B00C9AC34 /* BicisendasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicisendasTests.swift; sourceTree = "<group>"; };
 		6EAF5A9F215C378B00C9AC34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EB2A51E2170E57A00BF0CD8 /* RouteReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteReceiver.swift; sourceTree = "<group>"; };
+		6EB2A520217103DC00BF0CD8 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		6EB2A52221710E5400BF0CD8 /* RecorridoPasoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorridoPasoDAO.swift; sourceTree = "<group>"; };
 		6EC8452D2128CB5E00E34491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6EC8452F2128CB6F00E34491 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6EF24AC92164103500FD812A /* RecorridoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorridoDAO.swift; sourceTree = "<group>"; };
@@ -180,6 +186,7 @@
 				6E5F7C9A211E11B900E4E7B5 /* MapViewController.swift */,
 				6E0B4DC0213467CE0038ED9D /* RoutesViewController.swift */,
 				6E47A54621519BC50071C381 /* SuggestionsTableViewController.swift */,
+				6EB2A51E2170E57A00BF0CD8 /* RouteReceiver.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -209,6 +216,7 @@
 				6E5152BD2136C21B00803C51 /* TipoDireccionDAO.swift */,
 				6EF24AC92164103500FD812A /* RecorridoDAO.swift */,
 				6EF24ACB21652AA400FD812A /* USIGCoordinateString.swift */,
+				6EB2A52221710E5400BF0CD8 /* RecorridoPasoDAO.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -335,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				6EF57733212CB00800A17152 /* BikeStation.swift */,
+				6EB2A520217103DC00BF0CD8 /* Route.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -592,9 +601,11 @@
 				6EF24ACC21652AA400FD812A /* USIGCoordinateString.swift in Sources */,
 				6E0F52D1212DCDBF000F1D5D /* ToggleBikeStationsButton.swift in Sources */,
 				6E1D6FF9215D9A1200AA0F71 /* USIGCoordinateHelper.m in Sources */,
+				6EB2A521217103DC00BF0CD8 /* Route.swift in Sources */,
 				6E0B4DC1213467CE0038ED9D /* RoutesViewController.swift in Sources */,
 				6E708FFB213DC15300DE052C /* USIGObject.swift in Sources */,
 				6EF5773C212CD8F000A17152 /* BikeStandMarkerAnnotationView.swift in Sources */,
+				6EB2A51F2170E57A00BF0CD8 /* RouteReceiver.swift in Sources */,
 				6E5152C02136CB9000803C51 /* USIGType.swift in Sources */,
 				6EF57724212C8DAF00A17152 /* NetworkOperation.swift in Sources */,
 				6E708FF9213DC12200DE052C /* USIGContainer.swift in Sources */,
@@ -606,6 +617,7 @@
 				6E694B982154408C00EA86F6 /* SuggestionTableViewCell.swift in Sources */,
 				6EF24ACA2164103500FD812A /* RecorridoDAO.swift in Sources */,
 				6E5152BE2136C21B00803C51 /* TipoDireccionDAO.swift in Sources */,
+				6EB2A52321710E5400BF0CD8 /* RecorridoPasoDAO.swift in Sources */,
 				6EF5772D212C92D300A17152 /* Request+Debugging.swift in Sources */,
 				6E5152BA2136BF9600803C51 /* CalleDAO.swift in Sources */,
 				6EF57729212C921F00A17152 /* BikeStationsOperation.swift in Sources */,
@@ -847,8 +859,8 @@
 			baseConfigurationReference = 613F2C873179532AFB7D892F /* Pods-Bicisendas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XF2KB83BBC;
 				INFOPLIST_FILE = Bicisendas/Info.plist;
@@ -859,7 +871,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.quadiontech.Bicisendas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fc81501d-212f-43a1-9b5b-dd6b848968c4";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.quadiontech.Bicisendas";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.quadiontech.Bicisendas";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bicisendas/USIG/Bicisendas-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -872,8 +884,8 @@
 			baseConfigurationReference = 22FE738DC1193FD5C2E95070 /* Pods-Bicisendas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XF2KB83BBC;
 				INFOPLIST_FILE = Bicisendas/Info.plist;
@@ -884,7 +896,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.quadiontech.Bicisendas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fdb2782f-7813-4d65-8b4e-863adf35769b";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.quadiontech.Bicisendas";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.quadiontech.Bicisendas";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bicisendas/USIG/Bicisendas-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

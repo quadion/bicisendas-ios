@@ -12,11 +12,13 @@ public struct RecorridoDAO: Codable {
     public let destino: USIGCoordinateString
     public let origen: USIGCoordinateString
     public let travelledDistance: Int
+    public let plan: [RecorridoPasoDAO]
 
     enum CodingKeys: String, CodingKey {
         case tiempo
         case destino
         case origen
         case travelledDistance = "traveled_distance"
+        case plan
     }
 }

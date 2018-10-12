@@ -19,9 +19,13 @@ class RoutesViewModel {
 
     public var newResults = BehaviorRelay<Void>(value: Void())
 
+    // TODO: This should be changed to an enum where we resolve the location on tap.
     public var fromLocation = BehaviorRelay<USIGContainer?>(value: nil)
 
     public var toLocation = BehaviorRelay<USIGContainer?>(value: nil)
+
+    /// Emits a new value when we have found a pathway
+    public var currentRoute = BehaviorRelay<Route?>(value: nil)
 
     public var resultsCount: Int {
         get {
@@ -67,6 +71,7 @@ class RoutesViewModel {
         bindResults()
     }
 
+    // TODO: This is wrong. We should resolve the user's location on search, not on init.
     private func initLocation() {
         if let location = locationManager.location {
 
@@ -94,10 +99,12 @@ class RoutesViewModel {
     }
 
     private func bindResults() {
+        // TODO: Here is probably the place to convert from USIG objects to model objects and do the
+        //       required coordinate transformations.
         usigWrapper.pathWay
-            .subscribe(onNext: { (recorrido) in
-                print("👍 \(recorrido)")
-            })
+            .filter { $0 != nil }
+            .map { Route(fromRecorrido: $0!) }
+            .bind(to: currentRoute)
             .disposed(by: disposeBag)
     }
 

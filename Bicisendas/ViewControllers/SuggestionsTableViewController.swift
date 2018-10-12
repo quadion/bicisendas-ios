@@ -32,6 +32,11 @@ class SuggestionsTableViewController: UITableViewController {
         viewModel.newResults
             .subscribe(onNext: tableView.reloadData)
             .disposed(by: disposeBag)
+
+        viewModel.currentRoute
+            .filter { $0 != nil }
+            .subscribe(onNext: unwindWithRoute(route:))
+            .disposed(by: disposeBag)
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,6 +64,19 @@ class SuggestionsTableViewController: UITableViewController {
 
         viewModel.toLocation.accept(cellViewModel.usigContainer)
 
-        dismiss(animated: true, completion: nil)
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+
+    private func unwindWithRoute(route: Route?) {
+        performSegue(withIdentifier: "unwindToMapSegue", sender: route)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "unwindToMapSegue",
+            let route = sender as? Route,
+            let routeReciever = segue.destination as? RouteReceiver {
+
+            routeReciever.setRoute(route)
+        }
     }
 }
