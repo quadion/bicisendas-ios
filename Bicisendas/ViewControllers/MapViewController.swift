@@ -28,6 +28,8 @@ class MapViewController: UIViewController {
     var compassButton: MKCompassButton!
 
     fileprivate var bikePathsRenderer: MKTileOverlayRenderer!
+    fileprivate var routePolyline: MKPolyline?
+    fileprivate var routeRenderer: MKPolylineRenderer?
 
     private let locationManager = CLLocationManager()
 
@@ -146,7 +148,8 @@ class MapViewController: UIViewController {
             .skip(1)
             .asDriver(onErrorJustReturn: nil)
             .filter { $0 == nil }
-            .drive(onNext: hideRoute(_:))
+            .map { _ -> Void in }
+            .drive(onNext: hideRoute)
             .disposed(by: disposeBag)
     }
 
@@ -160,7 +163,17 @@ class MapViewController: UIViewController {
     }
 
     private func displayRoute(_ route: Route?) {
-        guard let _ = route else { return }
+        guard let route = route else { return }
+
+        let coordinates = route.coordinates
+
+        routePolyline = MKPolyline(coordinates: coordinates, count: coordinates.count)
+        routeRenderer = MKPolylineRenderer(polyline: routePolyline!)
+
+        routeRenderer?.strokeColor = .red
+        routeRenderer?.fillColor = .red
+
+        mapView.add(routePolyline!)
 
         UIView.animate(withDuration: 0.3,
                        delay: 0,
@@ -177,20 +190,27 @@ class MapViewController: UIViewController {
         }, completion: nil)
     }
 
-    private func hideRoute(_ route: Route?) {
-        UIView.animate(withDuration: 0.3,
-                       delay: 0,
-                       usingSpringWithDamping: 0.8,
-                       initialSpringVelocity: 0.8,
-                       options: .allowAnimatedContent,
-                       animations: { [weak self] in
+    private func hideRoute() {
 
-                        guard let strongSelf = self else { return }
+        guard let routePolyline = self.routePolyline else { return }
 
-                        strongSelf.currentRouteContainerBottomConstraint.constant = -strongSelf.currentRouteContainerView.frame.height
-                        strongSelf.view.layoutIfNeeded()
+        mapView.remove(routePolyline)
 
-            }, completion: nil)
+        defer {
+            UIView.animate(withDuration: 0.3,
+                           delay: 0,
+                           usingSpringWithDamping: 0.8,
+                           initialSpringVelocity: 0.8,
+                           options: .allowAnimatedContent,
+                           animations: { [weak self] in
+
+                            guard let strongSelf = self else { return }
+
+                            strongSelf.currentRouteContainerBottomConstraint.constant = -strongSelf.currentRouteContainerView.frame.height
+                            strongSelf.view.layoutIfNeeded()
+
+                }, completion: nil)
+        }
     }
 
     @IBAction func warningButtonTapped(_ sender: Any) {
@@ -244,6 +264,10 @@ class BiciTileOverlay: MKTileOverlay {
 extension MapViewController: MKMapViewDelegate {
 
     public func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+
+        if overlay is MKPolyline {
+            return routeRenderer!
+        }
 
         return bikePathsRenderer
     }

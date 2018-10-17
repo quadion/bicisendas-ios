@@ -8,8 +8,8 @@
 
 public struct USIGCoordinateString: Codable {
 
-    private let x: Double
-    private let y: Double
+    public let x: Double
+    public let y: Double
 
     public init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
