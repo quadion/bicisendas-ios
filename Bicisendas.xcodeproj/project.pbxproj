@@ -38,6 +38,7 @@
 		6E8E15022177659D00E786D8 /* RouteSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8E15012177659D00E786D8 /* RouteSummaryViewController.swift */; };
 		6E8E15042177814000E786D8 /* RouteStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8E15032177814000E786D8 /* RouteStep.swift */; };
 		6E8E1506217794B600E786D8 /* TipoRecorridoPaso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8E1505217794B600E786D8 /* TipoRecorridoPaso.swift */; };
+		6E8E15082177D46500E786D8 /* RouteLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8E15072177D46500E786D8 /* RouteLocation.swift */; };
 		6EAF5A9E215C378B00C9AC34 /* BicisendasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF5A9D215C378B00C9AC34 /* BicisendasTests.swift */; };
 		6EB2A51F2170E57A00BF0CD8 /* RouteReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A51E2170E57A00BF0CD8 /* RouteReceiver.swift */; };
 		6EB2A521217103DC00BF0CD8 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB2A520217103DC00BF0CD8 /* Route.swift */; };
@@ -140,6 +141,7 @@
 		6E8E15012177659D00E786D8 /* RouteSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteSummaryViewController.swift; sourceTree = "<group>"; };
 		6E8E15032177814000E786D8 /* RouteStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteStep.swift; sourceTree = "<group>"; };
 		6E8E1505217794B600E786D8 /* TipoRecorridoPaso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoRecorridoPaso.swift; sourceTree = "<group>"; };
+		6E8E15072177D46500E786D8 /* RouteLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteLocation.swift; sourceTree = "<group>"; };
 		6EAF5A9B215C378B00C9AC34 /* BicisendasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BicisendasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EAF5A9D215C378B00C9AC34 /* BicisendasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BicisendasTests.swift; sourceTree = "<group>"; };
 		6EAF5A9F215C378B00C9AC34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -346,6 +348,7 @@
 				6EF57720212C8AA200A17152 /* MapViewModel.swift */,
 				6E47A5242151797C0071C381 /* RoutesViewModel.swift */,
 				6E47A5442151873A0071C381 /* CompletionResultViewModel.swift */,
+				6E8E15072177D46500E786D8 /* RouteLocation.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -693,6 +696,7 @@
 				6E0F52D1212DCDBF000F1D5D /* ToggleBikeStationsButton.swift in Sources */,
 				6E1D6FF9215D9A1200AA0F71 /* USIGCoordinateHelper.m in Sources */,
 				6E8E15042177814000E786D8 /* RouteStep.swift in Sources */,
+				6E8E15082177D46500E786D8 /* RouteLocation.swift in Sources */,
 				6EB2A521217103DC00BF0CD8 /* Route.swift in Sources */,
 				6E0B4DC1213467CE0038ED9D /* RoutesViewController.swift in Sources */,
 				6E708FFB213DC15300DE052C /* USIGObject.swift in Sources */,

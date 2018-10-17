@@ -14,6 +14,8 @@ import RxCocoa
 class RouteSummaryViewController: UIViewController {
 
     @IBOutlet weak var clearButton: UIButton!
+    @IBOutlet weak var fromLabel: UILabel!
+    @IBOutlet weak var toLabel: UILabel!
 
     var viewModel: MapViewModel!
 

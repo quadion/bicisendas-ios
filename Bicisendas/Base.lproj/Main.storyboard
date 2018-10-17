@@ -125,24 +125,62 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBn-C8-b45">
-                                <rect key="frame" x="323" y="20" width="36" height="30"/>
+                                <rect key="frame" x="309" y="20" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="rut-Wg-Nm6"/>
+                                </constraints>
                                 <state key="normal" title="Clear"/>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="F1c-Mh-8fV">
+                                <rect key="frame" x="16" y="20" width="273" height="180"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vU-a6-py1">
+                                        <rect key="frame" x="0.0" y="0.0" width="273" height="40.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yt-Qd-xpe">
+                                        <rect key="frame" x="0.0" y="40.5" width="273" height="49.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oX-1M-ZG9">
+                                        <rect key="frame" x="0.0" y="90" width="273" height="40.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Superí 3271" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCp-Nb-f45">
+                                        <rect key="frame" x="0.0" y="130.5" width="273" height="49.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="gU6-dh-Yce" firstAttribute="bottom" secondItem="F1c-Mh-8fV" secondAttribute="bottom" id="3L5-D3-ILy"/>
+                            <constraint firstItem="F1c-Mh-8fV" firstAttribute="leading" secondItem="gU6-dh-Yce" secondAttribute="leading" constant="16" id="awI-Uo-Bpe"/>
+                            <constraint firstItem="GBn-C8-b45" firstAttribute="leading" secondItem="F1c-Mh-8fV" secondAttribute="trailing" constant="20" id="gLr-Fh-69v"/>
                             <constraint firstItem="gU6-dh-Yce" firstAttribute="trailing" secondItem="GBn-C8-b45" secondAttribute="trailing" constant="16" id="m7g-ME-GWe"/>
                             <constraint firstItem="GBn-C8-b45" firstAttribute="top" secondItem="gU6-dh-Yce" secondAttribute="top" constant="20" id="npx-mm-2pI"/>
+                            <constraint firstItem="F1c-Mh-8fV" firstAttribute="top" secondItem="GBn-C8-b45" secondAttribute="top" id="qxM-16-ugF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gU6-dh-Yce"/>
                     </view>
                     <connections>
                         <outlet property="clearButton" destination="GBn-C8-b45" id="B51-SB-rfi"/>
+                        <outlet property="fromLabel" destination="5yt-Qd-xpe" id="MAO-mm-jsd"/>
+                        <outlet property="toLabel" destination="gCp-Nb-f45" id="lgB-1E-GlL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4yC-4M-BMU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="423"/>
+            <point key="canvasLocation" x="1020" y="422.78860569715147"/>
         </scene>
     </scenes>
     <resources>

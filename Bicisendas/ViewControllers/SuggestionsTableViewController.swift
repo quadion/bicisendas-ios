@@ -62,7 +62,7 @@ class SuggestionsTableViewController: UITableViewController {
 
         let cellViewModel = viewModel.resultViewModel(atIndex: indexPath.row)
 
-        viewModel.toLocation.accept(cellViewModel.usigContainer)
+        viewModel.toLocation.accept(.usigObject(container: cellViewModel.usigContainer))
 
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }

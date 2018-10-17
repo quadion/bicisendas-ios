@@ -25,6 +25,10 @@ class MapViewModel {
 
     public let currentRoute = BehaviorSubject<Route?>(value: nil)
 
+//    public let currentRouteFrom: Observable<String>
+//
+//    public let currentRouteTo: Observable<String>
+//
     private let disposeBag = DisposeBag()
 
     init() {

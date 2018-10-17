@@ -19,10 +19,9 @@ class RoutesViewModel {
 
     public var newResults = BehaviorRelay<Void>(value: Void())
 
-    // TODO: This should be changed to an enum where we resolve the location on tap.
-    public var fromLocation = BehaviorRelay<USIGContainer?>(value: nil)
+    public var fromLocation = BehaviorRelay<RouteLocation?>(value: .currentLocation)
 
-    public var toLocation = BehaviorRelay<USIGContainer?>(value: nil)
+    public var toLocation = BehaviorRelay<RouteLocation?>(value: nil)
 
     /// Emits a new value when we have found a pathway
     public var currentRoute = BehaviorRelay<Route?>(value: nil)
@@ -66,23 +65,8 @@ class RoutesViewModel {
             .bind(to: newResults)
             .disposed(by: disposeBag)
 
-        initLocation()
         bindSearch()
         bindResults()
-    }
-
-    // TODO: This is wrong. We should resolve the user's location on search, not on init.
-    private func initLocation() {
-        if let location = locationManager.location {
-
-            let usigCoordinate = coordinateHelper.convertToUSIG(coordinate: location.coordinate)
-
-            let punto = PuntoDAO(coordX: usigCoordinate.x, coordY: usigCoordinate.y)
-
-            let usigFrom = USIGContainer(usigType: .punto, usigObject: punto)
-
-            fromLocation.accept(usigFrom)
-        }
     }
 
     private func bindSearch() {
@@ -93,9 +77,29 @@ class RoutesViewModel {
                     let strongSelf = self,
                     let from = $0.0, let to = $0.1 else { return }
 
-                strongSelf.usigWrapper.directions(from: from, to: to)
+                let fromUSIG = try! strongSelf.toUSIGContainer(routeLocation: from)
+                let toUSIG = try! strongSelf.toUSIGContainer(routeLocation: to)
+
+                strongSelf.usigWrapper.directions(from: fromUSIG, to: toUSIG)
             })
             .disposed(by: disposeBag)
+    }
+
+    private func toUSIGContainer(routeLocation: RouteLocation) throws -> USIGContainer {
+        switch routeLocation {
+        case .currentLocation:
+            guard let location = locationManager.location else { throw NSError() }
+
+            let usigCoordinate = USIGCoordinateHelper.shared().convertToUSIG(coordinate: location.coordinate)
+
+            let punto = PuntoDAO(coordX: usigCoordinate.x, coordY: usigCoordinate.y)
+
+            let usigFrom = USIGContainer(usigType: .punto, usigObject: punto)
+
+            return usigFrom
+        case .usigObject(let container):
+            return container
+        }
     }
 
     private func bindResults() {
