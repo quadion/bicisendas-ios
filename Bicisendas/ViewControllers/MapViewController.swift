@@ -21,6 +21,7 @@ class MapViewController: UIViewController {
     @IBOutlet weak var warningButton: UIButton!
     @IBOutlet weak var bikeStationsButton: UIButton!
     @IBOutlet weak var routesButton: UIButton!
+    @IBOutlet weak var currentRouteContainerView: UIView!
     @IBOutlet weak var currentRouteContainerBottomConstraint: NSLayoutConstraint!
 
     var userTrackingButton: MKUserTrackingButton!
@@ -140,6 +141,13 @@ class MapViewController: UIViewController {
             .filter { $0 != nil }
             .drive(onNext: displayRoute(_:))
             .disposed(by: disposeBag)
+
+        viewModel.currentRoute
+            .skip(1)
+            .asDriver(onErrorJustReturn: nil)
+            .filter { $0 == nil }
+            .drive(onNext: hideRoute(_:))
+            .disposed(by: disposeBag)
     }
 
     private func requestLocationPermission() {
@@ -164,9 +172,25 @@ class MapViewController: UIViewController {
                         guard let strongSelf = self else { return }
 
                         strongSelf.currentRouteContainerBottomConstraint.constant = 0
-                        strongSelf.view.setNeedsLayout()
+                        strongSelf.view.layoutIfNeeded()
 
         }, completion: nil)
+    }
+
+    private func hideRoute(_ route: Route?) {
+        UIView.animate(withDuration: 0.3,
+                       delay: 0,
+                       usingSpringWithDamping: 0.8,
+                       initialSpringVelocity: 0.8,
+                       options: .allowAnimatedContent,
+                       animations: { [weak self] in
+
+                        guard let strongSelf = self else { return }
+
+                        strongSelf.currentRouteContainerBottomConstraint.constant = -strongSelf.currentRouteContainerView.frame.height
+                        strongSelf.view.layoutIfNeeded()
+
+            }, completion: nil)
     }
 
     @IBAction func warningButtonTapped(_ sender: Any) {
@@ -194,6 +218,14 @@ class MapViewController: UIViewController {
     }
 
     @IBAction func unwindToMapViewController(_ segue: UIStoryboardSegue) -> Void {
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "embedRouteSummarySegue",
+            let destination = segue.destination as? RouteSummaryViewController {
+
+            destination.viewModel = viewModel
+        }
     }
 }
 

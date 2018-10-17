@@ -74,7 +74,7 @@
                                     <constraint firstAttribute="height" constant="200" id="PVo-DU-759"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="yGM-Xd-xkZ" kind="embed" id="g2L-QV-W5V"/>
+                                    <segue destination="yGM-Xd-xkZ" kind="embed" identifier="embedRouteSummarySegue" id="g2L-QV-W5V"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -97,6 +97,7 @@
                         <outlet property="buttonContainerBackgroundView" destination="yPO-bn-dVl" id="bRg-lb-WHn"/>
                         <outlet property="buttonContainerStackView" destination="le3-wK-Wns" id="QyY-NK-vaD"/>
                         <outlet property="currentRouteContainerBottomConstraint" destination="5bm-8P-d4s" id="8Kn-aV-6bf"/>
+                        <outlet property="currentRouteContainerView" destination="CQm-vo-8Fe" id="efL-s4-Iho"/>
                         <outlet property="mapView" destination="5uM-wO-qJh" id="7v8-59-FJV"/>
                         <outlet property="routesButton" destination="RrP-ZR-maJ" id="dbX-HD-GLk"/>
                         <outlet property="warningButton" destination="6Vn-gx-6l2" id="awt-CN-HMc"/>
@@ -115,15 +116,29 @@
             </objects>
             <point key="canvasLocation" x="806" y="93"/>
         </scene>
-        <!--View Controller-->
+        <!--Route Summary View Controller-->
         <scene sceneID="m5A-fA-i02">
             <objects>
-                <viewController id="yGM-Xd-xkZ" sceneMemberID="viewController">
+                <viewController id="yGM-Xd-xkZ" customClass="RouteSummaryViewController" customModule="Bicisendas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Di-RU-xfL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBn-C8-b45">
+                                <rect key="frame" x="323" y="20" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gU6-dh-Yce" firstAttribute="trailing" secondItem="GBn-C8-b45" secondAttribute="trailing" constant="16" id="m7g-ME-GWe"/>
+                            <constraint firstItem="GBn-C8-b45" firstAttribute="top" secondItem="gU6-dh-Yce" secondAttribute="top" constant="20" id="npx-mm-2pI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gU6-dh-Yce"/>
                     </view>
+                    <connections>
+                        <outlet property="clearButton" destination="GBn-C8-b45" id="B51-SB-rfi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4yC-4M-BMU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
