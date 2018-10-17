@@ -17,6 +17,8 @@ typedef struct {
 
 @interface USIGCoordinateHelper : NSObject
 
++ (instancetype)sharedHelper;
+
 - (CLLocationCoordinate2D)convertFromUSIGX:(double)x y:(double)y
   NS_SWIFT_NAME(convertFromUSIG(x:y:));
 - (USIGCoordinate)convertToUSIG:(CLLocationCoordinate2D)location

@@ -13,7 +13,7 @@ public struct RecorridoPasoDAO: Codable {
     private let gml: String
 
     public let time: Int?
-    public let type: String
+    public let type: TipoRecorridoPaso
     public let distance: Int?
     public let gmlFeature: GMLFeature?
 
@@ -29,7 +29,7 @@ public struct RecorridoPasoDAO: Codable {
 
         self.gml = try container.decode(String.self, forKey: .gml)
         self.time = try? container.decode(Int.self, forKey: .time)
-        self.type = try container.decode(String.self, forKey: .type)
+        self.type = try container.decode(TipoRecorridoPaso.self, forKey: .type)
         self.distance = try? container.decode(Int.self, forKey: .distance)
 
         let data = self.gml.data(using: .utf8)!

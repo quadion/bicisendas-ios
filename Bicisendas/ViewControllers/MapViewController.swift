@@ -170,10 +170,10 @@ class MapViewController: UIViewController {
         routePolyline = MKPolyline(coordinates: coordinates, count: coordinates.count)
         routeRenderer = MKPolylineRenderer(polyline: routePolyline!)
 
-        routeRenderer?.strokeColor = .red
-        routeRenderer?.fillColor = .red
+        routeRenderer?.strokeColor = UIColor(named: "routeColor")
+        routeRenderer?.fillColor = UIColor(named: "routeColor")
 
-        mapView.add(routePolyline!)
+        mapView.add(routePolyline!, level: .aboveRoads)
 
         UIView.animate(withDuration: 0.3,
                        delay: 0,

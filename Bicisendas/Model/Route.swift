@@ -12,19 +12,37 @@ public class Route {
     public let distance: Int
     public let origin: CLLocationCoordinate2D
     public let destination: CLLocationCoordinate2D
+    public let steps: [RouteStep]
 
     public var coordinates: [CLLocationCoordinate2D] {
-        return [origin, destination]
+        return steps.flatMap { $0.coordinates }
     }
-
-    private static let coordinateHelper = USIGCoordinateHelper()
 
     init(fromRecorrido recorrido: RecorridoDAO) {
         time = recorrido.tiempo
         distance = recorrido.travelledDistance
 
-        origin = Route.coordinateHelper.convertFromUSIG(x: recorrido.origen.x, y: recorrido.origen.y)
-        destination = Route.coordinateHelper.convertFromUSIG(x: recorrido.destino.x, y: recorrido.destino.y)
+        var steps: [RouteStep] = []
+
+        recorrido.plan.forEach { (recorridoPaso) in
+            var step: RouteStep
+
+            switch recorridoPaso.type {
+            case .startBiking:
+                step = RouteStepBegin(recorridoPasoDAO: recorridoPaso)
+            case .street:
+                step = RouteStepBike(recorridoPasoDAO: recorridoPaso)
+            case .finishBiking:
+                step = RouteStepEnd(recorridoPasoDAO: recorridoPaso)
+            }
+
+            steps.append(step)
+        }
+
+        self.steps = steps
+
+        origin = USIGCoordinateHelper.shared().convertFromUSIG(x: recorrido.origen.x, y: recorrido.origen.y)
+        destination = USIGCoordinateHelper.shared().convertFromUSIG(x: recorrido.destino.x, y: recorrido.destino.y)
     }
 
 }

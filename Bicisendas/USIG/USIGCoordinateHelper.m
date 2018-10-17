@@ -32,6 +32,16 @@
     return self;
 }
 
++ (instancetype)sharedHelper {
+    static dispatch_once_t onceToken;
+    static USIGCoordinateHelper *sharedInstance;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[self alloc] init];
+    });
+
+    return sharedInstance;
+}
+
 - (void)initProg4 {
     context = proj_context_create();
     pj_ctx_set_fileapi(context, get_bundle_fileapi());
