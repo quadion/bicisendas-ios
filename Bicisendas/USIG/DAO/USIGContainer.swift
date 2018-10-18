@@ -11,7 +11,20 @@ class USIGContainer: Codable, CustomStringConvertible {
     var usigObject: USIGObject
 
     var description: String {
-        return "\(usigType)"
+        switch usigType {
+        case .direccion:
+            if let direccion = usigObject as? DireccionDAO {
+                if let cruce = direccion.calleCruce {
+                    return "\(direccion.calle.nombre) y \(cruce.nombre)"
+                } else {
+                    return "\(direccion.calle.nombre) \(direccion.altura)"
+                }
+            } else {
+                fallthrough
+            }
+        default:
+            return "\(usigType)"
+        }
     }
 
     enum CodingKeys: String, CodingKey {

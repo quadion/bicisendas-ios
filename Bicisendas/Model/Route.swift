@@ -10,6 +10,8 @@ public class Route {
 
     public let time: Int
     public let distance: Int
+    public let fromLocation: RouteLocation
+    public let toLocation: RouteLocation
     public let origin: CLLocationCoordinate2D
     public let destination: CLLocationCoordinate2D
     public let steps: [RouteStep]
@@ -18,7 +20,7 @@ public class Route {
         return steps.flatMap { $0.coordinates }
     }
 
-    init(fromRecorrido recorrido: RecorridoDAO) {
+    init(fromRecorrido recorrido: RecorridoDAO, fromLocation from: RouteLocationViewModel, toLocation to: RouteLocationViewModel) {
         time = recorrido.tiempo
         distance = recorrido.travelledDistance
 
@@ -43,6 +45,9 @@ public class Route {
 
         origin = USIGCoordinateHelper.shared().convertFromUSIG(x: recorrido.origen.x, y: recorrido.origen.y)
         destination = USIGCoordinateHelper.shared().convertFromUSIG(x: recorrido.destino.x, y: recorrido.destino.y)
+
+        fromLocation = from.toRouteLocation()
+        toLocation = to.toRouteLocation()
     }
 
 }

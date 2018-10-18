@@ -24,9 +24,21 @@ class RouteSummaryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        bindUI()
+    }
+
+    private func bindUI() {
         clearButton.rx.tap
             .map { nil }
             .bind(to: viewModel.currentRoute)
+            .disposed(by: disposeBag)
+
+        viewModel.currentRouteFrom
+            .bind(to: fromLabel.rx.text)
+            .disposed(by: disposeBag)
+
+        viewModel.currentRouteTo
+            .bind(to: toLabel.rx.text)
             .disposed(by: disposeBag)
     }
 }

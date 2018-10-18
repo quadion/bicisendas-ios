@@ -25,10 +25,26 @@ class MapViewModel {
 
     public let currentRoute = BehaviorSubject<Route?>(value: nil)
 
-//    public let currentRouteFrom: Observable<String>
-//
-//    public let currentRouteTo: Observable<String>
-//
+    public var currentRouteFrom: Observable<String> {
+        return currentRoute
+            .filter { $0 != nil }
+            .map { [weak self] in
+                guard let strongSelf = self else { return "" }
+
+                return strongSelf.formatRouteLocation($0!.fromLocation)
+            }
+    }
+
+    public var currentRouteTo: Observable<String> {
+        return currentRoute
+            .filter { $0 != nil }
+            .map { [weak self] in
+                guard let strongSelf = self else { return "" }
+
+                return strongSelf.formatRouteLocation($0!.toLocation)
+        }
+    }
+
     private let disposeBag = DisposeBag()
 
     init() {
@@ -63,5 +79,14 @@ class MapViewModel {
             }
             .bind(to: annotations)
             .disposed(by: disposeBag)
+    }
+
+    private func formatRouteLocation(_ routeLocation: RouteLocation) -> String {
+        switch routeLocation {
+        case .currentLocation:
+            return "My Location"
+        case .enteredLocation(let string):
+            return string
+        }
     }
 }

@@ -19,9 +19,9 @@ class RoutesViewModel {
 
     public var newResults = BehaviorRelay<Void>(value: Void())
 
-    public var fromLocation = BehaviorRelay<RouteLocation?>(value: .currentLocation)
+    public var fromLocation = BehaviorRelay<RouteLocationViewModel?>(value: .currentLocation)
 
-    public var toLocation = BehaviorRelay<RouteLocation?>(value: nil)
+    public var toLocation = BehaviorRelay<RouteLocationViewModel?>(value: nil)
 
     /// Emits a new value when we have found a pathway
     public var currentRoute = BehaviorRelay<Route?>(value: nil)
@@ -85,7 +85,7 @@ class RoutesViewModel {
             .disposed(by: disposeBag)
     }
 
-    private func toUSIGContainer(routeLocation: RouteLocation) throws -> USIGContainer {
+    private func toUSIGContainer(routeLocation: RouteLocationViewModel) throws -> USIGContainer {
         switch routeLocation {
         case .currentLocation:
             guard let location = locationManager.location else { throw NSError() }
@@ -103,9 +103,15 @@ class RoutesViewModel {
     }
 
     private func bindResults() {
+        let combinedFromTo = Observable.combineLatest(fromLocation, toLocation)
+
         usigWrapper.pathWay
             .filter { $0 != nil }
-            .map { Route(fromRecorrido: $0!) }
+            .withLatestFrom(combinedFromTo, resultSelector: { (recorridoDAO, locations) -> Route in
+                let (fromLocation, toLocation) = locations
+
+                return Route(fromRecorrido: recorridoDAO!, fromLocation: fromLocation!, toLocation: toLocation!)
+            })
             .bind(to: currentRoute)
             .disposed(by: disposeBag)
     }
