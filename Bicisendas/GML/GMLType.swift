@@ -13,4 +13,7 @@ public enum GMLType: String, Decodable {
     case preferentialLane = "Carril preferencial"
     case end = "end"
 
+    case marker = "marker"
+    case walk = "walk"
+
 }

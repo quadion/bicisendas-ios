@@ -30,7 +30,7 @@ public class Route {
             switch recorridoPaso.type {
             case .startBiking:
                 step = RouteStepBegin(recorridoPasoDAO: recorridoPaso)
-            case .street:
+            case .street, .startWalking, .finishWalking:
                 step = RouteStepBike(recorridoPasoDAO: recorridoPaso)
             case .finishBiking:
                 step = RouteStepEnd(recorridoPasoDAO: recorridoPaso)

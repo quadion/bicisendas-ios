@@ -10,4 +10,6 @@ public enum TipoRecorridoPaso: String, Codable {
     case startBiking = "StartBiking"
     case street = "Street"
     case finishBiking = "FinishBiking"
+    case startWalking = "StartWalking"
+    case finishWalking = "FinishWalking"
 }
