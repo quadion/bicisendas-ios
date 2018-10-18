@@ -187,6 +187,12 @@ class MapViewController: UIViewController {
                         strongSelf.currentRouteContainerBottomConstraint.constant = 0
                         strongSelf.view.layoutIfNeeded()
 
+                        if let boundingMapRect = strongSelf.routePolyline?.boundingMapRect {
+                            let insets = UIEdgeInsetsMake(0, 20, strongSelf.currentRouteContainerView.frame.height, 20)
+                            strongSelf.mapView.setVisibleMapRect(boundingMapRect, edgePadding: insets, animated: true)
+                        }
+
+
         }, completion: nil)
     }
 
