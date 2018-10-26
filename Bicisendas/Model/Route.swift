@@ -8,8 +8,8 @@
 
 public class Route {
 
-    public let time: Int
-    public let distance: Int
+    public let time: Measurement<UnitDuration>
+    public let distance: Measurement<UnitLength>
     public let fromLocation: RouteLocation
     public let toLocation: RouteLocation
     public let origin: CLLocationCoordinate2D
@@ -21,8 +21,8 @@ public class Route {
     }
 
     init(fromRecorrido recorrido: RecorridoDAO, fromLocation from: RouteLocationViewModel, toLocation to: RouteLocationViewModel) {
-        time = recorrido.tiempo
-        distance = recorrido.travelledDistance
+        time = Measurement(value: Double(recorrido.tiempo), unit: UnitDuration.minutes)
+        distance = Measurement(value: Double(recorrido.travelledDistance), unit: UnitLength.meters)
 
         var steps: [RouteStep] = []
 

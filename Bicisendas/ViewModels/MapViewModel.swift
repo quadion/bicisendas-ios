@@ -45,6 +45,32 @@ class MapViewModel {
         }
     }
 
+    public var duration: Observable<String> {
+        return currentRoute
+            .filter { $0 != nil }
+            .map {
+                let timeFormatter = MeasurementFormatter()
+                timeFormatter.locale = Locale(identifier: "es_AR")
+                timeFormatter.unitOptions = .naturalScale
+                timeFormatter.unitStyle = .medium
+
+                return timeFormatter.string(from: $0!.time)
+            }
+    }
+
+    public var distance: Observable<String> {
+        return currentRoute
+            .filter { $0 != nil }
+            .map {
+                let distanceFormatter = MeasurementFormatter()
+                distanceFormatter.locale = Locale(identifier: "es_AR")
+                distanceFormatter.unitOptions = .naturalScale
+                distanceFormatter.unitStyle = .medium
+
+                return distanceFormatter.string(from: $0!.distance)
+            }
+    }
+
     private let disposeBag = DisposeBag()
 
     init() {
