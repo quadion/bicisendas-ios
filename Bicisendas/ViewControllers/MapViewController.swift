@@ -160,6 +160,7 @@ class MapViewController: UIViewController {
     fileprivate func updateButtons(forLocationServicesEnabled locationServicesEnabled: Bool) {
         userTrackingButton.isHidden = !locationServicesEnabled
         warningButton.isHidden = locationServicesEnabled
+        routesButton.isHidden = !locationServicesEnabled
     }
 
     private func displayRoute(_ route: Route?) {

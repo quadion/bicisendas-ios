@@ -25,7 +25,7 @@
                                 </connections>
                             </mapView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPO-bn-dVl">
-                                <rect key="frame" x="329" y="594" width="36" height="75"/>
+                                <rect key="frame" x="329" y="584" width="36" height="75"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PpJ-wM-e4s">
                                     <rect key="frame" x="0.0" y="0.0" width="36" height="75"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,9 +83,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5uM-wO-qJh" secondAttribute="trailing" id="0Cl-9e-gLQ"/>
                             <constraint firstAttribute="bottomMargin" secondItem="CQm-vo-8Fe" secondAttribute="bottom" constant="-200" id="5bm-8P-d4s"/>
                             <constraint firstAttribute="bottomMargin" secondItem="5uM-wO-qJh" secondAttribute="bottom" id="A04-hU-TdI"/>
+                            <constraint firstItem="yPO-bn-dVl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-8" id="Mq7-aD-Iqd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yPO-bn-dVl" secondAttribute="trailing" constant="10" id="RJ5-ow-qHu"/>
                             <constraint firstItem="CQm-vo-8Fe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SWM-mI-szd"/>
-                            <constraint firstItem="yPO-bn-dVl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="2" id="W1g-0N-iaQ"/>
                             <constraint firstItem="5uM-wO-qJh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="hVu-rv-cuj"/>
                             <constraint firstItem="5uM-wO-qJh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="k0c-Z2-t8R"/>
                             <constraint firstItem="CQm-vo-8Fe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="mby-NN-wjB"/>
