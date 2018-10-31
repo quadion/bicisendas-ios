@@ -6,6 +6,8 @@
 //  Copyright © 2018 Pablo Bendersky. All rights reserved.
 //
 
+import MapKit
+
 public class Route {
 
     public let time: Measurement<UnitDuration>
@@ -17,7 +19,40 @@ public class Route {
     public let steps: [RouteStep]
 
     public var coordinates: [CLLocationCoordinate2D] {
-        return steps.flatMap { $0.coordinates }
+
+        var coordinates = [CLLocationCoordinate2D]()
+
+        steps.forEach { (step) in
+
+            let stepCoordinates = step.coordinates
+
+            if let lastAppended = coordinates.last,
+                let firstToAppend = stepCoordinates.first,
+                let lastToAppend = stepCoordinates.last {
+
+                let lastAppendedPoint = MKMapPointForCoordinate(lastAppended)
+                let firstToAppendPoint = MKMapPointForCoordinate(firstToAppend)
+                let lastToAppendPoint = MKMapPointForCoordinate(lastToAppend)
+
+                if MKMetersBetweenMapPoints(lastAppendedPoint, firstToAppendPoint) <
+                    MKMetersBetweenMapPoints(lastAppendedPoint, lastToAppendPoint) {
+
+                    coordinates.append(contentsOf: stepCoordinates)
+
+                } else {
+
+                    coordinates.append(contentsOf: stepCoordinates.reversed())
+
+                }
+
+            } else {
+
+                coordinates.append(contentsOf: stepCoordinates)
+            }
+
+        }
+
+        return coordinates
     }
 
     init(fromRecorrido recorrido: RecorridoDAO, fromLocation from: RouteLocationViewModel, toLocation to: RouteLocationViewModel) {

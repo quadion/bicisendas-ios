@@ -6,6 +6,8 @@
 //  Copyright © 2018 Pablo Bendersky. All rights reserved.
 //
 
+import MapKit
+
 public protocol RouteStep {
 
     var coordinates: [CLLocationCoordinate2D] { get }
@@ -41,9 +43,29 @@ public struct RouteStepBike: RouteStep {
             var coordinates = [CLLocationCoordinate2D]()
 
             points.lineStringMembers.forEach { (lineStringMember) in
-                lineStringMember.lineString.coordinates.forEach({ (coordinate) in
-                    coordinates.append(USIGCoordinateHelper.shared().convertFromUSIG(x: coordinate.x, y: coordinate.y))
-                })
+                let convertedCoordinates = lineStringMember.lineString.coordinates.map {
+                    USIGCoordinateHelper.shared().convertFromUSIG(x: $0.x, y: $0.y)
+                }
+                if let lastInCollection = coordinates.last,
+                    let first = convertedCoordinates.first,
+                    let last = convertedCoordinates.last {
+
+                    let lastInCollectionPoint = MKMapPointForCoordinate(lastInCollection)
+                    let firstPoint = MKMapPointForCoordinate(first)
+                    let lastPoint = MKMapPointForCoordinate(last)
+
+                    if MKMetersBetweenMapPoints(lastInCollectionPoint, firstPoint) < MKMetersBetweenMapPoints(lastInCollectionPoint, lastPoint) {
+
+                        coordinates.append(contentsOf: convertedCoordinates)
+                        
+                    } else {
+
+                        coordinates.append(contentsOf: convertedCoordinates.reversed())
+                    }
+
+                } else {
+                    coordinates.append(contentsOf: convertedCoordinates)
+                }
             }
 
             self.coordinates = coordinates
