@@ -82,13 +82,14 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5uM-wO-qJh" secondAttribute="trailing" id="0Cl-9e-gLQ"/>
                             <constraint firstAttribute="bottomMargin" secondItem="CQm-vo-8Fe" secondAttribute="bottom" constant="-200" id="5bm-8P-d4s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yPO-bn-dVl" secondAttribute="bottom" constant="8" id="8n3-ci-aN7"/>
                             <constraint firstAttribute="bottomMargin" secondItem="5uM-wO-qJh" secondAttribute="bottom" id="A04-hU-TdI"/>
-                            <constraint firstItem="yPO-bn-dVl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-8" id="Mq7-aD-Iqd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yPO-bn-dVl" secondAttribute="trailing" constant="10" id="RJ5-ow-qHu"/>
                             <constraint firstItem="CQm-vo-8Fe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SWM-mI-szd"/>
                             <constraint firstItem="5uM-wO-qJh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="hVu-rv-cuj"/>
                             <constraint firstItem="5uM-wO-qJh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="k0c-Z2-t8R"/>
                             <constraint firstItem="CQm-vo-8Fe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="mby-NN-wjB"/>
+                            <constraint firstItem="CQm-vo-8Fe" firstAttribute="top" secondItem="yPO-bn-dVl" secondAttribute="bottom" priority="750" constant="8" id="uaX-xE-zJx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
