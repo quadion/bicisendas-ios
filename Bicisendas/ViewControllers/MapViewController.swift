@@ -271,6 +271,7 @@ extension MapViewController: MKMapViewDelegate {
     public func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
 
         if overlay is MKPolyline {
+
             let routeRenderer = MKPolylineRenderer(polyline: routePolyline!)
 
             routeRenderer.strokeColor = UIColor(named: "routeColor")
@@ -278,6 +279,7 @@ extension MapViewController: MKMapViewDelegate {
 
             return routeRenderer
         } else {
+
             return MKTileOverlayRenderer(overlay: overlay)
         }
     }
