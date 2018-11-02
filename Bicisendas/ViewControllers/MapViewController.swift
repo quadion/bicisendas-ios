@@ -145,6 +145,12 @@ class MapViewController: UIViewController {
             .disposed(by: disposeBag)
 
         viewModel.currentRoute
+            .map { $0 != nil }
+            .asDriver(onErrorJustReturn: false)
+            .drive(routesButton.rx.isHidden)
+            .disposed(by: disposeBag)
+
+        viewModel.currentRoute
             .skip(1)
             .asDriver(onErrorJustReturn: nil)
             .filter { $0 == nil }

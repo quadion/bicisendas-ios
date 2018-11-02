@@ -77,10 +77,16 @@ class RoutesViewModel {
                     let strongSelf = self,
                     let from = $0.0, let to = $0.1 else { return }
 
-                let fromUSIG = try! strongSelf.toUSIGContainer(routeLocation: from)
-                let toUSIG = try! strongSelf.toUSIGContainer(routeLocation: to)
+                do {
 
-                strongSelf.usigWrapper.directions(from: fromUSIG, to: toUSIG)
+                    let fromUSIG = try strongSelf.toUSIGContainer(routeLocation: from)
+                    let toUSIG = try strongSelf.toUSIGContainer(routeLocation: to)
+
+                    strongSelf.usigWrapper.directions(from: fromUSIG, to: toUSIG)
+
+                } catch {
+
+                }
             })
             .disposed(by: disposeBag)
     }
