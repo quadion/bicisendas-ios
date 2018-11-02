@@ -27,9 +27,7 @@ class MapViewController: UIViewController {
     var userTrackingButton: MKUserTrackingButton!
     var compassButton: MKCompassButton!
 
-    fileprivate var bikePathsRenderer: MKTileOverlayRenderer!
     fileprivate var routePolyline: MKPolyline?
-    fileprivate var routeRenderer: MKPolylineRenderer?
 
     private let locationManager = CLLocationManager()
 
@@ -76,8 +74,6 @@ class MapViewController: UIViewController {
 
         overlay.minimumZ = 9
         overlay.maximumZ = 18
-
-        bikePathsRenderer = MKTileOverlayRenderer(overlay: overlay)
 
         mapView.add(overlay, level: .aboveRoads)
 
@@ -175,10 +171,6 @@ class MapViewController: UIViewController {
         let coordinates = route.coordinates
 
         routePolyline = MKPolyline(coordinates: coordinates, count: coordinates.count)
-        routeRenderer = MKPolylineRenderer(polyline: routePolyline!)
-
-        routeRenderer?.strokeColor = UIColor(named: "routeColor")
-        routeRenderer?.fillColor = UIColor(named: "routeColor")
 
         mapView.add(routePolyline!, level: .aboveRoads)
 
@@ -279,10 +271,15 @@ extension MapViewController: MKMapViewDelegate {
     public func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
 
         if overlay is MKPolyline {
-            return routeRenderer!
-        }
+            let routeRenderer = MKPolylineRenderer(polyline: routePolyline!)
 
-        return bikePathsRenderer
+            routeRenderer.strokeColor = UIColor(named: "routeColor")
+            routeRenderer.fillColor = UIColor(named: "routeColor")
+
+            return routeRenderer
+        } else {
+            return MKTileOverlayRenderer(overlay: overlay)
+        }
     }
 
 }
