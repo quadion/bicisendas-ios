@@ -91,6 +91,8 @@ class MapViewController: UIViewController {
     private func registerMapViewAnnotations() {
         mapView.register(BikeStandMarkerAnnotationView.self,
                          forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        mapView.register(RouteEndpointAnnotationView.self,
+                         forAnnotationViewWithReuseIdentifier: "routeEndpointIdentifier")
         mapView.register(BikeStandMarkerAnnotationView.self,
                          forAnnotationViewWithReuseIdentifier: MKMapViewDefaultClusterAnnotationViewReuseIdentifier)
     }
@@ -105,7 +107,7 @@ class MapViewController: UIViewController {
 
                 guard let strongSelf = self else { return }
 
-                strongSelf.mapView.removeAnnotations(strongSelf.mapView.annotations)
+                strongSelf.mapView.removeAnnotations(ofType: BikeStation.self)
                 strongSelf.mapView.addAnnotations(annotations)
 
             }, onError: { (error) in
@@ -125,7 +127,7 @@ class MapViewController: UIViewController {
             .drive(onNext: { [weak self] _ in
                 guard let strongSelf = self else { return }
 
-                strongSelf.mapView.removeAnnotations(strongSelf.mapView.annotations)
+                strongSelf.mapView.removeAnnotations(ofType: BikeStation.self)
             })
             .disposed(by: disposeBag)
 
@@ -174,6 +176,9 @@ class MapViewController: UIViewController {
 
         mapView.add(routePolyline!, level: .aboveRoads)
 
+        mapView.addAnnotation(route.origin)
+        mapView.addAnnotation(route.destination)
+
         UIView.animate(withDuration: 0.3,
                        delay: 0,
                        usingSpringWithDamping: 0.8,
@@ -200,6 +205,8 @@ class MapViewController: UIViewController {
         guard let routePolyline = self.routePolyline else { return }
 
         mapView.remove(routePolyline)
+
+        mapView.removeAnnotations(ofType: RouteEndpoint.self)
 
         defer {
             UIView.animate(withDuration: 0.3,
@@ -259,14 +266,30 @@ class BiciTileOverlay: MKTileOverlay {
     override func url(forTilePath path: MKTileOverlayPath) -> URL {
         let flippedY = (1 << path.z) - path.y - 1
 
-        let tileUrl = "https://tiles1.usig.buenosaires.gob.ar/mapcache/tms/1.0.0/ciclovias_caba_3857@GoogleMapsCompatible/\(path.z)/\(path.x)/\(flippedY).png"
-
-        return URL(string: tileUrl)!
+        return super.url(forTilePath: MKTileOverlayPath(x: path.x, y: flippedY, z: path.z, contentScaleFactor: path.contentScaleFactor))
     }
 
 }
 
 extension MapViewController: MKMapViewDelegate {
+
+    public func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+
+        if annotation is BikeStation {
+
+            let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier, for: annotation)
+            return annotationView
+
+        } else if annotation is RouteEndpoint {
+
+            let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "routeEndpointIdentifier",for: annotation)
+            return annotationView
+
+        } else {
+
+            return nil
+        }
+    }
 
     public func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
 

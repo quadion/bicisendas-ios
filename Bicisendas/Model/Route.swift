@@ -14,8 +14,8 @@ public class Route {
     public let distance: Measurement<UnitLength>
     public let fromLocation: RouteLocation
     public let toLocation: RouteLocation
-    public let origin: CLLocationCoordinate2D
-    public let destination: CLLocationCoordinate2D
+    public let origin: RouteEndpoint
+    public let destination: RouteEndpoint
     public let steps: [RouteStep]
 
     public var coordinates: [CLLocationCoordinate2D] {
@@ -78,8 +78,11 @@ public class Route {
 
         self.steps = steps
 
-        origin = USIGCoordinateHelper.shared().convertFromUSIG(x: recorrido.origen.x, y: recorrido.origen.y)
-        destination = USIGCoordinateHelper.shared().convertFromUSIG(x: recorrido.destino.x, y: recorrido.destino.y)
+        let originCoordinate = USIGCoordinateHelper.shared().convertFromUSIG(x: recorrido.origen.x, y: recorrido.origen.y)
+        origin = RouteEndpoint(endpointType: .begin, coordinate: originCoordinate)
+
+        let destinationCoordinate = USIGCoordinateHelper.shared().convertFromUSIG(x: recorrido.destino.x, y: recorrido.destino.y)
+        destination = RouteEndpoint(endpointType: .end, coordinate: destinationCoordinate)
 
         fromLocation = from.toRouteLocation()
         toLocation = to.toRouteLocation()
