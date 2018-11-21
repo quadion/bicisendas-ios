@@ -13,13 +13,14 @@ import RxCocoa
 
 class RouteSummaryViewController: UIViewController {
 
-    @IBOutlet weak var clearButton: UIButton!
-    @IBOutlet weak var fromToStackView: UIStackView!
+    @IBOutlet weak var clearButton: UIBarButtonItem!
     @IBOutlet weak var fromLabel: UILabel!
     @IBOutlet weak var toLabel: UILabel!
-    @IBOutlet weak var durationDistanceStackView: UIStackView!
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var navigationBar: UINavigationBar!
+    @IBOutlet weak var startRouteReferenceView: UIView!
+    @IBOutlet weak var endRouteReferenceView: UIView!
 
     var viewModel: MapViewModel!
 
@@ -29,12 +30,21 @@ class RouteSummaryViewController: UIViewController {
         super.viewDidLoad()
 
         setStackViewSpacings()
+        setupUI()
         bindUI()
     }
 
+    private func setupUI() {
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.shadowImage = UIImage()
+
+        startRouteReferenceView.roundCorners(startRouteReferenceView.frame.width / 2)
+        endRouteReferenceView.roundCorners(endRouteReferenceView.frame.width / 2)
+    }
+
     private func setStackViewSpacings() {
-        fromToStackView.setCustomSpacing(20, after: fromLabel)
-        durationDistanceStackView.setCustomSpacing(20, after: durationLabel)
+//        fromToStackView.setCustomSpacing(20, after: fromLabel)
+//        durationDistanceStackView.setCustomSpacing(20, after: durationLabel)
     }
 
     private func bindUI() {
