@@ -19,6 +19,9 @@ class RoutesViewModel {
 
     public var newResults = BehaviorRelay<Void>(value: Void())
 
+    /// Emits a new value when there's an error in the USIG wrapper.
+    public var error = BehaviorRelay<String?>(value: nil)
+
     public var fromLocation = BehaviorRelay<RouteLocationViewModel?>(value: .currentLocation)
 
     public var toLocation = BehaviorRelay<RouteLocationViewModel?>(value: nil)
@@ -56,6 +59,11 @@ class RoutesViewModel {
                 usigContainers.map { CompletionResultViewModel(usigContainer: $0) }
             }
             .bind(to: completionResults)
+            .disposed(by: disposeBag)
+
+        usigWrapper.error
+            .filter { $0 != nil }
+            .bind(to: error)
             .disposed(by: disposeBag)
 
         completionResults

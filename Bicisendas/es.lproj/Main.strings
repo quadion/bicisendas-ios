@@ -1,1 +1,24 @@
 
+/* Class = "UILabel"; text = "To"; ObjectID = "2fA-G5-h64"; */
+"2fA-G5-h64.text" = "Hasta";
+
+/* Class = "UILabel"; text = "Duration"; ObjectID = "HOw-aq-5UP"; */
+"HOw-aq-5UP.text" = "Duracion";
+
+/* Class = "UILabel"; text = "50 min"; ObjectID = "HdD-yZ-B08"; */
+"HdD-yZ-B08.text" = "50 min";
+
+/* Class = "UILabel"; text = "Cabrera 5453"; ObjectID = "OvC-ax-Ek8"; */
+"OvC-ax-Ek8.text" = "Cabrera 5453";
+
+/* Class = "UILabel"; text = "My Location"; ObjectID = "UIv-YS-TjV"; */
+"UIv-YS-TjV.text" = "Mi ubicación";
+
+/* Class = "UILabel"; text = "Distance"; ObjectID = "fqC-4C-Osn"; */
+"fqC-4C-Osn.text" = "Distancia";
+
+/* Class = "UILabel"; text = "From"; ObjectID = "mqW-fg-adk"; */
+"mqW-fg-adk.text" = "Desde";
+
+/* Class = "UILabel"; text = "10,846km"; ObjectID = "osP-fv-bVa"; */
+"osP-fv-bVa.text" = "10,846km";

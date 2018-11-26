@@ -27,6 +27,12 @@ class RoutesViewController: UIViewController {
             .bind(to: searchBar.rx.isUserInteractionEnabled)
             .disposed(by: disposeBag)
 
+        viewModel.error
+            .asDriver(onErrorJustReturn: nil)
+            .filter { $0 != nil }
+            .drive(onNext: showError(_:))
+            .disposed(by: disposeBag)
+
         searchBar.rx.text.orEmpty
             .throttle(0.5, scheduler: MainScheduler.instance)
             .distinctUntilChanged()
@@ -49,4 +55,17 @@ class RoutesViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
+    private func showError(_ error: String?) {
+        let alert = UIAlertController(title: NSLocalizedString("We are sorry!", comment: "Error searching route"),
+                                      message: NSLocalizedString("We could not find a route from your location.", comment: "Error searching route"),
+                                      preferredStyle: .alert)
+
+        let dismissAction = UIAlertAction(title: NSLocalizedString("Dismiss", comment: "Dismiss"), style: .default) { [weak self] (_) in
+            self?.dismiss(animated: true, completion: nil)
+        }
+
+        alert.addAction(dismissAction)
+
+        present(alert, animated: true, completion: nil)
+    }
 }

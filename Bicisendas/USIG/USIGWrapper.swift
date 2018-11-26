@@ -31,6 +31,9 @@ class USIGWrapper: NSObject {
     /// Emits a RecorridoDAO when a new pathway is found.
     public var pathWay = BehaviorRelay<RecorridoDAO?>(value: nil)
 
+    /// Emits a String with the error description when there's an error in the underlying code we are wrapping.
+    public var error = BehaviorRelay<String?>(value: nil)
+
     private let disposeBag = DisposeBag()
 
 
@@ -38,11 +41,12 @@ class USIGWrapper: NSObject {
     ///
     /// - ready: Triggered when the API is ready to be used.
     /// - suggestions: Triggered when there are new suggestions after a search.
-    private enum USIGHandlers: String {
+    private enum USIGHandlers: String, CaseIterable {
         case ready
         case suggestions
         case directions
         case debug // For debug purposes only
+        case error
     }
 
     private var webView: WKWebView!
@@ -74,10 +78,9 @@ class USIGWrapper: NSObject {
         let configuration = WKWebViewConfiguration()
         configuration.userContentController = userContentController
 
-        userContentController.add(self, name: USIGHandlers.ready.rawValue)
-        userContentController.add(self, name: USIGHandlers.suggestions.rawValue)
-        userContentController.add(self, name: USIGHandlers.directions.rawValue)
-        userContentController.add(self, name: USIGHandlers.debug.rawValue)
+        USIGHandlers.allCases.forEach { (handler) in
+            userContentController.add(self, name: handler.rawValue)
+        }
 
         self.webView = WKWebView(frame: CGRect.zero, configuration: configuration)
 
@@ -142,6 +145,10 @@ extension USIGWrapper: WKScriptMessageHandler {
             }
         case USIGHandlers.debug.rawValue:
             print("👍 usig-api DEBUG \(message.body)")
+        case USIGHandlers.error.rawValue:
+            if let bodyString = message.body as? String {
+                error.accept(bodyString)
+            }
         default:
             print("👍 default case in \(#function)")
         }
