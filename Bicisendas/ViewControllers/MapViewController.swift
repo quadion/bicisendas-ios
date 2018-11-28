@@ -23,6 +23,7 @@ class MapViewController: UIViewController {
     @IBOutlet weak var routesButton: UIButton!
     @IBOutlet weak var currentRouteContainerView: UIView!
     @IBOutlet weak var currentRouteContainerBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var outOfCabaWarningView: UIView!
 
     var userTrackingButton: MKUserTrackingButton!
     var compassButton: MKCompassButton!
@@ -40,8 +41,9 @@ class MapViewController: UIViewController {
 
         registerMapViewAnnotations()
 
-        bikeStationsButton.layer.cornerRadius = 5
-        buttonContainerBackgroundView.layer.cornerRadius = 5
+        bikeStationsButton.roundCorners(5)
+        buttonContainerBackgroundView.roundCorners(5)
+        outOfCabaWarningView.roundCorners(5)
 
         locationManager.delegate = self
 
@@ -53,6 +55,8 @@ class MapViewController: UIViewController {
         let region = mapView.regionThatFits(cabaRegion)
         mapView.setRegion(region, animated: true)
         mapView.showsCompass = false
+
+        viewModel.cabaMapRect.accept(mapView.visibleMapRect)
 
         userTrackingButton = MKUserTrackingButton(mapView: mapView)
         userTrackingButton.translatesAutoresizingMaskIntoConstraints = false
@@ -154,6 +158,10 @@ class MapViewController: UIViewController {
             .filter { $0 == nil }
             .map { _ -> Void in }
             .drive(onNext: hideRoute)
+            .disposed(by: disposeBag)
+
+        viewModel.inCaba
+            .bind(to: outOfCabaWarningView.rx.isHidden)
             .disposed(by: disposeBag)
     }
 
@@ -259,6 +267,12 @@ class MapViewController: UIViewController {
             destination.viewModel = viewModel
         }
     }
+
+    @IBAction func goToCabaTapped(_ sender: Any?) {
+        guard let cabaRect = viewModel.cabaMapRect.value else { return }
+
+        mapView.setVisibleMapRect(cabaRect, animated: true)
+    }
 }
 
 class BiciTileOverlay: MKTileOverlay {
@@ -305,6 +319,10 @@ extension MapViewController: MKMapViewDelegate {
 
             return MKTileOverlayRenderer(overlay: overlay)
         }
+    }
+
+    public func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
+        viewModel.visibleMapRect.accept(mapView.visibleMapRect)
     }
 
 }

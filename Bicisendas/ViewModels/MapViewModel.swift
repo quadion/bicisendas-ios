@@ -11,9 +11,18 @@ import MapKit
 import GeoJSON
 
 import RxSwift
+import RxCocoa
 import RxSwiftUtilities
 
 class MapViewModel {
+
+    /// MKMapRect of CABA, as obtained when initializing the map. We'll use it to check if
+    /// directions are to be enabled, and to show an alert to the user.
+    public let cabaMapRect = BehaviorRelay<MKMapRect?>(value: nil)
+
+    /// Current visible MKMapRect. To be combined with CABA Map Rect so we can check if the mapa is centered
+    /// in the area of interest.
+    public let visibleMapRect = BehaviorRelay<MKMapRect?>(value: nil)
 
     public let showBikeStations = BehaviorSubject<Bool>(value: false)
 
@@ -70,6 +79,15 @@ class MapViewModel {
                 return distanceFormatter.string(from: $0!.distance)
             }
     }
+
+    public lazy var inCaba: Observable<Bool> = {
+        return Observable.combineLatest(cabaMapRect, visibleMapRect)
+            .map { rects in
+                guard let caba = rects.0, let visible = rects.1 else { return true }
+
+                return MKMapRectIntersectsRect(caba, visible)
+            }
+    }()
 
     private let disposeBag = DisposeBag()
 
