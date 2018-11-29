@@ -20,6 +20,7 @@ target 'Bicisendas' do
   pod 'XMLParsing', :git => 'https://github.com/ShawnMoore/XMLParsing.git'
   
   pod 'SimulatorStatusMagic', :configurations => ['Debug']
+  pod 'SwiftLint'
 
 end
 

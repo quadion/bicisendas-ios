@@ -8,6 +8,7 @@ build_project:
   stage: build
   script:
     - bundle install
+    - bundle exec danger
     - bundle exec fastlane build
     - bundle exec fastlane tests
   artifacts:

@@ -12,6 +12,7 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - SimulatorStatusMagic (2.2)
+  - SwiftLint (0.27.0)
   - SwiftProjection (1.0.4):
     - Threadly (~> 2.0.1)
   - Threadly (2.0.1)
@@ -26,6 +27,7 @@ DEPENDENCIES:
   - RxSwift
   - RxSwiftUtilities
   - SimulatorStatusMagic
+  - SwiftLint
   - SwiftProjection
   - XMLParsing (from `https://github.com/ShawnMoore/XMLParsing.git`)
 
@@ -39,6 +41,7 @@ SPEC REPOS:
     - RxSwift
     - RxSwiftUtilities
     - SimulatorStatusMagic
+    - SwiftLint
     - SwiftProjection
     - Threadly
 
@@ -60,10 +63,11 @@ SPEC CHECKSUMS:
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
   RxSwiftUtilities: 0edb01ef16c527c10fb352485b62cbd951e4a04d
   SimulatorStatusMagic: 0389a805fa8bd001e2977c4046730bdbd6642861
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   SwiftProjection: ecb419680cebd2b775e17b682510137a1d4c0ec3
   Threadly: 749ce89c59c17b77db00549fd2a643537296645e
   XMLParsing: 085edb6fa22c71d6b53a79299f990a91e7414d19
 
-PODFILE CHECKSUM: 73515f6cc454968bad610313aec4e8c94cadab74
+PODFILE CHECKSUM: e4b22596cce4160218b32c0d076fefc92dbf1193
 
 COCOAPODS: 1.5.2
