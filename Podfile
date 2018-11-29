@@ -16,7 +16,15 @@ target 'Bicisendas' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxSwiftUtilities'
+  pod 'SwiftProjection'
+  pod 'XMLParsing', :git => 'https://github.com/ShawnMoore/XMLParsing.git'
   
   pod 'SimulatorStatusMagic', :configurations => ['Debug']
 
+end
+
+target 'BicisendasTests' do
+  use_frameworks!
+  
+  pod 'XMLParsing', :git => 'https://github.com/ShawnMoore/XMLParsing.git'
 end

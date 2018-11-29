@@ -1,0 +1,20 @@
+<html>
+<head>
+  <script src="proj4.js"></script>
+  <script src="mapabuenosaires-to-latlng.js"></script>
+  <script>
+    var x = 106728.370109;// longitud (aunque en esta proyección no se puede hablar de longitud)
+    var y = 102913.336526;// latitud (aunque en esta proyección no se puede hablar de latitud)
+    var center = mapaBuenosAiresToLatLng(x, y);
+    console.log(center);
+    // {lat: -34.60298633785489, lon: -58.38994744519263
+
+    x = -58.38994744519263;
+    y = -34.60298633785489;
+    center = latLngToMapaBuenosAires(x, y);
+    console.log(center);
+    // 102913.3364379835, lon: 106728.3702059013
+
+  </script>
+</head>
+</html>

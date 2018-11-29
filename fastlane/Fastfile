@@ -29,6 +29,11 @@ platform :ios do
   	build_app(scheme: "Bicisendas")
   end
 
+  desc "Run the unit tests"
+  lane :tests do
+    run_tests(scheme: "Bicisendas")
+  end
+
   desc "Push a new beta build to TestFlight"
   lane :beta do
   	build

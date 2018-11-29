@@ -1,0 +1,366 @@
+{
+  "tiempo": 49,
+  "destino": "98947.3877593,108063.893493",
+  "origen": "106733.162124,102905.39864",
+  "plan": [
+    {
+      "gml": "<gml:feature><gml:type>bike</gml:type><gml:Point srsName=\"EPSG:97433\"><gml:coordinates>106733.162123603644432,102905.398639636201551</gml:coordinates></gml:Point></gml:feature>",
+      "time": 0,
+      "type": "StartBiking",
+      "walked": 0,
+      "traveled": 0
+    },
+    {
+      "indicacion_giro": "",
+      "to": 600,
+      "from": 501,
+      "name": "MONTEVIDEO",
+      "tipo": "Ciclovía",
+      "distance": 135,
+      "gml": "<gml:feature><gml:type>Ciclovía</gml:type><gml:fid>13118501600</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>106772.839764332675259,102910.603138869148097 106766.557982706406619,103045.029723088809988</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "13118501600"
+    },
+    {
+      "indicacion_giro": 1,
+      "to": 2700,
+      "from": 1601,
+      "name": "TUCUMAN",
+      "tipo": "Ciclovía",
+      "distance": 1405,
+      "gml": "<gml:feature><gml:type>Ciclovía</gml:type><gml:fid>2106016011679</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>106766.557982706406619,103045.029723088809988 106754.160077221735264,103043.443747955781873 106641.07114346131857,103035.154201324738096</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>106641.07114346131857,103035.154201324738096 106616.40031916598673,103033.341595805541147 106604.174276945530437,103032.513416916510323</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>106604.174276945530437,103032.513416916510323 106485.538700453267666,103024.481643897481263</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>106485.538700453267666,103024.481643897481263 106465.87547474418534,103023.145619820628781 106359.809670737275155,103016.824820116191404 106347.068026405511773,103015.801330114365555</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>106347.068026405511773,103015.801330114365555 106227.752800201371429,103006.222713351657148 106215.651753401471069,103005.277350381205906</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>106215.651753401471069,103005.277350381205906 106203.128849617438391,103004.292923291155603 106079.51688238317729,103002.667224591379636</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>106079.51688238317729,103002.667224591379636 105956.967370253914851,103001.057156869763276 105943.905422426469158,103000.791460182124865</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>105943.905422426469158,103000.791460182124865 105843.26123949677276,102998.744032830523793 105831.957028179182089,102998.798651802906534</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>105831.957028179182089,102998.798651802906534 105723.399096498280414,103000.094851104251575</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>105723.399096498280414,103000.094851104251575 105609.474142725113779,103011.648597044462804 105594.771626448462484,103013.507842138307751</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>105594.771626448462484,103013.507842138307751 105488.861948853431386,103026.90534375597781 105476.893694910439081,103028.327115102059906</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>105476.893694910439081,103028.327115102059906 105365.601432924449909,103041.513652013469255</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "2106016011679"
+    },
+    {
+      "indicacion_giro": 0,
+      "to": 2900,
+      "from": 2701,
+      "name": "TUCUMAN",
+      "tipo": null,
+      "distance": 198,
+      "gml": "<gml:feature><gml:type>bike</gml:type><gml:fid>2106027012800</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>105365.601432924449909,103041.513652013469255 105349.055243752343813,103043.474446319087292 105262.269776887522312,103054.020564313439536</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>105262.269776887522312,103054.020564313439536 105169.242381122603547,103065.324440388416406</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "2106027012800"
+    },
+    {
+      "indicacion_giro": 2,
+      "to": 3300,
+      "from": 2901,
+      "name": "TUCUMAN",
+      "tipo": "Ciclovía",
+      "distance": 520,
+      "gml": "<gml:feature><gml:type>Ciclovía</gml:type><gml:fid>2106029013000</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>105169.242381122603547,103065.324440388416406 105094.36238577196491,103122.518003010351094</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>105094.36238577196491,103122.518003010351094 104964.250506875905558,103152.157177812841837</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>104964.250506875905558,103152.157177812841837 104809.79587114941387,103187.335143987002084</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>104809.79587114941387,103187.335143987002084 104797.265132370972424,103190.194379218490212 104679.894909174428903,103218.927400579035748</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "2106029013000"
+    },
+    {
+      "indicacion_giro": 0,
+      "to": 3500,
+      "from": 3301,
+      "name": "TUCUMAN",
+      "tipo": null,
+      "distance": 254,
+      "gml": "<gml:feature><gml:type>bike</gml:type><gml:fid>2106033013400</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>104679.894909174428903,103218.927400579035748 104573.828913367236964,103244.894927293731598 104547.822150580235757,103252.730531370034441</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>104547.822150580235757,103252.730531370034441 104536.455421845588717,103256.16007303087099 104436.740671759922407,103290.393074101462844</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "2106033013400"
+    },
+    {
+      "indicacion_giro": 2,
+      "to": 1200,
+      "from": 901,
+      "name": "BILLINGHURST",
+      "tipo": "Ciclovía",
+      "distance": 455,
+      "gml": "<gml:feature><gml:type>Ciclovía</gml:type><gml:fid>2082901916</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>104436.740671759922407,103290.393074101462844 104439.170157779022702,103307.095832711100229</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>104439.170157779022702,103307.095832711100229 104464.558691636411822,103479.224871586062363</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>104464.558691636411822,103479.224871586062363 104500.665803199488437,103604.245673478319077</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>104500.665803199488437,103604.245673478319077 104537.96815232935478,103733.414825512969401</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "2082901916"
+    },
+    {
+      "indicacion_giro": 1,
+      "to": 6100,
+      "from": 3501,
+      "name": "GORRITI",
+      "tipo": "Ciclovía",
+      "distance": 3241,
+      "gml": "<gml:feature><gml:type>Ciclovía</gml:type><gml:fid>707235013600</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>104537.96815232935478,103733.414825512969401 104444.823639713737066,103733.586142407293664 104426.285353847037186,103734.382888943946455</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>104426.285353847037186,103734.382888943946455 104270.362198624861776,103741.061496477748733</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>104270.362198624861776,103741.061496477748733 104249.199022738612257,103741.967599909461569 104106.556557993550086,103748.599412552182912</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>104106.556557993550086,103748.599412552182912 103992.178534766935627,103753.911110967208515</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>103992.178534766935627,103753.911110967208515 103852.660939184293966,103760.38669580007263</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>103852.660939184293966,103760.38669580007263 103695.776883197147981,103767.674658816657029</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>103695.776883197147981,103767.674658816657029 103638.403975046865526,103822.657439069502288</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>103638.403975046865526,103822.657439069502288 103566.617503056113492,103895.975653138171765</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>103566.617503056113492,103895.975653138171765 103541.290291974321008,103921.849912645629956 103495.08884601725731,103967.043920084266574</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>103495.08884601725731,103967.043920084266574 103414.013667428138433,104046.346317609073594</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>103414.013667428138433,104046.346317609073594 103342.29753801348852,104114.078722099598963</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>103342.29753801348852,104114.078722099598963 103235.129685336214607,104197.373061059101019</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>103235.129685336214607,104197.373061059101019 103129.485212893239805,104279.487748555009603</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>103129.485212893239805,104279.487748555009603 103031.777942504180828,104355.430749005186954</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>103031.777942504180828,104355.430749005186954 102943.984362526462064,104423.66304672586557</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>102943.984362526462064,104423.66304672586557 102854.347101671475684,104493.332800778603996</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>102854.347101671475684,104493.332800778603996 102767.740977265057154,104560.604190074795042</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>102767.740977265057154,104560.604190074795042 102692.837449109749286,104633.859887649683515</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>102692.837449109749286,104633.859887649683515 102644.018910534548922,104681.608509181227419 102627.480448089627316,104697.936163742997451</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>102627.480448089627316,104697.936163742997451 102571.576226269331528,104753.1533229767374</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>102571.576226269331528,104753.1533229767374 102553.045648584433366,104771.449670842412161 102531.858919986116234,104791.910016099587665</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>102531.858919986116234,104791.910016099587665 102480.86858916359779,104841.127341332670767</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>102480.86858916359779,104841.127341332670767 102469.548688782480895,104852.064524789122515 102395.449849455180811,104919.359425713031669</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>102395.449849455180811,104919.359425713031669 102299.02370569051709,105006.919357167862472</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>102299.02370569051709,105006.919357167862472 102286.61009939192445,105018.192463987012161 102203.464719041905482,105093.432442719378741</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>102203.464719041905482,105093.432442719378741 102107.413563163470826,105180.351766172825592</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>102107.413563163470826,105180.351766172825592 102011.362407226697542,105267.27108971508278</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>102011.362407226697542,105267.27108971508278 101907.389667464478407,105361.362077857280383</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "707235013600"
+    },
+    {
+      "indicacion_giro": 2,
+      "to": 1827,
+      "from": 0,
+      "name": "DORREGO",
+      "tipo": "Ciclovía",
+      "distance": 31,
+      "gml": "<gml:feature><gml:type>Ciclovía</gml:type><gml:fid>408901827</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>101907.389667464478407,105361.362077857280383 101928.208963630648213,105384.775730715497048</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "408901827"
+    },
+    {
+      "indicacion_giro": 1,
+      "to": 100,
+      "from": 1,
+      "name": "FREIRE, RAMON, CAP. GRAL.",
+      "tipo": "Ciclovía",
+      "distance": 146,
+      "gml": "<gml:feature><gml:type>Ciclovía</gml:type><gml:fid>60571100</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>101928.208963630648213,105384.775730715497048 101856.336624406976625,105446.734829341701698 101822.095872968435287,105447.883037114035687 101806.29962863313267,105453.773434007074684</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "60571100"
+    },
+    {
+      "indicacion_giro": 1,
+      "to": 3300,
+      "from": 3101,
+      "name": "ARENAL, CONCEPCION",
+      "tipo": "Ciclovía",
+      "distance": 208,
+      "gml": "<gml:feature><gml:type>Ciclovía</gml:type><gml:fid>110331013200</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>101806.29962863313267,105453.773434007074684 101724.866064849367831,105368.782698632319807 101717.702350334788207,105361.017207957658684</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>101717.702350334788207,105361.017207957658684 101663.314366869279183,105302.13541358463408</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "110331013200"
+    },
+    {
+      "indicacion_giro": 2,
+      "to": 1100,
+      "from": 101,
+      "name": "MARTINEZ, ENRIQUE, GRAL.",
+      "tipo": "Ciclovía",
+      "distance": 1223,
+      "gml": "<gml:feature><gml:type>Ciclovía</gml:type><gml:fid>13038101180</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>101663.314366869279183,105302.13541358463408 101652.267897097073728,105312.283554208857822 101591.387336118539679,105365.149175353260944</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>101591.387336118539679,105365.149175353260944 101549.39676426697406,105391.046773211986874</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>101549.39676426697406,105391.046773211986874 101535.311368674723781,105399.741803885961417 101451.064622917096131,105449.552668266434921</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>101451.064622917096131,105449.552668266434921 101374.676948610576801,105494.7074354760407 101360.607179853104753,105502.980600862676511</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>101360.607179853104753,105502.980600862676511 101301.92975993231812,105537.495090779004386</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>101301.92975993231812,105537.495090779004386 101221.784419576884829,105584.641977826177026</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>101221.784419576884829,105584.641977826177026 101207.316228705793037,105593.149510518167517 101120.35865392962296,105643.90564989350969</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>101120.35865392962296,105643.90564989350969 101035.768175041099312,105693.286834697661106</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>101035.768175041099312,105693.286834697661106 100878.81330691149924,105784.90881472696492</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>100878.81330691149924,105784.90881472696492 100780.926466221557348,105842.195990520849591</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>100780.926466221557348,105842.195990520849591 100702.578045992529951,105868.968352535332087</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>100702.578045992529951,105868.968352535332087 100603.933564771446981,105902.670123601565138</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "13038101180"
+    },
+    {
+      "indicacion_giro": 2,
+      "to": 3301,
+      "from": 3400,
+      "name": "LORETO, VIRREY",
+      "tipo": "Ciclovía",
+      "distance": 71,
+      "gml": "<gml:feature><gml:type>Ciclovía</gml:type><gml:fid>1213634003301</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>100642.478461653605336,105962.254933054267894 100603.933564771446981,105902.670123601565138</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "1213634003301"
+    },
+    {
+      "indicacion_giro": 1,
+      "to": 3200,
+      "from": 1101,
+      "name": "SUPERI",
+      "tipo": "Ciclovía",
+      "distance": 2653,
+      "gml": "<gml:feature><gml:type>Ciclovía</gml:type><gml:fid>2012711011200</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>100642.478461653605336,105962.254933054267894 100556.106879647224559,105999.51138364628423</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>100556.106879647224559,105999.51138364628423 100466.383867737167748,106038.213093928759918</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>100466.383867737167748,106038.213093928759918 100357.552236971037928,106085.156690463380073</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>100357.552236971037928,106085.156690463380073 100341.552870117477141,106092.054875771282241 100321.202100808674004,106102.874820899232873</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>100321.202100808674004,106102.874820899232873 100254.868748769789818,106138.131436220079195</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>100254.868748769789818,106138.131436220079195 100160.548045261049992,106185.839959104167065</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>100160.548045261049992,106185.839959104167065 100143.92777728450892,106194.246686425525695</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>100143.92777728450892,106194.246686425525695 100013.127517091401387,106376.640192940816632</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>100013.127517091401387,106376.640192940816632 99921.529053841033601,106504.55079836655932</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>99921.529053841033601,106504.55079836655932 99851.375177409383468,106602.524713042381336</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>99851.375177409383468,106602.524713042381336 99776.158972303892369,106707.55312460877758</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>99776.158972303892369,106707.55312460877758 99702.05210460696253,106811.034703097640886</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>99702.05210460696253,106811.034703097640886 99626.078112571965903,106917.117773864636547</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>99626.078112571965903,106917.117773864636547 99553.947732882967102,107019.107210778878652</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>99553.947732882967102,107019.107210778878652 99480.325226519911666,107121.432568781849113</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>99480.325226519911666,107121.432568781849113 99420.764743848470971,107204.211580409639282</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>99420.764743848470971,107204.211580409639282 99339.353438693578937,107317.364770841988502</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>99339.353438693578937,107317.364770841988502 99273.425984084227821,107408.99510581677896</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>99273.425984084227821,107408.99510581677896 99198.311340614643996,107513.390720728828455</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>99198.311340614643996,107513.390720728828455 99171.780989142949693,107550.264723783329828 99137.313407223889953,107598.044681459170533</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>99137.313407223889953,107598.044681459170533 99058.956687774989405,107706.643306644633412</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>99058.956687774989405,107706.643306644633412 98988.162211919989204,107804.773465126447263</gml:coordinates></gml:LineString></gml:lineStringMember><gml:lineStringMember><gml:LineString><gml:coordinates>98988.162211919989204,107804.773465126447263 98923.55495415344194,107906.473891694651684</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "2012711011200"
+    },
+    {
+      "indicacion_giro": 0,
+      "to": 3300,
+      "from": 3201,
+      "name": "SUPERI",
+      "tipo": null,
+      "distance": 150,
+      "gml": "<gml:feature><gml:type>bike</gml:type><gml:fid>2012732013300</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>98923.55495415344194,107906.473891694651684 98843.260710454836953,108032.861163359324564</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "2012732013300"
+    },
+    {
+      "indicacion_giro": 2,
+      "to": 3401,
+      "from": 3500,
+      "name": "PEDRAZA, MANUELA",
+      "tipo": null,
+      "distance": 101,
+      "gml": "<gml:feature><gml:type>bike</gml:type><gml:fid>1704835003401</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>98843.260710454836953,108032.861163359324564 98927.920882018632255,108087.45417372326483</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "1704835003401"
+    },
+    {
+      "indicacion_giro": 2,
+      "to": 3283,
+      "from": 3300,
+      "name": "CONDE",
+      "tipo": null,
+      "distance": 30,
+      "gml": "<gml:feature><gml:type>bike</gml:type><gml:fid>315333003283</gml:fid><gml:MultiLineString srsName=\"EPSG:97433\"><gml:lineStringMember><gml:LineString><gml:coordinates>98927.920882018632255,108087.45417372326483 98943.989875702638528,108061.76782802992966</gml:coordinates></gml:LineString></gml:lineStringMember></gml:MultiLineString></gml:feature>",
+      "type": "Street",
+      "id": "315333003283"
+    },
+    {
+      "gml": "<gml:feature><gml:type>end</gml:type><gml:Point srsName=\"EPSG:97433\"><gml:coordinates>98947.387759299890604,108063.893492999603041</gml:coordinates></gml:Point></gml:feature>",
+      "time": 0,
+      "type": "FinishBiking",
+      "walked": 0,
+      "traveled": 0
+    }
+  ],
+  "traveled_distance": 10821,
+  "services": "",
+  "walk": 0,
+  "type": "bike",
+  "id": "2018-10-02T173749687619",
+  "summary": [
+    {
+      "gml": "<gml:feature><gml:type>bike</gml:type><gml:Point srsName=\"EPSG:97433\"><gml:coordinates>106733.162123603644432,102905.398639636201551</gml:coordinates></gml:Point></gml:feature>",
+      "time": 0,
+      "type": "StartBiking",
+      "walked": 0,
+      "traveled": 0
+    },
+    {
+      "gml": "<gml:feature><gml:type>end</gml:type><gml:Point srsName=\"EPSG:97433\"><gml:coordinates>98947.387759299890604,108063.893492999603041</gml:coordinates></gml:Point></gml:feature>",
+      "time": 0,
+      "type": "FinishBiking",
+      "walked": 0,
+      "traveled": 0
+    }
+  ],
+  "options": {
+    "icons": {
+      "recorrido_pie": "//mapa.buenosaires.gob.ar/images/recorrido_pie20x20.png",
+      "recorrido_subte": "//mapa.buenosaires.gob.ar/images/recorrido_subte20x20.png",
+      "recorrido_tren": "//mapa.buenosaires.gob.ar/images/recorrido_tren20x20.png",
+      "recorrido_colectivo": "//mapa.buenosaires.gob.ar/images/recorrido_colectivo20x20.png",
+      "recorrido_auto": "//mapa.buenosaires.gob.ar/images/recorrido_auto20x20.png",
+      "recorrido_bici": "//servicios.usig.buenosaires.gob.ar/usig-js/dev/images/recorrido_bici20x20.png"
+    },
+    "template": {
+      "index": 0,
+      "color": "#0074FF",
+      "cls": "trip_0"
+    },
+    "texts": {
+      "descWalk": "Recorrido a pie",
+      "descCar": "Recorrido en auto",
+      "descBike": "Recorrido en bici",
+      "hayRamales": "No todos los ramales conducen a destino",
+      "planTransporte": {
+        "walking": {
+          "startDir": {
+            "texto": "Caminar desde <span class=\"plan-calle\">$calle $desde</span>"
+          },
+          "startCruce": {
+            "texto": "Caminar desde <span class=\"plan-calle\">$calle1 y $calle2</span>"
+          },
+          "finish": {
+            "texto": " hasta destino."
+          }
+        },
+        "board": {
+          "walking_esquina": {
+            "texto": " hasta <span class=\"plan-calle\">$calle1 y $calle2</span>"
+          },
+          "walking_calle_nro": {
+            "texto": " hasta <span class=\"plan-calle\">$calle1 $nro </span>"
+          },
+          "walkingestacion": {
+            "texto": " hasta la estación <span class=\"plan-estacion\">$estacion</span> en <span class=\"plan-calle\">$calle1 y $calle2</span>"
+          },
+          "subte": {
+            "texto": "Tomar el <span class=\"transport\">SUBTE LÍNEA $subte (en dirección a $sentido)</span>"
+          },
+          "estacion": {
+            "texto": " en la estación <span class=\"plan-estacion\">$estacion</span>"
+          },
+          "esquina": {
+            "texto": " en <span class=\"plan-calle\">$calle1 y $calle2</span>"
+          },
+          "calle_nro": {
+            "texto": " en <span class=\"plan-calle\">$calle1 $nro</span>"
+          },
+          "ramales": {
+            "texto": "(Ramales: $ramal)"
+          },
+          "colectivo": {
+            "texto": "Tomar el <span class=\"transport\">COLECTIVO $colectivo $ramal</span>"
+          },
+          "tren": {
+            "texto": "Tomar el <span class=\"transport\">TREN $tren $ramal</span>"
+          }
+        },
+        "alight": {
+          "subtetren": {
+            "texto": " y bajar en la estación <span class=\"plan-estacion\">$estacion</span>"
+          },
+          "cole_esquina": {
+            "texto": " y bajar en <span class=\"plan-calle\">$calle1 y $calle2</span>"
+          },
+          "cole_calle_nro": {
+            "texto": " y bajar en <span class=\"plan-calle\">$calle1 $nro</span>"
+          },
+          "metrobus": {
+            "texto": " y bajar en la estación <span class=\"plan-estacion\">$estacion</span> en <span class=\"plan-calle\">$calle1 y $calle2</span>"
+          }
+        },
+        "subwayconnection": {
+          "texto": "Bajarse en la estación <span class=\"plan-estacion\">$estacionorigen</span> y combinar con el <span class=\"transport\">SUBTE LÍNEA $subte (en dirección a $sentido)</span> en estación <span class=\"plan-estacion\">$estaciondestino</span>"
+        }
+      },
+      "planAuto": {
+        "seguir": {
+          "texto": "Seguir por <span class=\"plan-calle\">$calle</span>"
+        },
+        "doblarIzq": {
+          "texto": "Doblar a la izquierda en <span class=\"plan-calle\">$calle</span>"
+        },
+        "doblarDer": {
+          "texto": "Doblar a la derecha en <span class=\"plan-calle\">$calle</span>"
+        },
+        "irDesde": {
+          "texto": "Ir desde <span class=\"plan-calle\">$calle</span>"
+        },
+        "hasta": {
+          "texto": " hasta el <span class=\"plan-calle\">$hasta</span>"
+        }
+      },
+      "planBici": {
+        "inicio": {
+          "walking": {
+            "texto": "Caminar $metros desde <span class=\"plan-calle\">$calle</span>"
+          },
+          "biking": {
+            "texto": "Pedalear $metros desde $via<span class=\"plan-calle\">$calle</span>"
+          }
+        },
+        "walking": [
+          {
+            "texto": "Caminar $metros por <span class=\"plan-calle\">$calle</span>",
+            "turn_indication": "seguir"
+          },
+          {
+            "texto": "Doblar a la izquierda en <span class=\"plan-calle\">$calle</span> y caminar $metros",
+            "turn_indication": "izquierda"
+          },
+          {
+            "texto": "Doblar a la derecha en <span class=\"plan-calle\">$calle</span> y caminar $metros",
+            "turn_indication": "derecha"
+          }
+        ],
+        "biking": [
+          {
+            "texto": "Seguir $metros por $via<span class=\"plan-calle\">$calle</span>",
+            "turn_indication": "seguir"
+          },
+          {
+            "texto": "Doblar a la izquierda en $via<span class=\"plan-calle\">$calle</span> y seguir $metros",
+            "turn_indication": "izquierda"
+          },
+          {
+            "texto": "Doblar a la derecha en $via<span class=\"plan-calle\">$calle</span> y seguir $metros",
+            "turn_indication": "derecha"
+          }
+        ],
+        "hasta": {
+          "texto": " hasta el <span class=\"plan-calle\">$hasta</span>"
+        },
+        "ciclovia": {
+          "texto": " ciclovia "
+        },
+        "carril": {
+          "texto": " carril preferencial "
+        }
+      }
+    },
+    "lang": "es"
+  }
+}

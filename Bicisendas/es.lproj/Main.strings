@@ -1,1 +1,33 @@
 
+/* Class = "UILabel"; text = "To"; ObjectID = "2fA-G5-h64"; */
+"2fA-G5-h64.text" = "Hasta";
+
+/* Class = "UILabel"; text = "Duration"; ObjectID = "HOw-aq-5UP"; */
+"HOw-aq-5UP.text" = "Duracion";
+
+/* Class = "UILabel"; text = "50 min"; ObjectID = "HdD-yZ-B08"; */
+"HdD-yZ-B08.text" = "50 min";
+
+/* Class = "UILabel"; text = "Cabrera 5453"; ObjectID = "OvC-ax-Ek8"; */
+"OvC-ax-Ek8.text" = "Cabrera 5453";
+
+/* Class = "UILabel"; text = "My Location"; ObjectID = "UIv-YS-TjV"; */
+"UIv-YS-TjV.text" = "Mi ubicación";
+
+/* Class = "UILabel"; text = "Distance"; ObjectID = "fqC-4C-Osn"; */
+"fqC-4C-Osn.text" = "Distancia";
+
+/* Class = "UILabel"; text = "From"; ObjectID = "mqW-fg-adk"; */
+"mqW-fg-adk.text" = "Desde";
+
+/* Class = "UILabel"; text = "10,846km"; ObjectID = "osP-fv-bVa"; */
+"osP-fv-bVa.text" = "10,846km";
+
+/* Class = "UIButton"; normalTitle = "Go there"; ObjectID = "Tkc-Av-Hoc"; */
+"Tkc-Av-Hoc.normalTitle" = "Ir ahí";
+
+/* Class = "UILabel"; text = "Out of region"; ObjectID = "Txu-Hv-tJz"; */
+"Txu-Hv-tJz.text" = "Fuera de zona";
+
+/* Class = "UILabel"; text = "This app works in the City of Buenos Aires. Please go back there to use it."; ObjectID = "ZuS-wX-oA1"; */
+"ZuS-wX-oA1.text" = "Esta app solo funciona en la Ciudad Autónoma de Buenos Aires. Por favor ubicá tu mapa ahí para usarla.";

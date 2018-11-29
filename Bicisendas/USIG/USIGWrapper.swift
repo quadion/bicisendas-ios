@@ -1,0 +1,157 @@
+//
+//  USIGWrapper.swift
+//  Bicisendas
+//
+//  Created by Pablo Bendersky on 27/08/2018.
+//  Copyright © 2018 Pablo Bendersky. All rights reserved.
+//
+
+import WebKit
+
+import RxSwift
+import RxCocoa
+
+
+/// Wrapper for JS USIG services. This wrapper works by creating a hidden `WKWebView` that loads an HTML file
+/// (`usig-api.html`). The API is then part Javascript (within `usig-api.html`) and part Swift, in this file.
+/// Communication from Swift to Javascript is done by executing Javascript, while from Javascript to Swift is
+/// done by `messageHandlers`.
+class USIGWrapper: NSObject {
+
+    /// Emits `true` when the API is ready.
+    public var isReady = BehaviorRelay<Bool>(value: false)
+
+    /// Receives a `String` with the search term to be send to USIG's API.
+    public var searchTerm = PublishSubject<String>()
+
+    /// Emits an array of `USIGContainer` objects with suggestions.
+    /// Those objects are either `CalleDAO` or `DireccionDAO`.
+    public var suggestions = BehaviorRelay<[USIGContainer]>(value: [])
+
+    /// Emits a RecorridoDAO when a new pathway is found.
+    public var pathWay = BehaviorRelay<RecorridoDAO?>(value: nil)
+
+    /// Emits a String with the error description when there's an error in the underlying code we are wrapping.
+    public var error = BehaviorRelay<String?>(value: nil)
+
+    private let disposeBag = DisposeBag()
+
+
+    /// Registered handlers in the `WKWebView`. Those should match what we trigger from `usig-api.html`.
+    ///
+    /// - ready: Triggered when the API is ready to be used.
+    /// - suggestions: Triggered when there are new suggestions after a search.
+    private enum USIGHandlers: String, CaseIterable {
+        case ready
+        case suggestions
+        case directions
+        case debug // For debug purposes only
+        case error
+    }
+
+    private var webView: WKWebView!
+
+    private var ready = false {
+        didSet {
+            isReady.accept(ready)
+        }
+    }
+
+    override init() {
+        super.init()
+        createWebView()
+        createBindings()
+    }
+
+    private func createBindings() {
+        searchTerm
+            .subscribe(onNext: suggestions(for:))
+            .disposed(by: disposeBag)
+    }
+
+    private func createWebView() {
+
+        let data = try! Data(contentsOf: Bundle.main.url(forResource: "usig-api", withExtension: "html")!)
+
+        let userContentController = WKUserContentController()
+
+        let configuration = WKWebViewConfiguration()
+        configuration.userContentController = userContentController
+
+        USIGHandlers.allCases.forEach { (handler) in
+            userContentController.add(self, name: handler.rawValue)
+        }
+
+        self.webView = WKWebView(frame: CGRect.zero, configuration: configuration)
+
+        // We need to add the web view to the view hierarchy.
+        // Otherwise, the system assumes the web view is in background and triggers
+        // watchdog issues when running async code in usig-api.html.
+        UIApplication.shared.keyWindow?.addSubview(self.webView)
+
+        webView.load(data,
+                     mimeType: "text/html",
+                     characterEncodingName: "UTF8",
+                     baseURL: URL(string: "http://servicios.usig.buenosaires.gob.ar/usig-js/3.2/demos/")!)
+    }
+
+    public func suggestions(for inputString: String) {
+        webView.evaluateJavaScript("api.getSuggestions(\"\(inputString)\")") { (_, error) in
+        }
+    }
+
+    public func directions(from: USIGContainer, to: USIGContainer) {
+        let jsonEncoder = JSONEncoder()
+
+        let fromJSON = try! jsonEncoder.encode(from)
+        let toJSON = try! jsonEncoder.encode(to)
+
+        guard
+            let fromString = String(data: fromJSON, encoding: .utf8),
+            let toString = String(data: toJSON, encoding: .utf8)
+        else { return }
+
+        webView.evaluateJavaScript("api.getDirections(\(fromString), \(toString))") { (_, error) in
+            if let error = error {
+                print("👍 👎 Error executing Javascript - \(error)")
+            }
+        }
+    }
+
+}
+
+extension USIGWrapper: WKScriptMessageHandler {
+
+    public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        switch message.name {
+        case USIGHandlers.ready.rawValue:
+            ready = true
+        case USIGHandlers.suggestions.rawValue:
+            let decoder = JSONDecoder()
+            if let dataString = message.body as? String, let data = dataString.data(using: .utf8) {
+
+                let elements = try! decoder.decode([USIGContainer].self, from: data)
+
+                suggestions.accept(elements)
+            }
+        case USIGHandlers.directions.rawValue:
+            let decoder = JSONDecoder()
+            if let dataString = message.body as? String,
+                let data = dataString.data(using: .utf8) {
+
+                let recorrido = try! decoder.decode(RecorridoDAO.self, from: data)
+
+                pathWay.accept(recorrido)
+            }
+        case USIGHandlers.debug.rawValue:
+            print("👍 usig-api DEBUG \(message.body)")
+        case USIGHandlers.error.rawValue:
+            if let bodyString = message.body as? String {
+                error.accept(bodyString)
+            }
+        default:
+            print("👍 default case in \(#function)")
+        }
+    }
+
+}

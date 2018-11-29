@@ -1,0 +1,12 @@
+
+/* Class = "UISearchBar"; placeholder = "Search for an address"; ObjectID = "SWZ-uS-jI3"; */
+"SWZ-uS-jI3.placeholder" = "Buscar una dirección";
+
+/* Class = "UISearchBar"; SWZ-uS-jI3.scopeButtonTitles[0] = "Title"; ObjectID = "SWZ-uS-jI3"; */
+"SWZ-uS-jI3.scopeButtonTitles[0]" = "Title";
+
+/* Class = "UISearchBar"; SWZ-uS-jI3.scopeButtonTitles[1] = "Title"; ObjectID = "SWZ-uS-jI3"; */
+"SWZ-uS-jI3.scopeButtonTitles[1]" = "Title";
+
+/* Class = "UIBarButtonItem"; title = "Dismiss"; ObjectID = "lvA-MS-SqW"; */
+"lvA-MS-SqW.title" = "Cerrar";
