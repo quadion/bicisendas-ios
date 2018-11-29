@@ -2,6 +2,10 @@ stages:
   - build
   - archive
 
+variables:
+  DANGER_GITLAB_HOST: gitlab.quadiontech.com
+  DANGER_GITLAB_API_BASE_URL: https://gitlab.quadiontech.com/api/v4
+
 build_project:
   tags:
     - xcode10
