@@ -40,6 +40,10 @@ class RoutesViewController: UIViewController {
             .bind(to: viewModel.searchTerm)
             .disposed(by: disposeBag)
 
+        viewModel.searchTerm
+            .bind(to: searchBar.rx.text)
+            .disposed(by: disposeBag)
+
         dismissButton.rx.tap
             .bind(onNext: dismissTapped)
             .disposed(by: disposeBag)

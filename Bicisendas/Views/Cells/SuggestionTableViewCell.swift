@@ -19,6 +19,12 @@ class SuggestionTableViewCell: UITableViewCell {
 
     @IBOutlet weak var directionsButton: UIButton!
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+        directionsButton.roundCorners(4)
+    }
+
     public func updateWith(viewModel: CompletionResultViewModel) {
         self.textLabel?.text = viewModel.title
         self.directionsButton.isHidden = viewModel.shouldHideDirections
