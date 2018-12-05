@@ -57,11 +57,28 @@ class SuggestionsTableViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+
+        let cellViewModel = viewModel.resultViewModel(atIndex: indexPath.row)
+
+        if cellViewModel.shouldHideDirections {
+            viewModel.searchTerm.on(.next(cellViewModel.title))
+        } else {
+            searchDirections(forViewModel: cellViewModel)
+        }
+
+        return nil
+    }
+
     private func directionsTapped(onCell cell: SuggestionTableViewCell) {
         guard let indexPath = tableView.indexPath(for: cell) else { return }
 
         let cellViewModel = viewModel.resultViewModel(atIndex: indexPath.row)
 
+        searchDirections(forViewModel: cellViewModel)
+    }
+
+    private func searchDirections(forViewModel cellViewModel: CompletionResultViewModel) {
         viewModel.toLocation.accept(.usigObject(container: cellViewModel.usigContainer))
 
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
