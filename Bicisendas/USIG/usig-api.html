@@ -141,11 +141,12 @@
 
       getSuggestions(string) {
         var callbackSuggestions = function(results) {
-            if (results instanceof usig.ErrorCalleInexistente) {
+            if (results instanceof usig.ErrorCalleInexistente ||
+                results instanceof usig.ErrorCalleInexistenteAEsaAltura) {
                window.callbacker('suggestions', JSON.stringify([]));
                return;
             }
-            
+
             var resultsWithType = results.map(r => { return this.wrapObject(r); });
 
             window.callbacker('suggestions', JSON.stringify(resultsWithType));
@@ -239,7 +240,7 @@ usig.Recorridos.buscarRecorridos(
     console.log(api.ready);
     
     window.onerror = function(error) {
-      window.callbacker('error', 'windowOnfError');
+      window.callbacker('error', 'windowOnError - ' + error);
     };
     
 	$.noConflict();

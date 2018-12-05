@@ -146,6 +146,7 @@ extension USIGWrapper: WKScriptMessageHandler {
         case USIGHandlers.debug.rawValue:
             print("👍 usig-api DEBUG \(message.body)")
         case USIGHandlers.error.rawValue:
+            print("👍 usig-api ERROR \(message.body)")
             if let bodyString = message.body as? String {
                 error.accept(bodyString)
             }
