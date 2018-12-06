@@ -1,1 +1,1 @@
-Con Bicisendas podés ver en un mapa todas las ciclovías disponibles en CABA, así como la ubicación de las estaciones de EcoBici.
+Con Bicisendas podés ver en un mapa todas las ciclovías disponibles en CABA, buscar recorridos desde tu ubicación a cualquier dirección, y visualizar la ubicación de las estaciones de EcoBici.

@@ -1,1 +1,1 @@
-With Bicisendas you can see all the bikelanes available in the City of Buenos Aires, as well as the stations for the bikeshare EcoBici.
+With Bicisendas you can see all the bikelanes available in the City of Buenos Aires, search for routes from your current location to anywhere in the city, and check the stations for the bikeshare network EcoBici.
