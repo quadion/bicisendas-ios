@@ -46,6 +46,8 @@ class RoutesViewModel {
     private let disposeBag = DisposeBag()
 
     init() {
+        locationManager.startUpdatingLocation()
+
         usigWrapper.isReady
             .bind(to: isReady)
             .disposed(by: disposeBag)
