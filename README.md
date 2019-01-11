@@ -9,7 +9,7 @@ search for routes from your current location to anywhere in the city, and check 
 
 PRs are welcome. Please fork the project, and send a PR to `master`.
 
-## Interting bits
+## Interesting bits
 
 A few bits of the app we consider interesting:
 
